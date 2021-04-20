@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- This file is generated. All changes outside MARKER sections will be lost. -->
+
+	<parent>
+		<groupId>tasi.sve</groupId>
+		<artifactId>tasi.sve</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../tasi.sve</relativePath>
+	</parent>
+
+	<artifactId>tasi.sve.dss</artifactId>
+	<name>${project.artifactId}</name>
+	<packaging>pom</packaging>
+	<!-- MARKER: CUSTOM SETTINGS: START -->
+	<!-- Add additional settings here -->
+	<!-- MARKER: CUSTOM SETTINGS: END -->
+</project>

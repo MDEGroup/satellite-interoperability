@@ -1,0 +1,882 @@
+/******************************************************************************
+*
+*    PROJECT:      IGSC MADE
+*    FILE:         IGM_004_dss.set
+*    RELEASE:      1.0
+*    AUTHOR:       IGSC AVS Team
+*    DATE:         2020/05/30
+*
+*    OVERVIEW
+*    ========
+*    IGM set file 004 
+*    Sensors: - Gyro, GNSS, STT
+*    Actuators: - Cold Gas, RW, APPE
+*
+*    CHANGE LOG
+*    ========
+*    IGSC AVS Team    2020/12/21     First issue
+*
+******************************************************************************/
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//         S I M U L A T I O N   C O N F I G U R A T I O N   D A T A
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**************************************************************
+//*
+//*  SIM MODEL PARAMETERS
+//*
+//*************************************************************/
+
+// *****************************************************
+// Model command stack
+// *****************************************************
+MODEL_COMMAND_STACK = [ 
+
+   0     SC.DEPLOY,3,180,4,180,5,180,0,0,0,5                                         // +X yoke deployment (when deployed +Y)
+   0     SC.DEPLOY,6,180,7,180,8,180,9,180,10,180,11,180,12,180,0,0,0,5              // +X SAW deployment (when deployed +Y)
+   0     SC.DEPLOY,14,180,15,180,16,180,0,0,0,5                                      // -X yoke deployment (when deployed -Y)
+   0     SC.DEPLOY,17,180,18,180,19,180,20,180,21,180,22,180,23,180,0,0,0,5          // -X SAW deployment (when deployed +Y)
+   
+   0     SC.DEPLOY,24,90,0,0,0,5                                                     // +Y antenna UHF deployment
+   0     SC.DEPLOY,25,-90,0,0,0,5                                                    // -Y antenna UHF deployment  
+
+   0     SC.DEPLOY,26,75,27,-70,28,0,29,76.85,30,-82.8,31,0,0,0,0,5                  // EOR deployment
+   0     SC.DEPLOY,26,74.5,27,-70,28,56.1,29,71.3,30,-68.9,31,56.6,0,0,0,5           // SK deployment
+   
+   0.125     SC.LOG_INERTIA
+   
+   0     GYRO1.SWITCH_ON
+
+   0	 FSS1.SWITCH_ON
+
+   0     MHSTR.SWITCH_ON
+   0.1875     MHSTR.SYNC_TO_GPSTIME
+
+   0     RW1.SWITCH_ON
+   0     RW2.SWITCH_ON
+   0     RW3.SWITCH_ON
+   0     RW4.SWITCH_ON
+     
+   0     COLD_GAS1.SWITCH_ON
+   0     COLD_GAS2.SWITCH_ON
+   0     COLD_GAS3.SWITCH_ON
+   0     COLD_GAS4.SWITCH_ON
+   
+   //0	 APPE_PYSC.SWITCH_ON
+   //0	 APPE_MYSC.SWITCH_ON   
+
+]
+
+EPOCH = [2025 05 20 15 13 44]
+ORBIT_EPOCH = [2025 05 20 15 13 44]
+   
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  M O D E L S   D A T A
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/**************************************************************
+//*
+//*  S/C Plant
+//*
+//*************************************************************/
+
+//*****************************************************
+// Configuration data list:
+//
+// IERS_UT1_UTC_DATA                   [3] IERS BULLETIN-A UT1-UTC data (UT1_Base_MJD,UT1_Coef_1,UT1_Coef_2)
+// IERS_POLE_LOCATION_DATA             [11] IERS BULLETIN-A Pole Location data (Pole_Base_MJD,X0,X1,X2,X3,X4,Y0,Y1,Y2,Y3,Y4)
+// IERS_TAI_UTC_LEAP_SECONDS           [1] IERS BULLETIN-A TAI-UTC value
+// ZERO_INPUT_FLAG                     [1] Flag to force to zero propagation inputs to keep the inertial status
+// MULTI_BODY_FLAG                     [1] Flag to enable using the Multi-Body model
+// ORBPROP_SUN_MOON_GRAV               [1] Flag to take into account the Sun and Moon gravity
+// ORBPROP_GEM_ORDER                   [1] Earth Gravity model order (from 0 to 120. 0=Newton. 1=J2 only)
+// ORBPROP_DRAG_CDA                    [1] "Cd*A" Air drag factor
+// ORBPROP_PRESSUN_CPA                 [1] "Cp*A" Solar pressure factor
+// GRAVITY_GRADIENT                    [1] Flag to take into account the Gravity Gradient torque
+// MAGNETIC_DIPOLE_MOMENTUM            [3] Constant Magnetic Dipole Momentum with respect to the S/C reference frame [Am^2]
+// SOLAR_TORQUE                        [3xn] Harmonics Solar Torques coefficilents [Nm] (3 rows, n columns)
+// SC_MASS                             [1] S/C total Mass [kg]
+// SC_J_COG                            [3x3] S/C initial Inertia Tensor wrt the S/C Center of Gravity (S/C reference frame components) [kg*m^2]
+// SC_COG                              [3] S/C initial Center of Gravity wrt the S/C reference frame [m]
+// SOLAR_SURFACE_DATA                  [nx10] SUN Sensitive Surfaces data (n rows, 10 columns = iBody,iA,iB,iC,max_power,x_absorb,x_specular,x_diffuse,cd,n_mesh)
+// SOLAR_SURFACE_DATA_RGB              [nx13] SUN Sensitive Surfaces data (n rows, 10 columns = iBody,iA,iB,iC,max_power,x_absorb,x_specular,x_diffuse,cd,n_mesh,r,g,b)
+// SOLAR_SURFACE_UPDATE_TIME_S         [1] Shadowing model updating time [s] (allows speeding-up the simulation)
+// ASW_CONTROLLED_ITEM_INDEX           [16] Array of Id of the Multi-Body items controlled by the S/C input (0 = not used)
+// ASW_CONTROLLED_ITEM_DATA            [2x16] Multi-Body controlled Motor-Filter data (2 rows, 16 columns = tau_filter [s], max_ang_dotdot [deg/s^2])
+// SC_L                                [3xn] Flexible Modes Participation Factors in Traslation (3 rows, n columns)
+// SC_S                                [3xn] Flexible Modes Participation Factors in Rotation (3 rows, n columns)
+// SC_W                                [n] Flexible Modes Natural frequencies ( w = 2*pi*f )
+// SC_Z                                [n] Flexible Modes Damping factors
+// SC_FLEXIBLE_BODY_ID                 [n] Flexible Modes related Multi-Body items Id array (0 = not used)
+// SC_FLEXIBLE_DEPLOY_DATA             [nx4] Flexible Modes deployment related data (n rows, 4 columns = id,a0,xmin) id=0 means not-used
+// EPOCH                               [6] Initial Epoch : year,month,day,hour,minute,seconds
+// ORBIT_A                             [1] Initial Orbit Semimajor axis [m]
+// ORBIT_E                             [1] Initial Orbit Eccentricity [-]
+// ORBIT_I                             [1] Initial Orbit Inclination [deg]
+// ORBIT_RAAN                          [1] Initial Orbit Right Ascension of Ascending Node [deg]
+// ORBIT_AOP                           [1] Initial Orbit Argument of Perigee [deg]
+// ORBIT_TRUEAN                        [1] Initial Orbit True Anomaly [deg]
+// ORBIT_EPOCH                         [6] Orbit data reference Epoch : year,month,day,hour,minute,seconds
+// SC_INITIAL_REFERENCE_MODE           [1] Initial Attitude Reference Frame (0=EarthPointing,1=Zero-Doppler,2=Local-Velocity,3=ECI-J2000,4=SunPointing)
+// SC_QUATERNION                       [4] Initial Attitude Quaternion wrt the set Reference Frame
+// SC_ATTITUDE                         [4] Initial Attitude Angles [deg] and sequence order [ijk] wrt the set Reference Frame
+// SC_ANGULAR_RATE                     [3] Initial S/C Angular Rate [deg/s]
+// MAGNETIC_FIELD_WRT_SC               [3] Forced fixed Magnetic Field vector wrt S/C reference frame (if any) [T]
+// SUN_WRT_ECI                         [3] Forced fixed Sun wrt ECI-J2000 reference frame (if any) RA,Declination [deg] and Magnitude [m]
+// MOON_WRT_ECI                        [3] Forced fixed Moon wrt ECI-J2000 reference frame (if any) RA,Declination [deg] and Magnitude [m]
+// SUN_HALF_CONE_UNIT_REFERENCE_VECTOR [3] S/C Unit vector used to compute the Sun Half-Cone angle
+// ENABLE_TRACE_FLAG                   [1] Flag to enable the S/C Status step-by-step trace file generation
+// SAR_ANGLE                           [1] SAR instrument Range aperture half-angle [deg]
+// FLEXIBLE_BODY_FLAG                  [1] Flag to enable using the FlexibleBody model
+//*****************************************************
+
+// *****************************************************
+// Simulation Initial Epoch GMT [ y m d h m s ]      1x6
+// *****************************************************
+EPOCH =  [ 2021  03  22  21  00  00 ]
+
+// *****************************************************
+// S/C Initial Attitude wrt the Selected Reference   1x4
+// Roll(1) - Pitch(2) - Yaw(3) - Rotations_Order
+// (Used only if SC_QUATERNION has not been provided)
+// *****************************************************
+SC_ATTITUDE = [ 0.0  0.0   0.0    312 ]
+
+// *****************************************************
+// S/C Initial Inertial Angular Rate [deg/s]
+// wrt S/C Reference Frame                           1x3
+// *****************************************************
+//SC_ANGULAR_RATE = [ 0.2  -0.3  -0.4 ]
+SC_ANGULAR_RATE = [ 0.1  -0.05  0.01 ]
+
+//*****************************************************
+// Enable log of DSS data
+//*****************************************************
+ENABLE_TRACE_FLAG = 0
+
+//*****************************************************
+// Multybody-Model enabling flag, 1 to enable it      1x1
+// NOTE: if MULTI_BODY_FLAG = 0 the following values shall be loaded:  
+// SC_MASS [1], SC_J_COG [9], SC_COG [3]
+//*****************************************************
+MULTI_BODY_FLAG = 1
+MULTIBODY_FILE_NAME = ../data/MultyBodyLayout.cfg
+
+//*****************************************************
+// FlexibleBody-Model enabling flag, 1 to enable it      1x1
+// if FLEXIBLE_BODY_FLAG = 1, the following values shall be loaded: 
+// SC_W, SC_L, SC_S, SC_Z, SC_FLEXIBLE_BODY_ID, SC_FLEXIBLE_DEPLOY_DATA
+//*****************************************************
+
+FLEXIBLE_BODY_FLAG = 0
+
+//// *****************************************************
+//// Modal Natural Frequencies (2*pi*f)             n_flex
+//// NOTE: if SW_W is not present the body is considered rigid. (=>FLEXIBLE_BODY_FLAG = 0)
+//// *****************************************************
+//SC_W = [    1.1373   6.5973   7.0372    13.635  1.1373   6.5973   7.0372   13.635  34.388  34.388 ]
+//
+// *****************************************************
+// TRANSLATION - Modal Partecipation Factors    3xn_flex
+// NOTE: 3 ROWs-data for each COLUMN, related to a single flexible mode
+// *****************************************************
+//SC_L = [     0.0    0.0300         0         0  0.0  	    0.0300         0         0    1.018    1.018
+//			-5.3600    2.9000    0.2500         0 -5.3600    2.9000    0.2500         0    0.002    0.002
+//			 0.0100   -0.4800    5.7100    0.1500  0.0100   -0.4800    5.7100    0.1500  -11.582  -11.582 ]
+//
+// *****************************************************
+// ROTATION - Modal Partecipation Factors       3xn_flex
+// NOTE: 3 ROWs-data for each COLUMN, related to a single flexible mode
+// *****************************************************
+//SC_S = [  -7.5322  3.6807    5.1075   3.1852   -7.5322  3.6807    5.1075   3.1852   0.117   0.117  
+//			 -0.0670  2.7946  -33.7367  -0.8453   -0.0670  2.7946  -33.7367  -0.8453  17.578  17.578
+//			-33.0911  6.2419     0.5854  0.0     -33.0911  6.2419     0.5854  0.0      0.008   0.008 ]
+//
+// *****************************************************
+// Modal Damping Coefficients                      n_flex
+// *****************************************************
+//SC_Z = [  0.003    0.003    0.003     0.003     0.003     0.003     0.003     0.003    0.003    0.003 ]
+//
+// *****************************************************
+// Movable flexible objects data                  n_flex
+// body_id     [-]   Multi-Body movable item identifier
+// *****************************************************
+//SC_FLEXIBLE_BODY_ID     = [   2     2     2     2     9     9     9     9     0     0  ]
+//
+// *****************************************************
+// Deployable flexible objects data             4xn_flex
+// flex_deploy_id       [-]   Multi-Body deployable item identifier
+// flex_deploy_a0       [deg] Deployable item fully deployed hinge angle
+// flex_deploy_delta    [deg] Deployable item deployment range hinge half-angle magnitude
+// flex_deploy_xmin     [-]   Deployable item minimum scale factor at deployment range edge
+// NOTE: 4 ROWs-data for each COLUMN, related to a single flexible mode
+// *****************************************************
+//SC_FLEXIBLE_DEPLOY_DATA = [   3     3     3     3     10    10    10    10    17    19
+//                              180   180   180   180   180   180   180   180   180   180
+//                              179   179   179   179   179   179   179   179   179   179
+//                              0.2   0.2   0.2   0.2   0.2   0.2   0.2   0.2   0.2   0.2
+//]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//         O R B I T   D A T A
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//*****************************************************
+// S/C Reference Orbit EPOCH    [ y m d h m s ]      1x6
+//*****************************************************
+ORBIT_EPOCH =  [ 2021  03  22  21  00  00 ]
+
+//*****************************************************
+// S/C Reference Orbit Semi-Major Axis [m]           1x1
+//*****************************************************
+ORBIT_A = 7273000     
+
+//*****************************************************
+// S/C Reference Orbit Eccentricity                  1x1
+//*****************************************************
+ORBIT_E = 0.013422208
+
+//*****************************************************
+// S/C Reference Orbit Inclination [deg]             1x1
+//*****************************************************
+ORBIT_I = 5.808
+
+//*****************************************************
+// Initial Right Ascension of Ascending Node [deg]   1x1
+//*****************************************************
+ORBIT_RAAN = 180
+
+//*****************************************************
+// S/C Reference Orbit Argument of Perigee [deg]     1x1
+//*****************************************************
+ORBIT_AOP = 196.7545
+
+//*****************************************************
+// S/C Reference Orbit True Anolay [deg]             1x1
+//*****************************************************
+ORBIT_TRUEAN = 250.9760
+
+//*****************************************************
+// Initial Attitude : 0 = EarthPointing (ORS)        1x1
+// Reference Frame    1 = Zero-Doppler   Reference Frame (ESA)
+//                    2 = Local-Velocity Reference Frame (ESA)
+//                    3 = ECI J2000      Reference Frame
+//                    4 = SunPointing    Reference Frame
+//*****************************************************
+SC_INITIAL_REFERENCE_MODE = 0
+
+//*****************************************************
+// Gravity Gradient torque flag, 1 to enable it      1x1
+//*****************************************************
+GRAVITY_GRADIENT = 1
+
+//*****************************************************
+// Gravity Earth model order, 1 to enable J2 effect  1x1
+// from 2 to 30 to use GEM-10 with nxn harmonics
+//*****************************************************
+ORBPROP_GEM_ORDER = 0
+
+//*****************************************************
+// Sun & Moon gravity model flag, 1 to enable it     1x1
+//*****************************************************
+ORBPROP_SUN_MOON_GRAV = 0
+
+//*****************************************************
+// Atmospheric drag term, given by 'Cd*A'  [m^2]     1x1
+//*****************************************************
+ORBPROP_DRAG_CDA =  0 
+//Ballistic Coefficient 
+//Aaer = 5.44 m^2 and Cd = 2.25
+
+//*****************************************************
+// Solar pressure term, given by 'Cp*A'  [m^2]       1x1
+//*****************************************************
+ORBPROP_PRESSUN_CPA = 0
+//6.4 m^2 radiation surface as been set to 32 m^2
+// radiation coefficient has been set to 1.3
+
+// *****************************************************
+// Static S/C Magnetic Dipole (no MGT) [Am^2]        1x3
+// *****************************************************
+MAGNETIC_DIPOLE_MOMENTUM = [ 0   0   0 ]
+
+//
+//
+//     **********************************************************************   
+//     *                                                                    *   
+//     *                   I E R S   B U L L E T I N - A                    *   
+//     *                                                                    *   
+//     *           Rapid Service/Prediction of Earth Orientation            *   
+//     **********************************************************************   
+//     21 September 2017                                     Vol. XXX No. 038   
+//     ______________________________________________________________________   
+
+//      PREDICTIONS:                                                             
+//      The following formulas will not reproduce the predictions given below,   
+//      but may be used to extend the predictions beyond the end of this table.  
+//                                                                               
+//      x =  0.1184 + 0.1427 cos A - 0.0296 sin A - 0.0316 cos C - 0.0071 sin C  
+//      y =  0.3587 - 0.0207 cos A - 0.1284 sin A - 0.0395 cos C + 0.0316 sin C  
+//         UT1-UTC =  0.2893 - 0.00109 (MJD - 58025) - (UT2-UT1)                 
+//                                                                               
+//      where A = 2*pi*(MJD-58017)/365.25 and C = 2*pi*(MJD-58017)/435.          
+//                                                                               
+//         TAI-UTC(MJD 58018) = 37.0                                             
+
+// *****************************************************  
+// POLE_LOCATION_DATA := [ Pole_Base_MJD  X0  X1  X2  X3  X4  Y0  Y1  Y2  Y3  Y4 ]
+//       A = 2*pi*(MJD-Pole_Base_MJD)/365.25 and C = 2*pi*(MJD-Pole_Base_MJD)/435.
+//       x =  Pole_X0+Pole_X1*cosA+Pole_X2*sinA+Pole_X3*cosC+Pole_X4*sinC
+//       y =  Pole_Y0+Pole_Y1*cosA+Pole_Y2*sinA+Pole_Y3*cosC+Pole_Y4*sinC
+//
+// UT1_UTC_DATA := [ UT1_Base_MJD   UT1_Coef_1  UT1_Coef_2 ]
+//       UT1-UTC = UT1_Coef_1 + UT1_Coef_2 * (MJD-UT1_Base_MJD) - (UT2-UT1)
+//
+// NOTE: POD & COD implement : Pole_Base_MJD = UT1_Base_MJD - 8
+// *****************************************************
+
+IERS_POLE_LOCATION_DATA   = [ 58017   0.1184  +0.1427  -0.0296  -0.0316  -0.0071  0.3587  -0.0207  -0.1284  -0.0395 +0.0316]
+IERS_UT1_UTC_DATA         = [ 58025  0.2893  -0.00109 ] 
+IERS_TAI_UTC_LEAP_SECONDS = 37
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//         U N I T   M O D E L   D A T A
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//----------------------------SENSORS------------------------------------//
+
+/****************************************************************
+*
+*  GYRO HONEYWELL PARAMETERS
+*
+*****************************************************************/
+//
+// GYRO1 DATA
+//_______________________________________________________________ 
+// **************************************************************
+// *  UNIT MOUNTING MATRIX
+// *  DIMENSION: [3x3]   
+// *  REFERENCE: HBK-CSG-0014-TASI ISSUE 1             
+// **************************************************************
+GYRO1.BRF2UNIT = [ 1    0     0   
+                   0   -0.707106781186547   0.707106781186547
+                   0   -0.707106781186547  -0.707106781186547 ]
+
+// **************************************************************
+// *  RATE BIAS
+// *  UNIT: °/hr
+// **************************************************************
+GYRO1.BIAS = 0.010
+
+// **************************************************************
+// *  ANGULAR RANDOM WALK
+// *  UNIT: ??/sqrt(hr)
+// *  REFERENCE: "PSYG9666_Product Specification"            
+// **************************************************************
+GYRO1.ARW = 0.005
+
+// **************************************************************
+// *  READ OUT NOISE
+// *  UNIT: microRad
+// *  REFERENCE: "PSYG9666_Product Specification"            
+// **************************************************************
+GYRO1.RON = 0.8e-6
+
+// **************************************************************
+// *  200Hz FRAME TIME LSB
+// *  UNIT: sec/LSB
+// *  REFERENCE: "ICDYG9666HA_Interface Control Document"            
+// **************************************************************
+GYRO1.TIME_LSB = 5e-3
+
+// **************************************************************
+// *  OUTPUT COMULATED ANGLE LSB
+// *  UNIT: rad/LSB
+// *  REFERENCE: "ICDYG9666HA_Interface Control Document"            
+// **************************************************************
+GYRO1.ANGLE_LSB = 1e-6
+
+// **************************************************************
+// *  MODEL SAMPLE TIME          
+// **************************************************************
+GYRO1.SAMPLE_TIME = 0.125
+
+// **************************************************************
+// *  MODEL ERROR SOURCES FLAGS         
+// **************************************************************
+GYRO1.ARW_ENABLED  = 1
+GYRO1.OWN_ENABLED  = 0
+GYRO1.BIAS_ENABLED = 1
+
+// **************************************************************
+// *  GYRO POSITION WRT COG
+// **************************************************************
+GYRO1.POSITION_WRT_SC = [-0.3216 0.081565 2.3748]
+
+// **************************************************************
+    
+// 
+// GYRO2 DATA
+//_______________________________________________________________ 
+GYRO2.BRF2UNIT = [ 1    0     0   
+                   0   -0.7   0.7
+                   0   -0.7  -0.7 ]
+GYRO2.BIAS = 0.010
+GYRO2.ARW = 0.005
+GYRO2.RON = 0.8e-6
+GYRO2.TIME_LSB = 5e-3
+GYRO2.ANGLE_LSB = 1e-6;
+GYRO2.SAMPLE_TIME = 0.125
+GYRO2.ARW_ENABLED  = 1;
+GYRO2.OWN_ENABLED  = 0;
+GYRO2.BIAS_ENABLED = 1;
+GYRO2.POSITION_WRT_SC = [-0.3216 0.081565 2.3748]
+
+
+//****************************************************************
+//*
+//*  CSS Bradford
+//*
+//*****************************************************************
+
+// 
+// CSS1 DATA
+//_______________________________________________________________ 
+//*BRF 2 Unit (Z boresight)
+//
+FSS1.MOUNTING_MATRIX = [0.0  -1.0  0.0
+                        -1.0  0.0  0.0
+                        0.0  0.0  -1.0]			  
+						  
+FSS1.I0 = 33    
+FSS1.NOISE = 1.0e-5         
+FSS1.SAT_LEV= 35      
+FSS1.HC_FOV_MIN = 0.523598  
+FSS1.HC_FOV_MAX = 1.134463 
+FSS1.delta = 0.38397
+
+
+//********************************************************************************
+//*
+//* MHSTR IRIDIUM PARAMETERS
+//*
+//********************************************************************************
+MHSTR.UPDATE_STEP_TIME = 0.125 ;
+
+//********************************************************************************
+//*  STT Mounting Matrices
+//********************************************************************************
+MHSTR.BRF2OH1 = [0.0		0.0		-1.0
+				 -0.9336	0.3584	0.0
+				 0.3584		0.9336	0.0] 
+
+
+MHSTR.BRF2OH2 = [0.0		0.0		-1.0
+                 0.9336		0.3584	0.0
+                 0.3584		-0.9336	0.0]				 
+
+//********************************************************************************
+//*  Measured data delay
+//*  Delay = MEAS_DELAY[0] + MEAS_DELAY[1] * (Ts_id % P.MEAS_DELAY[2])
+//********************************************************************************
+MHSTR.MEAS_DELAY =[0.1875  0.0  1.0]
+//*****************************************************************
+//*  RANDOM NOISE                                         [Arcsec] 
+//* 
+//* From IRIDIUM Performance Analysis
+//* ASR7002069-C DRAFT 14/06/2012
+//*   0.1 deg/sec    8.4   62.5 
+//*   0.5 deg/sec    11.6  94.3 
+//*   1 deg/sec      18.8  155.3
+//*   2 deg/sec      42    361.3 
+//*   Table 10-3: HF Error – Single Head @ 15°C (3-sigma)
+//*
+//*  Noise error omega thresholds rates are in [deg/s]
+//*
+//*****************************************************************/
+// 1-sigma         X       Y      Z(boresigth)
+MHSTR.ERR_RAND = [2.3 2.3 18.6 
+					3.1 3.1 23.4 
+					4.8 4.8 42.9 
+					17 17 119.3 ]
+MHSTR.ERR_RAND_OMEGA_THR =[0.1 0.5 1.0 2.0]     
+
+//*****************************************************************
+//*  Bias error                                            [Arcsec]
+//*****************************************************************/
+MHSTR.ERR_BIAS =[0.0 0.0 0.0] 
+
+//*****************************************************************
+//*  Harmonic error                                        [Arcsec]
+//*  error pulsation in rad/s
+//*****************************************************************/
+MHSTR.ERR_HARMONIC  = [0.0 0.0 0.0]    
+MHSTR.ERR_HARM_PULS = 0.0011    
+ 
+//*****************************************************************
+//*  FoV                                                     [deg]
+//* IRIDIUM MICD
+//*****************************************************************/
+MHSTR.OPTICAL_HEAD = 1
+MHSTR.FOV_moon  = 19
+MHSTR.FOV_earth = 25
+MHSTR.FOV_sun   = 26
+
+
+//*************************************************************
+//*
+//*  GPS PARAMETERS
+//*
+//*************************************************************
+// 
+// GPS1 DATA
+//_______________________________________________________________ 
+GPS1.UPDATE_STEP_TIME      = 1
+GPS1.ENABLE_FULL_MODEL     = 1
+GPS1.POSITION_ERROR_BIAS   = [0 0 0]
+GPS1.VELOCITY_ERROR_BIAS   = [0 0 0]
+GPS1.POSITION_ERROR_HARM   = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+GPS1.VELOCITY_ERROR_HARM   = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+GPS1.POSITION_PHASE_SIGMA  = [0 0 0 0 0 0]
+GPS1.VELOCITY_PHASE_SIGMA  = [0 0 0 0 0 0]
+GPS1.POSITION_ERROR_SIGMA  = [10 10 10]
+GPS1.VELOCITY_ERROR_SIGMA  = [0.01 0.01 0.01]
+
+// 
+// GPS2 DATA
+//_______________________________________________________________  
+GPS2.UPDATE_STEP_TIME      = 1
+GPS2.ENABLE_FULL_MODEL     = 1
+GPS2.POSITION_ERROR_BIAS   = [0 0 0]
+GPS2.VELOCITY_ERROR_BIAS   = [0 0 0]
+GPS2.POSITION_ERROR_HARM   = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+GPS2.VELOCITY_ERROR_HARM   = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+GPS2.POSITION_PHASE_SIGMA  = [0 0 0 0 0 0]
+GPS2.VELOCITY_PHASE_SIGMA  = [0 0 0 0 0 0]
+GPS2.POSITION_ERROR_SIGMA  = [10 10 10]
+GPS2.VELOCITY_ERROR_SIGMA  = [0.01 0.01 0.01]
+
+//*************************************************************
+//*
+//*  TACHO PREPROCESSING
+//*
+//*************************************************************
+//**************************************************************
+//*  Tacho Pulses angular amplitude            [rad] 1 x tac_num
+//*  360deg/24 = 15deg -> 15*pi/180 = 0.261799 [rad]
+//**************************************************************
+ACE1_PRE.TACHO_DA = 0.261799
+
+//---------------------------ACTUATORS-----------------------------------//
+
+//*************************************************************************
+//*
+//* COLD_GAS 
+//*
+//*************************************************************************
+COLD_GAS1.UPDATE_STEP_TIME  =     0.125
+COLD_GAS2.UPDATE_STEP_TIME  =     0.125
+COLD_GAS3.UPDATE_STEP_TIME  =     0.125
+COLD_GAS4.UPDATE_STEP_TIME  =     0.125
+
+COLD_GAS1.POSITION          =      [ 1.0  0.656964  0 ] 
+COLD_GAS2.POSITION          =      [ -1.0   0.656964  0 ]
+COLD_GAS3.POSITION          =      [ -1.0  -0.743036  0 ]
+COLD_GAS4.POSITION          =      [ 1.0  -0.743036  0 ]
+
+COLD_GAS1.MISALIGN          =	   [ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+COLD_GAS2.MISALIGN          =	   [ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+COLD_GAS3.MISALIGN          =	   [ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+COLD_GAS4.MISALIGN          =	   [ 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+
+COLD_GAS1.UNIT_VEC          =      [0.707106781186547   -0.707106781186548  0]
+COLD_GAS2.UNIT_VEC          =	   [-0.707106781186547  -0.707106781186548  0]
+COLD_GAS3.UNIT_VEC          =	   [-0.707106781186547  0.707106781186548   0]
+COLD_GAS4.UNIT_VEC          =	   [0.707106781186547   0.707106781186548   0]
+
+COLD_GAS1.NM_THRUST         =	   0.05
+COLD_GAS2.NM_THRUST         =	   0.05
+COLD_GAS3.NM_THRUST         =	   0.05
+COLD_GAS4.NM_THRUST         =	   0.05
+
+COLD_GAS1.F_BIAS            =	   0.0
+COLD_GAS2.F_BIAS            =	   0.0
+COLD_GAS3.F_BIAS            =	   0.0
+COLD_GAS4.F_BIAS            =	   0.0
+
+COLD_GAS1.F_NOISE_SIGMA     =	   0.0
+COLD_GAS2.F_NOISE_SIGMA     =	   0.0
+COLD_GAS3.F_NOISE_SIGMA     =	   0.0
+COLD_GAS4.F_NOISE_SIGMA     =	   0.0
+
+
+//****************************************************************
+//*
+//*  WHEEL PARAMETERS
+//*
+//****************************************************************
+
+// **************************************************************
+// Friction viscous coefficient                    [ Nm/(rad/s) ] 
+// (it is the slope of friction torque)
+// REFERENCE: 
+// **************************************************************
+// Speed Ranges (0:50 - 50:100 - 100:150 - 150:200 - 200:280 - >280)
+RW1.MU = [0.3945E-3    0.2074E-3    0.1184E-3    0.0869E-3    0.0615E-3    0.0508E-3]
+RW2.MU = [0.3945E-3    0.2074E-3    0.1184E-3    0.0869E-3    0.0615E-3    0.0508E-3]
+RW3.MU = [0.3945E-3    0.2074E-3    0.1184E-3    0.0869E-3    0.0615E-3    0.0508E-3]
+RW4.MU = [0.3945E-3    0.2074E-3    0.1184E-3    0.0869E-3    0.0615E-3    0.0508E-3]
+
+// **************************************************************
+// Quiescent Power                    [ W ] 
+// (it is the power consumption at 0 rpm)
+// REFERENCE: 
+// **************************************************************
+RW1.Q_POWER = 5.5       
+RW2.Q_POWER = 5.5       
+RW3.Q_POWER = 5.5       
+RW4.Q_POWER = 5.5       
+
+// **************************************************************
+// ON Resistance of FET switches in the commutation     [ Ohm ] 
+// (it has been inferred from the Honeywell worst-case)
+// REFERENCE: 
+// **************************************************************
+RW1.R_FET = 1.2          
+RW2.R_FET = 1.2         
+RW3.R_FET = 1.2         
+RW4.R_FET = 1.2         
+
+// **************************************************************
+// Voltage Drop due to the flyback diode on power stage      [ V ] 
+// (it has been inferred from the Honeywell worst-case)
+// REFERENCE: 
+// **************************************************************
+RW1.V_drop_diode = 1.3  
+RW2.V_drop_diode = 1.3  
+RW3.V_drop_diode = 1.3  
+RW4.V_drop_diode = 1.3  
+
+// **************************************************************
+// *  Friction threshold rate                           [ rad/s ]
+// **************************************************************
+RW1.W0F = 0.0052
+RW2.W0F = 0.0052
+RW3.W0F = 0.0052
+RW4.W0F = 0.0052
+
+// **************************************************************
+// *   Stiction Torque                                     [ Nm ]
+// REFERENCE: 
+// **************************************************************
+RW1.STICT_T = 0.0023
+RW2.STICT_T = 0.0023
+RW3.STICT_T = 0.0023
+RW4.STICT_T = 0.0023
+
+// **************************************************************
+// * Wheel Inertia                                       [Kg/m^2]
+// REFERENCE: 
+// **************************************************************
+
+RW1.INERTIA = 0.159
+RW2.INERTIA = 0.159
+RW3.INERTIA = 0.159
+RW4.INERTIA = 0.159
+
+// **************************************************************
+// * Wheel voltage quantization        (10Volt/2^12)          [V]
+// **************************************************************
+RW1.QUANT = 0.002442
+RW2.QUANT = 0.002442
+RW3.QUANT = 0.002442
+RW4.QUANT = 0.002442
+
+// **************************************************************
+// * Wheel voltage convention                               [bit]
+// **************************************************************
+RW1.VOLTAGE_CONV = 1
+RW2.VOLTAGE_CONV = 1
+RW3.VOLTAGE_CONV = 1
+RW4.VOLTAGE_CONV = 1
+
+// ********************************************************************************
+// *  Wheel axis unity vector                          3 x wh_num
+// *  REFERENCE: HBK-CSG-0014-TASI ISSUE 1  
+// ********************************************************************************
+RW1.AXIS = [ 0.577345920477541    -0.577345920477541   0.577358966515530]
+RW2.AXIS = [ 0.577345920477541     0.577345920477541   0.577358966515530]
+RW3.AXIS = [-0.577345920477541    -0.577345920477541   0.577358966515530]
+RW4.AXIS = [-0.577345920477541     0.577345920477541   0.577358966515530]
+
+// **************************************************************
+// *  Motor Gain                                   [Nm/Volt]  1x1
+// **************************************************************
+RW1.GAIN = 0.0252
+RW2.GAIN = 0.0252
+RW3.GAIN = 0.0252
+RW4.GAIN = 0.0252
+
+// **************************************************************
+// *  Overspeed limits                        [rad/s]  2 x wh_num
+// *  nominal = 2800rpm | rate max = 3500rpm 
+// **************************************************************
+
+RW1.WLIM = [-628 628]
+RW2.WLIM = [-628 628]
+RW3.WLIM = [-628 628]
+RW4.WLIM = [-628 628]
+
+//RW1.WLIM = [-928 928]
+//RW2.WLIM = [-928 928]
+//RW3.WLIM = [-928 928]
+//RW4.WLIM = [-928 928]
+// **************************************************************
+// *  Torque saturation levels                   [Nm]  2 x wh_num
+// **************************************************************
+RW1.TLIM = [-0.252 0.252]
+RW2.TLIM = [-0.252 0.252]
+RW3.TLIM = [-0.252 0.252]
+RW4.TLIM = [-0.252 0.252]
+
+// **************************************************************
+// *  Motor scale factor                     [Nm/A] 1x1
+// REFERENCE: 
+// **************************************************************
+RW1.MOTOR_SF = 0.0735
+RW2.MOTOR_SF = 0.0735
+RW3.MOTOR_SF = 0.0735
+RW4.MOTOR_SF = 0.0735
+
+// **************************************************************
+// *  TM MOTOR CURRENT SENSOR_GAIN           [V/A] 1x1
+// *  Kcs*Gtm = 4.0 * 0.625 = 2.5 [V/A]
+// **************************************************************
+RW1.TM_SENSOR_GAIN = 2.5
+RW2.TM_SENSOR_GAIN = 2.5
+RW3.TM_SENSOR_GAIN = 2.5
+RW4.TM_SENSOR_GAIN = 2.5
+
+// **************************************************************
+// *  Initial wheel rate                     [rad/s] 1x1
+// **************************************************************
+RW1.W0  =  0.0
+RW2.W0  =  0.0
+RW3.W0  =  0.0
+RW4.W0  =  0.0
+
+
+/****************************************************************
+*
+*  APPE PARAMETERS
+*
+*****************************************************************/
+
+/****************************************************************
+*
+*  APPE PARAMETERS
+*
+%   03/03/2020: aggiornamento dei valori geometrici         (A. Perrotta)
+*   31/03/2020: aggiunta dei parametri di rumore            (A. Perrotta)
+*   06/06/2020: aggiunta degli ID del multibody e dell'Isp  (A. Perrotta)
+*****************************************************************/
+
+// APPE_PYSC = Robotic Arm +Y_SC
+
+APPE_PYSC.l1        = 1.299                 // Robotic arm (RA) first link length [m]
+APPE_PYSC.l2        = 0.5                   // Robotic arm (RA) second link length [m]
+APPE_PYSC.l3        = 0.21                  // misalignment of the thruster position on the plate [m]
+APPE_PYSC.d12       = 0.08                  // misalignment between first and second link [m]
+APPE_PYSC.d23       = 0.00                  // misalignment between second link and plate [m]
+APPE_PYSC.R_RA_SC   = [1 0 0;0 1 0;0 0 1]   // Rotation matrix of SC reference frame w.r.t. RA reference frame []
+APPE_PYSC.SCO_RA    = [0.9;-0.7;-0.15]      // Origin of SC reference frame in RA reference frame [m]
+APPE_PYSC.TF        = 0.230                 // Thruster force [N] (minimum life avg = 0.230 [N])
+APPE_PYSC.ST        = 0.0000                // Swirl torque [Nm] (default = 0.0006 [Nm])
+APPE_PYSC.ISP       = 1680                  // Specific Impulse [s] (minimum life avg = 1680 [s])
+
+APPE_PYSC.TF_FAMILY_ERR = 0.00              // Family error [%]
+APPE_PYSC.TF_REPEATABILITY_ERR = 0.00       // Repeatability error [%]
+APPE_PYSC.TF_ERR_TRANS   = 0.00             // Accuracy error durig transient phase [%]
+APPE_PYSC.TF_ERR_STEAD   = 0.00             // Accuracy error durig transient phase [%]
+APPE_PYSC.TF_sigma     = 0.000              // Damping factor during steady phase 
+APPE_PYSC.TF_omega_mean = 0.00              // Pulsation (mean value) [rad/s]
+APPE_PYSC.TF_omega_sigma = 0.0000           // Pulsation (sigma) [rad/s]
+APPE_PYSC.TF_t1_mean =  0                   // Transient phase starting time (mean value) [s]
+APPE_PYSC.TF_t1_sigma = 0                   // Transient phase starting time (sigma) [s]
+APPE_PYSC.TF_t2_mean    = 0                 // Steady phase starting time (mean value) [s]
+APPE_PYSC.TF_t2_sigma = 0                  // Steady phase starting time (sigma) [s]
+APPE_PYSC.TF_RADIAL_OFFSET = [0.000; 0.000; 0.0]    // Radial error of the force application point wrt centerline [m]
+APPE_PYSC.TF_ORIENTATION_ERR_TRANS = 0              // Maximum orientation error during transient phase [deg]
+APPE_PYSC.TF_ORIENTATION_ERR = 0.0                  // Maximum orientation error during steady phase [deg]
+APPE_PYSC.TF_ORIENTATION_REPEATABILITY_ERR = 0.0    // Maximum orientation repeatabilty error [deg]
+APPE_PYSC.TF_ORIENTATION_sigma1 = 0.00      // Damping orientation factor during transient phase 
+APPE_PYSC.TF_ORIENTATION_sigma2 = 0.000     // Damping orientation factor during steady phase
+APPE_PYSC.TF_ORIENTATION_omega_mean = 0.00  // Pulsation of orientation (mean value) [rad/s]
+APPE_PYSC.TF_ORIENTATION_omega_sigma = 0.00 // Pulsation of orientation (sigma) [rad/s]
+APPE_PYSC.TF_MOUNTING_ERR = 0.00            // Error between channel axis and plate normal [deg]
+
+APPE_PYSC.FIRST_LINK_INDEX  = 26            // ID Link1 APPE +Y
+APPE_PYSC.SECOND_LINK_INDEX = 27            // ID Link2 APPE +Y
+APPE_PYSC.PLATE_INDEX       = 28            // ID Plate APPE +Y
+APPE_PYSC.TANK_ITEM_INDEX = 1               // ID Tank
+
+APPE_PYSC.THETA_NOISE_BIAS  = 0.0           // Joint angle noise bias [rad]
+APPE_PYSC.THETA_NOISE_SIGMA = 0.00000       // Joint angle noise sigma [rad] (= 50 millideg)
+
+
+// APPE_MYSC = Robotic Arm -Y_SC
+
+APPE_MYSC.l1        = 1.299                 // Robotic arm (RA) first link length [m]
+APPE_MYSC.l2        = 0.5                   // Robotic arm (RA) second link length [m]
+APPE_MYSC.l3        = 0.21                  // misalignment of the thruster position on the plate [m]
+APPE_MYSC.d12       = 0.08                  // misalignment between first and second link [m]
+APPE_MYSC.d23       = 0.00                  // misalignment between second link and plate [m]
+APPE_MYSC.R_RA_SC   = [-1 0 0;0 -1 0;0 0 1] // Rotation matrix of SC reference frame w.r.t. RA reference frame []
+APPE_MYSC.SCO_RA    = [0.9;-0.7;-0.15]      // Origin of SC reference frame in RA reference frame [m]
+APPE_MYSC.TF        = 0.230                 // Thruster force [N] (minimum life avg = 0.230 [N])
+APPE_MYSC.ST        = 0.0000                // Swirl torque [Nm] (default = 0.0006 [Nm])
+APPE_MYSC.ISP       = 1680                  // Specific Impulse [s] (minimum life avg = 1680 [s])
+
+APPE_MYSC.TF_FAMILY_ERR = 0.0              // Family error [%]
+APPE_MYSC.TF_REPEATABILITY_ERR = 0.0       // Repeatability error [%]
+APPE_MYSC.TF_ERR_TRANS   = 0.0             // Accuracy error durig transient phase [%]
+APPE_MYSC.TF_ERR_STEAD   = 0.0             // Accuracy error durig transient phase [%]
+// APPE_MYSC.TF_sigma1     = 0.00              // Damping factor during transient phase 
+APPE_MYSC.TF_sigma     = 0.00              // Damping factor during steady phase 
+APPE_MYSC.TF_omega_mean = 0.0              // Pulsation (mean value) [rad/s]
+APPE_MYSC.TF_omega_sigma = 0.00           // Pulsation (sigma) [rad/s]
+APPE_MYSC.TF_t1_mean = 0                   // Transient phase starting time (mean value) [s]
+APPE_MYSC.TF_t1_sigma = 0                 // Transient phase starting time (sigma) [s]
+APPE_MYSC.TF_t2_mean = 0                  // Steady phase starting time (mean value) [s]
+APPE_MYSC.TF_t2_sigma = 0                  // Steady phase starting time (sigma) [s]
+APPE_MYSC.TF_RADIAL_OFFSET = [0.00; 0.00; 0.0]    // Radial error of the force application point wrt centerline [m]
+APPE_MYSC.TF_ORIENTATION_ERR_TRANS = 0.0               // Maximum orientation error during transient phase [deg]
+APPE_MYSC.TF_ORIENTATION_ERR = 0.                  // Maximum orientation error during steady phase [deg]
+APPE_MYSC.TF_ORIENTATION_REPEATABILITY_ERR = 0.    // Maximum orientation repeatabilty error [deg]
+APPE_MYSC.TF_ORIENTATION_sigma1 = 0.0      // Damping orientation factor during transient phase 
+APPE_MYSC.TF_ORIENTATION_sigma2 = 0.00     // Damping orientation factor during steady phase
+APPE_MYSC.TF_ORIENTATION_omega_mean = 0.  // Pulsation of orientation (mean value) [rad/s]
+APPE_MYSC.TF_ORIENTATION_omega_sigma = 0.0 // Pulsation of orientation (sigma) [rad/s]
+APPE_MYSC.TF_MOUNTING_ERR = 0.            // Error between channel axis and plate normal [deg]
+
+APPE_MYSC.FIRST_LINK_INDEX  = 29            // ID Link1 APPE -Y
+APPE_MYSC.SECOND_LINK_INDEX = 30            // ID Link2 APPE -Y
+APPE_MYSC.PLATE_INDEX       = 31            // ID Plate APPE -y
+APPE_MYSC.TANK_ITEM_INDEX = 1               // ID Tank
+
+APPE_MYSC.THETA_NOISE_BIAS  = 0.0           // Joint angle noise bias [rad]
+APPE_MYSC.THETA_NOISE_SIGMA = 0.00000       // Joint angle noise sigma [rad] (= 50 millideg)
+
+//

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_12_1_17260432_1174076031670_498761_740" name="Physical Viewpoint" visibility="public" URI="" metamodelReference="_12_1_17260432_1174076031670_498761_740_packageImportcreatedOnLoad">
+  <eAnnotations xmi:id="_8vrmDp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_8vrmD54HEeu53dsWBgqOCg" name="PhysicalViewpoint" nsURI="http:///schemas/PhysicalViewpoint/_8kQVgJ4HEeu53dsWBgqOCg/0" nsPrefix="PhysicalViewpoint">
+      <eAnnotations xmi:id="_8vrmEJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_8vrmEZ4HEeu53dsWBgqOCg" key="originalName" value="Physical Viewpoint"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmEp4HEeu53dsWBgqOCg" name="allocation">
+        <eAnnotations xmi:id="_8vrmE54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106324680505_860729_2671"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmFJ4HEeu53dsWBgqOCg" name="base_Dependency" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmFp4HEeu53dsWBgqOCg" name="systemElement">
+        <eAnnotations xmi:id="_8vrmF54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106324379663_448566_2333"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmGJ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmGp4HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_12_1_17260432_1174076031670_498761_740_packageImportcreatedOnLoad">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0primitiveTypesPhysical_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0javaPrimitiveTypesPhysical_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106324680505_860729_2671" name="allocation" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1128437165856_741900_341" annotatedElement="_61501c1_1106324680505_860729_2671" body="An Allocation represents the allocation of a node in the communications viewpoint to a system element in the physical viewpoint."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823579_982802_395" name="base_Dependency" visibility="private" association="_10_0_17260432_1129543823579_696971_394">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_887022_218" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106324379663_448566_2333" name="systemElement" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1128437165856_592963_340" annotatedElement="_61501c1_1106324379663_448566_2333" body="A System Element is a physical element in a system. Physical properties of the system element are specified as attributes of the UML construct."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823639_431797_486" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823639_791313_485">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823649_964682_491" name="base_Class" visibility="private" association="_10_0_17260432_1129543823649_430578_490">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_762159_217" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823649_430578_490" name="" visibility="public" memberEnd="_10_0_17260432_1129543823649_964682_491 _10_0_17260432_1129543823649_584360_492" navigableOwnedEnd="_10_0_17260432_1129543823649_584360_492">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823649_584360_492" name="extension_systemElement" visibility="private" type="_61501c1_1106324379663_448566_2333" aggregation="composite" association="_10_0_17260432_1129543823649_430578_490">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823649_777680_493" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823649_873307_494" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823579_696971_394" name="" visibility="public" memberEnd="_10_0_17260432_1129543823579_982802_395 _10_0_17260432_1129543823579_935097_396" navigableOwnedEnd="_10_0_17260432_1129543823579_935097_396">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823579_935097_396" name="extension_allocation" visibility="private" type="_61501c1_1106324680505_860729_2671" aggregation="composite" association="_10_0_17260432_1129543823579_696971_394">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823579_811170_397" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823579_184456_398" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823639_791313_485" name="" visibility="public" memberEnd="_10_0_17260432_1129543823639_431797_486 _10_0_17260432_1129543823639_59908_487" navigableOwnedEnd="_10_0_17260432_1129543823639_59908_487">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823639_59908_487" name="extension_systemElement" visibility="private" type="_61501c1_1106324379663_448566_2333" aggregation="composite" association="_10_0_17260432_1129543823639_791313_485">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823639_38913_488" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823639_290466_489" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>

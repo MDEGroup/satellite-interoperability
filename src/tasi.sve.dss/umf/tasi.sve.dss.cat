@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue:Catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Catalogue="http://www.esa.int/2005/10/Smdl/Catalogue" xmlns:Types="http://www.esa.int/2005/10/Core/Types" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="_umf_tasi_sve_dss_componentName_1613124398200_26" Name="tasi_sve_dss" Creator="UMF" Date="2021-04-15T18:31:27.903+02:00" Title="SMDL Catalogue for tasi.sve.dss" Version="1.0.0">
+  <Namespace Id="_umf_tasi_sve_dss_componentName_1613124398200_12" Name="tasi">
+    <Description>The tasi namespace.</Description>
+    <Namespace Id="_umf_tasi_sve_dss_componentName_1613124398200_14" Name="sve">
+      <Description>This is the top-level namespace of tasi.sve.</Description>
+      <Namespace Id="_umf_tasi_sve_dss_componentName_1613124398200_16" Name="dss">
+        <Description>This namespace provides the dss elements of tasi.sve.</Description>
+        <Type xsi:type="Catalogue:Model" Id="_19_0_3_c380313_1613127812741_784303_8987" Name="DssRoot" Visibility="public">
+          <Uuid>fb0fb2df-6bd0-3441-8667-b5aa40ab7b98</Uuid>
+          <Property Id="_19_0_3_c380313_1617897449007_716686_9558" Name="ReceiverId" Visibility="public" Access="readOnly">
+            <Type xlink:title="String8" xlink:href="http://www.esa.int/2005/10/Smp#String8"/>
+          </Property>
+          <Operation Id="_19_0_3_c380313_1617914706945_468467_9584" Name="ReceivePulse" Visibility="public">
+            <Parameter Id="_19_0_3_c380313_1617914822641_652529_9587" Name="pulseId">
+              <Type xlink:title="Int32" xlink:href="http://www.esa.int/2005/10/Smp#Int32"/>
+            </Parameter>
+          </Operation>
+          <Interface xlink:title="IPulseReceiver" xlink:href="tasi.sve.common.cat#_17_0_3_8ba0285_1605803585250_335594_6113"/>
+          <Container Id="_19_0_3_c380313_1613127841485_369807_9024" Name="l3Models" Lower="0" Upper="-1">
+            <Type xlink:title="IModel" xlink:href="http://www.esa.int/2005/10/Smp#Smp.IModel"/>
+          </Container>
+          <EntryPoint Id="_19_0_3_c380313_1617915457309_508556_9588" Name="UpdateAllModels">
+            <Metadata xsi:type="Types:Attribute" Id="_19_0_3_c380313_1617915457309_508556_9588.View" Name="View">
+              <Type xlink:title="View" xlink:href="http://www.esa.int/2005/10/Smp#Smp.Attributes.View"/>
+              <Value xsi:type="Types:SimpleValue">
+                <Value xsi:type="xsd:int">3</Value>
+              </Value>
+            </Metadata>
+          </EntryPoint>
+        </Type>
+        <Type xsi:type="Catalogue:Model" Id="_19_0_3_c380313_1618497617969_100812_9534" Name="GyroHoneywell" Visibility="public">
+          <Uuid>a9755682-b63b-352c-b87d-f4d407e0856a</Uuid>
+          <Operation Id="_19_0_3_c380313_1618502820907_245001_9561" Name="Update" Visibility="public">
+            <Metadata xsi:type="Types:Attribute" Id="_19_0_3_c380313_1618502820907_245001_9561.View" Name="View">
+              <Type xlink:title="View" xlink:href="http://www.esa.int/2005/10/Smp#Smp.Attributes.View"/>
+              <Value xsi:type="Types:SimpleValue">
+                <Value xsi:type="xsd:int">3</Value>
+              </Value>
+            </Metadata>
+          </Operation>
+        </Type>
+        <Type xsi:type="Catalogue:Model" Id="_19_0_3_c380313_1616119765653_953893_8974" Name="SumL3" Visibility="public">
+          <Uuid>79d8c842-a2b6-3e74-8751-88f7756c2a1f</Uuid>
+          <EntryPoint Id="_19_0_3_c380313_1616120480364_148585_9016" Name="UpdateSum">
+            <Metadata xsi:type="Types:Attribute" Id="_19_0_3_c380313_1616120480364_148585_9016.View" Name="View">
+              <Type xlink:title="View" xlink:href="http://www.esa.int/2005/10/Smp#Smp.Attributes.View"/>
+              <Value xsi:type="Types:SimpleValue">
+                <Value xsi:type="xsd:int">3</Value>
+              </Value>
+            </Metadata>
+          </EntryPoint>
+          <Field Id="_19_0_3_c380313_1616428005070_917351_8925" Name="sum" Input="false" Output="false" State="true" View="true">
+            <Type xlink:title="Float64" xlink:href="http://www.esa.int/2005/10/Smp#Float64"/>
+            <Default xsi:type="Types:SimpleValue">
+              <Value xsi:type="xsd:double">0.0</Value>
+            </Default>
+          </Field>
+          <Field Id="_19_0_3_c380313_1617098217108_213686_8939" Name="nInputs" Visibility="public" Input="false" Output="false" State="true" View="true">
+            <Type xlink:title="Int32" xlink:href="http://www.esa.int/2005/10/Smp#Int32"/>
+          </Field>
+          <Field Id="_19_0_3_c380313_1617098306130_393998_8950" Name="sumProgressiveID" Input="false" Output="false" State="false" View="false">
+            <Type xlink:title="Int32" xlink:href="http://www.esa.int/2005/10/Smp#Int32"/>
+          </Field>
+        </Type>
+      </Namespace>
+    </Namespace>
+  </Namespace>
+</Catalogue:Catalogue>

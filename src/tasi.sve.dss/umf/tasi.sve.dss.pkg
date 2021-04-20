@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Package:Package xmlns:Package="http://www.esa.int/2005/10/Smdl/Package" xmlns:xlink="http://www.w3.org/1999/xlink" Id="tasi.sve.dss" Name="tasi_sve_dss" Creator="UMF" Date="2021-04-15T18:31:28.044+02:00" Title="tasi.sve.dss" Version="1.0.0">
+  <Description>This package is generated from tasi.sve.dss.cat using the SMP2 Package Generation Tool.
+This package is generated. DO NOT EDIT.</Description>
+  <Dependency xlink:title="tasi_sve_common" xlink:href="tasi.sve.common.pkg#tasi.sve.common"/>
+  <Dependency xlink:title="esa_smp2_smp" xlink:href="esa.smp2.smp.pkg#esa.smp2.smp"/>
+  <Implementation Uuid="fb0fb2df-6bd0-3441-8667-b5aa40ab7b98">
+    <Type xlink:title="DssRoot" xlink:href="tasi.sve.dss.cat#_19_0_3_c380313_1613127812741_784303_8987"/>
+  </Implementation>
+  <Implementation Uuid="a9755682-b63b-352c-b87d-f4d407e0856a">
+    <Type xlink:title="GyroHoneywell" xlink:href="tasi.sve.dss.cat#_19_0_3_c380313_1618497617969_100812_9534"/>
+  </Implementation>
+  <Implementation Uuid="79d8c842-a2b6-3e74-8751-88f7756c2a1f">
+    <Type xlink:title="SumL3" xlink:href="tasi.sve.dss.cat#_19_0_3_c380313_1616119765653_953893_8974"/>
+  </Implementation>
+</Package:Package>

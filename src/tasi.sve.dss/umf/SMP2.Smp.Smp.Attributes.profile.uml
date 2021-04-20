@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:InformationViewpoint="http:///schemas/InformationViewpoint/_8kipYJ4HEeu53dsWBgqOCg/0" xmlns:SMDLProfile="http:///schemas/SMDLProfile/_8kciwJ4HEeu53dsWBgqOCg/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/InformationViewpoint/_8kipYJ4HEeu53dsWBgqOCg/0 UMF.UMF_Profile.Information_Viewpoint.profile.uml#_8vrkkJ4HEeu53dsWBgqOCg http:///schemas/SMDLProfile/_8kciwJ4HEeu53dsWBgqOCg/0 UMF.SMDL_Profile.profile.uml#_8v0H8J4HEeu53dsWBgqOCg">
+  <uml:Profile xmi:id="_smp2_Smp.mdxml_Smp.Attributes" name="Attributes" visibility="public" URI="" metamodelReference="_smp2_Smp.mdxml_Smp.Attributes_packageImportcreatedOnLoad">
+    <eAnnotations xmi:id="_8vsLLp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_8vsLL54HEeu53dsWBgqOCg" name="Attributes" nsURI="http:///schemas/Attributes/_8kkekJ4HEeu53dsWBgqOCg/0" nsPrefix="Attributes">
+        <eAnnotations xmi:id="_8vsLMJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/4.0.0/UML">
+          <references xmi:type="uml:Package" href="tasi.sve.dss.uml#_14c603f2_1097762085647_121508_479"/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_8vsLMZ4HEeu53dsWBgqOCg" name="Limits" instanceClassName="java.lang.String">
+          <eAnnotations xmi:id="_8vsLMp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Limits"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLM54HEeu53dsWBgqOCg" name="Operator">
+          <eAnnotations xmi:id="_8vsLNJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Operator"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLNZ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLN54HEeu53dsWBgqOCg" name="OperatorKind" ordered="false" lowerBound="1" eType="_8vsLOZ4HEeu53dsWBgqOCg" defaultValueLiteral="None"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8vsLOZ4HEeu53dsWBgqOCg" name="OperatorKind">
+          <eAnnotations xmi:id="_8vsLOp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind"/>
+          <eLiterals xmi:id="_8vsLO54HEeu53dsWBgqOCg" name="None"/>
+          <eLiterals xmi:id="_8vsLPJ4HEeu53dsWBgqOCg" name="Positive" value="1"/>
+          <eLiterals xmi:id="_8vsLPZ4HEeu53dsWBgqOCg" name="Negative" value="2"/>
+          <eLiterals xmi:id="_8vsLPp4HEeu53dsWBgqOCg" name="Assign" value="3"/>
+          <eLiterals xmi:id="_8vsLP54HEeu53dsWBgqOCg" name="Add" value="4"/>
+          <eLiterals xmi:id="_8vsLQJ4HEeu53dsWBgqOCg" name="Subtract" value="5"/>
+          <eLiterals xmi:id="_8vsLQZ4HEeu53dsWBgqOCg" name="Multiply" value="6"/>
+          <eLiterals xmi:id="_8vsLQp4HEeu53dsWBgqOCg" name="Divide" value="7"/>
+          <eLiterals xmi:id="_8vsLQ54HEeu53dsWBgqOCg" name="Remainder" value="8"/>
+          <eLiterals xmi:id="_8vsLRJ4HEeu53dsWBgqOCg" name="Greater" value="9"/>
+          <eLiterals xmi:id="_8vsLRZ4HEeu53dsWBgqOCg" name="Less" value="10"/>
+          <eLiterals xmi:id="_8vsLRp4HEeu53dsWBgqOCg" name="Equal" value="11"/>
+          <eLiterals xmi:id="_8vsLR54HEeu53dsWBgqOCg" name="NotGreater" value="12"/>
+          <eLiterals xmi:id="_8vsLSJ4HEeu53dsWBgqOCg" name="NotLess" value="13"/>
+          <eLiterals xmi:id="_8vsLSZ4HEeu53dsWBgqOCg" name="NotEqual" value="14"/>
+          <eLiterals xmi:id="_8vsLSp4HEeu53dsWBgqOCg" name="Indexer" value="15"/>
+          <eLiterals xmi:id="_8vsLS54HEeu53dsWBgqOCg" name="Sum" value="16"/>
+          <eLiterals xmi:id="_8vsLTJ4HEeu53dsWBgqOCg" name="Difference" value="17"/>
+          <eLiterals xmi:id="_8vsLTZ4HEeu53dsWBgqOCg" name="Product" value="18"/>
+          <eLiterals xmi:id="_8vsLTp4HEeu53dsWBgqOCg" name="Quotient" value="19"/>
+          <eLiterals xmi:id="_8vsLT54HEeu53dsWBgqOCg" name="Module" value="20"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLUJ4HEeu53dsWBgqOCg" name="Maximum">
+          <eAnnotations xmi:id="_8vsLUZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Maximum"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLUp4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLVJ4HEeu53dsWBgqOCg" name="Duration" ordered="false" lowerBound="1" eType="_8vsLVp4HEeu53dsWBgqOCg" defaultValueLiteral="-PT1S"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_8vsLVp4HEeu53dsWBgqOCg" name="Data_UMF_UMFProfile_PrimitiveTypes_Duration" instanceClassName="java.lang.String">
+          <eAnnotations xmi:id="_8vsLV54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_8vsLWJ4HEeu53dsWBgqOCg" key="originalName" value="Data_UMF_UMF Profile_Primitive Types_Duration"/>
+            <references xmi:type="uml:PrimitiveType" href="tasi.sve.dss.uml#_14c603f2_1097765765508_352517_8206"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLWZ4HEeu53dsWBgqOCg" name="BaseClass">
+          <eAnnotations xmi:id="_8vsLWp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.BaseClass"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLW54HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLXZ4HEeu53dsWBgqOCg" name="String" ordered="false" lowerBound="1" upperBound="-1" defaultValueLiteral=" ">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLX54HEeu53dsWBgqOCg" name="GetRaises">
+          <eAnnotations xmi:id="_8vsLYJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1236069618628_391635_4134"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLYZ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLY54HEeu53dsWBgqOCg" name="exception" ordered="false" lowerBound="1" upperBound="-1" defaultValueLiteral="Smp::Exception">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLZZ4HEeu53dsWBgqOCg" name="Forcible">
+          <eAnnotations xmi:id="_8vsLZp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Forcible"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLZ54HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLaZ4HEeu53dsWBgqOCg" name="RaisedException">
+          <eAnnotations xmi:id="_8vsLap4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1236069413665_127679_4087"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLa54HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLbZ4HEeu53dsWBgqOCg" name="exception" ordered="false" lowerBound="1" upperBound="-1" defaultValueLiteral="Smp::Exception">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLb54HEeu53dsWBgqOCg" name="View">
+          <eAnnotations xmi:id="_8vsLcJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1295362382627_129388_3860"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLcZ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLc54HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLdZ4HEeu53dsWBgqOCg" name="ViewKind" ordered="false" lowerBound="1" eType="_8vsLd54HEeu53dsWBgqOCg" defaultValueLiteral="VK_None"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8vsLd54HEeu53dsWBgqOCg" name="Data_SMP2_Smp_Smp_ViewKind">
+          <eAnnotations xmi:id="_8vsLeJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="uml:Enumeration" href="tasi.sve.dss.uml#_12_1_2_17260432_1295362382627_394123_3861"/>
+          </eAnnotations>
+          <eLiterals xmi:id="_8vsLeZ4HEeu53dsWBgqOCg" name="VK_None"/>
+          <eLiterals xmi:id="_8vsLep4HEeu53dsWBgqOCg" name="VK_Debug" value="1"/>
+          <eLiterals xmi:id="_8vsLe54HEeu53dsWBgqOCg" name="VK_Expert" value="2"/>
+          <eLiterals xmi:id="_8vsLfJ4HEeu53dsWBgqOCg" name="VK_All" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLfZ4HEeu53dsWBgqOCg" name="ByReference">
+          <eAnnotations xmi:id="_8vsLfp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.ByReference"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLf54HEeu53dsWBgqOCg" name="base_Parameter" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLgZ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLg54HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLhZ4HEeu53dsWBgqOCg" name="Service">
+          <eAnnotations xmi:id="_8vsLhp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1236069319916_249513_4066"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLh54HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLiZ4HEeu53dsWBgqOCg" name="IncludePath">
+          <eAnnotations xmi:id="_8vsLip4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_9_8770277_1319463161642_669595_5216"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLi54HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLjZ4HEeu53dsWBgqOCg" name="Path" ordered="false" lowerBound="1" upperBound="-1" defaultValueLiteral=" ">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLj54HEeu53dsWBgqOCg" name="ConcurrencyLevel">
+          <eAnnotations xmi:id="_8vsLkJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLkZ4HEeu53dsWBgqOCg" name="ConcurrencyLevelKind" ordered="false" lowerBound="1" eType="_8vsLlZ4HEeu53dsWBgqOCg" defaultValueLiteral="background"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLk54HEeu53dsWBgqOCg" name="base_Element" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8vsLlZ4HEeu53dsWBgqOCg" name="ConcurrencyLevelKind">
+          <eAnnotations xmi:id="_8vsLlp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevelKind"/>
+          <eLiterals xmi:id="_8vsLl54HEeu53dsWBgqOCg" name="with_all"/>
+          <eLiterals xmi:id="_8vsLmJ4HEeu53dsWBgqOCg" name="with_none" value="1"/>
+          <eLiterals xmi:id="_8vsLmZ4HEeu53dsWBgqOCg" name="background" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLmp4HEeu53dsWBgqOCg" name="Virtual">
+          <eAnnotations xmi:id="_8vsLm54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Virtual"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLnJ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLnp4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLoJ4HEeu53dsWBgqOCg" name="Initialisation">
+          <eAnnotations xmi:id="_8vsLoZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Initialisation"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLop4HEeu53dsWBgqOCg" name="base_Element" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLpJ4HEeu53dsWBgqOCg" name="Static">
+          <eAnnotations xmi:id="_8vsLpZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Static"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLpp4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLqJ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLqp4HEeu53dsWBgqOCg" name="BaseClassVirtual">
+          <eAnnotations xmi:id="_8vsLq54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_9_c300305_1314705110802_673478_5231"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLrJ4HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLrp4HEeu53dsWBgqOCg" name="String" ordered="false" lowerBound="1" upperBound="-1" defaultValueLiteral=" ">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLsJ4HEeu53dsWBgqOCg" name="Varargs">
+          <eAnnotations xmi:id="_8vsLsZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f810373_1223997831260_931136_9179"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLsp4HEeu53dsWBgqOCg" name="printfCheck" ordered="false" lowerBound="1" defaultValueLiteral="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLtJ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_8vsLtp4HEeu53dsWBgqOCg" name="LimitValue" instanceClassName="java.lang.String">
+          <eAnnotations xmi:id="_8vsLt54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.LimitValue"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLuJ4HEeu53dsWBgqOCg" name="Template">
+          <eAnnotations xmi:id="_8vsLuZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f810373_1250019221203_980817_10558"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLup4HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLvJ4HEeu53dsWBgqOCg" name="templateParameter" ordered="false" lowerBound="1" eType="_8vsLvp4HEeu53dsWBgqOCg" defaultValueLiteral="typename Type"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_8vsLvp4HEeu53dsWBgqOCg" name="Data_UMF_UMFProfile_PrimitiveTypes_String8" instanceClassName="java.lang.String">
+          <eAnnotations xmi:id="_8vsLv54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_8vsLwJ4HEeu53dsWBgqOCg" key="originalName" value="Data_UMF_UMF Profile_Primitive Types_String8"/>
+            <references xmi:type="uml:PrimitiveType" href="tasi.sve.dss.uml#_14c603f2_1097762639854_586036_1369"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLwZ4HEeu53dsWBgqOCg" name="Exception" eSuperTypes="_8vsLyJ4HEeu53dsWBgqOCg">
+          <eAnnotations xmi:id="_8vsLwp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1236069073179_32741_4044"/>
+          <eAnnotations xmi:id="_8vsLw54HEeu53dsWBgqOCg" source="duplicates">
+            <contents xmi:type="ecore:EReference" xmi:id="_8vsLxJ4HEeu53dsWBgqOCg" name="base_DataType" ordered="false" lowerBound="1">
+              <eAnnotations xmi:id="_8vsLxZ4HEeu53dsWBgqOCg" source="redefines" references="_8vsLy54HEeu53dsWBgqOCg"/>
+              <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+            </contents>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLyJ4HEeu53dsWBgqOCg" name="FunctionalViewpoint_exception">
+          <eAnnotations xmi:id="_8vsLyZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_8vsLyp4HEeu53dsWBgqOCg" key="originalName" value="Functional Viewpoint_exception"/>
+            <references xmi:type="uml:Stereotype" href="UMF.UMF_Profile.Functional_Viewpoint.profile.uml#_bfe02f9_1095863732138_335438_881"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsLy54HEeu53dsWBgqOCg" name="base_DataType" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsLzZ4HEeu53dsWBgqOCg" name="Limit">
+          <eAnnotations xmi:id="_8vsLzp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Limit"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsLz54HEeu53dsWBgqOCg" name="Limits" ordered="false" lowerBound="1" eType="_8vsLMZ4HEeu53dsWBgqOCg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL0Z4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL054HEeu53dsWBgqOCg" name="Minimum">
+          <eAnnotations xmi:id="_8vsL1J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Minimum"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL1Z4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsL154HEeu53dsWBgqOCg" name="Duration" ordered="false" lowerBound="1" eType="_8vsLVp4HEeu53dsWBgqOCg" defaultValueLiteral="PT0S"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL2Z4HEeu53dsWBgqOCg" name="SetRaises">
+          <eAnnotations xmi:id="_8vsL2p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1236069550115_717432_4110"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL254HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsL3Z4HEeu53dsWBgqOCg" name="exception" ordered="false" lowerBound="1" upperBound="-1" defaultValueLiteral="Smp::Exception">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL354HEeu53dsWBgqOCg" name="IsConst">
+          <eAnnotations xmi:id="_8vsL4J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.IsConst"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL4Z4HEeu53dsWBgqOCg" name="base_Usage" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Usage"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL454HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL5Z4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL554HEeu53dsWBgqOCg" name="CppStrongType">
+          <eAnnotations xmi:id="_8vsL6J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_1049037f_1237804398634_687601_4886"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL6Z4HEeu53dsWBgqOCg" name="base_DataType" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL654HEeu53dsWBgqOCg" name="Fallible">
+          <eAnnotations xmi:id="_8vsL7J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Fallible"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL7Z4HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL754HEeu53dsWBgqOCg" name="ConstCall">
+          <eAnnotations xmi:id="_8vsL8J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1236068200770_95725_3752"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL8Z4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL854HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL9Z4HEeu53dsWBgqOCg" name="BaseClassField">
+          <eAnnotations xmi:id="_8vsL9p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsL954HEeu53dsWBgqOCg" name="String" ordered="false" lowerBound="1" defaultValueLiteral=" ">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL-Z4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsL-54HEeu53dsWBgqOCg" name="Const">
+          <eAnnotations xmi:id="_8vsL_J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Const"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL_Z4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsL_54HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMAZ4HEeu53dsWBgqOCg" name="base_DataType" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMA54HEeu53dsWBgqOCg" name="base_Parameter" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMBZ4HEeu53dsWBgqOCg" name="Abstract">
+          <eAnnotations xmi:id="_8vsMBp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Abstract"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMB54HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMCZ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMC54HEeu53dsWBgqOCg" name="Constructor">
+          <eAnnotations xmi:id="_8vsMDJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_smp2_Smp.mdxml_Smp.Attributes.Constructor"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMDZ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMD54HEeu53dsWBgqOCg" name="ReturnDoc">
+          <eAnnotations xmi:id="_8vsMEJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17_0_3_17260432_1334582883649_885335_5284"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMEZ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsME54HEeu53dsWBgqOCg" name="documentation" ordered="false" lowerBound="1" eType="_8vsLvp4HEeu53dsWBgqOCg" defaultValueLiteral=""/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMFZ4HEeu53dsWBgqOCg" name="ByPointer">
+          <eAnnotations xmi:id="_8vsMFp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17_0_3_c300305_1347452105532_195323_5240"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMF54HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMGZ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMG54HEeu53dsWBgqOCg" name="base_Parameter" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMHZ4HEeu53dsWBgqOCg" name="NotConst">
+          <eAnnotations xmi:id="_8vsMHp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17_0_3_c300305_1347452239275_758091_5747"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMH54HEeu53dsWBgqOCg" name="base_DataType" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMIZ4HEeu53dsWBgqOCg" name="base_Parameter" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMI54HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMJZ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMJ54HEeu53dsWBgqOCg" name="AttachedAssociation">
+          <eAnnotations xmi:id="_8vsMKJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17_0_3_17260432_1391083970030_447276_6084"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMKZ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsMK54HEeu53dsWBgqOCg" name="AssociationName" ordered="false" lowerBound="1" defaultValueLiteral=" ">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMLZ4HEeu53dsWBgqOCg" name="ExtendsType">
+          <eAnnotations xmi:id="_8vsMLp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17_0_3_17260432_1391084289496_229603_6100"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsML54HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsMMZ4HEeu53dsWBgqOCg" name="PrimitiveTypeName" ordered="false" lowerBound="1" defaultValueLiteral=" ">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsMM54HEeu53dsWBgqOCg" name="Mutable">
+          <eAnnotations xmi:id="_8vsMNJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17_0_2_5_8e00291_1459343513126_913388_6239"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsMNZ4HEeu53dsWBgqOCg" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes" body="SMP standard attributes."/>
+    <packageImport xmi:id="_smp2_Smp.mdxml_Smp.Attributes_packageImportcreatedOnLoad">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0primitiveTypesAttributes">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesAttributes">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model1 _smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.BaseClass" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Modell" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Modelu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits" name="Limits" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Limits" body="This Structure is only to be used by the Limit Attribute Type. It is needed in order to represent the softMaximum, hardMaximum, softMinimum and hardMinimum under one Attribute."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum" name="softMaximum" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.LimitValue">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum" body="Defines the Soft Maximum"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum__v" name="" visibility="public" value="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum" name="hardMaximum" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.LimitValue">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum" body="Defines the Hard Maximum"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum__v" name="" visibility="public" value="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum" name="softMinimum" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.LimitValue">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum" body="Defines the Soft Minimum"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum__v" name="" visibility="public" value="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum" name="hardMinimum" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.LimitValue">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum" body="Defines the Hard Minimum"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum__v" name="" visibility="public" value="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1213276449815_657631_3727" name="" visibility="public" memberEnd="_12_1_2_17260432_1213276449815_125059_3728 _12_1_2_17260432_1213276449815_441622_3729" navigableOwnedEnd="_12_1_2_17260432_1213276449815_441622_3729">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1213276449815_441622_3729" name="extension_IsConst" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.IsConst" aggregation="composite" association="_12_1_2_17260432_1213276449815_657631_3727">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1213276449815_749479_3730" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1213276449831_922576_3731" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation1 _smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Constructor" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operationl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operationu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236068252582_295806_3766" name="" visibility="public" memberEnd="_12_1_2_17260432_1236068252582_395297_3767 _12_1_2_17260432_1236068252582_429906_3768" navigableOwnedEnd="_12_1_2_17260432_1236068252582_429906_3768">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236068252582_429906_3768" name="extension_Immutable" visibility="private" type="_12_1_2_17260432_1236068200770_95725_3752" aggregation="composite" association="_12_1_2_17260432_1236068252582_295806_3766">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236068252582_581753_3769" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236068252582_649510_3770" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_f810373_1250019307359_5446_10567" name="" visibility="public" memberEnd="_12_1_f810373_1250019307359_141348_10568 _12_1_f810373_1250019307359_499614_10569" navigableOwnedEnd="_12_1_f810373_1250019307359_499614_10569">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_f810373_1250019307359_499614_10569" name="extension_Template" visibility="private" type="_12_1_f810373_1250019221203_980817_10558" aggregation="composite" association="_12_1_f810373_1250019307359_5446_10567">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_f810373_1250019307359_76617_10570" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_f810373_1250019307359_633917_10571" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236069605816_115972_4129" name="" visibility="public" memberEnd="_12_1_2_17260432_1236069605816_965803_4130 _12_1_2_17260432_1236069605816_361604_4131" navigableOwnedEnd="_12_1_2_17260432_1236069605816_361604_4131">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236069605816_361604_4131" name="extension_SetRaises" visibility="private" type="_12_1_2_17260432_1236069550115_717432_4110" aggregation="composite" association="_12_1_2_17260432_1236069605816_115972_4129">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236069605816_228259_4132" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236069605816_213518_4133" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator" name="Operator" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Operator" body="The Operator attribute type defines an operator kind (Smp.Attributes.OperatorKind) for an operation. When supported by the target platform, it can be evaluated to map the operation to an operator. The default value for this attribute is None, which corresponds to not mapping to an operator."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__t" name="OperatorKind" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__tu" name="" visibility="public" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__t__v" name="" visibility="public" instance="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.None"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum" name="Maximum" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Maximum" body="Maximum time between calls (e.g. time step)"/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__t" name="Duration" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="tasi.sve.dss.uml#_14c603f2_1097765765508_352517_8206"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__tu" name="" visibility="public" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__t__v" name="" visibility="public" value="-PT1S"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass" name="BaseClass" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.BaseClass" body="This attribute identifies that an SMP2 Model has a C++ base class."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model1" name="base_Class" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__u_Model">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__t" name="String" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClass__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1187602596452_883858_534" name="" visibility="public" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1213002903751_431099_1169" name="" visibility="public" value=" "/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1236069618628_391635_4134" name="GetRaises" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1236069618628_579914_4135" annotatedElement="_12_1_2_17260432_1236069618628_391635_4134" body="Defines that a property setter raises an exception."/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236069618644_436213_4144" name="base_Property" visibility="private" association="_12_1_2_17260432_1236069618644_926237_4143">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236070834267_668099_4164" name="exception" visibility="public">
+        <ownedComment xmi:id="_12_1_2_17260432_1236070834267_96285_4167" annotatedElement="_12_1_2_17260432_1236070834267_668099_4164" body="Defines the list of raised exceptions (as fully qualified names)."/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236070834267_57538_4166" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236070834267_1558_4165" name="" visibility="public" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1236070917234_775752_4174" name="" visibility="public" value="Smp::Exception"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Forcible" name="Forcible" visibility="public">
+      <ownedComment xmi:id="_12_1_f810373_1188485284770_651437_565" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Forcible" body="This Attribute enables Parameter Forcing Support. Add this Attribute to a Model Property to enable forcing support for it."/>
+      <ownedAttribute xmi:id="_12_1_f810373_1188485614597_999596_705" name="base_Property" visibility="private" association="_12_1_f810373_1188485614597_652592_704">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1236069413665_127679_4087" name="RaisedException" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1236069459195_205796_4099" annotatedElement="_12_1_2_17260432_1236069413665_127679_4087" body="Defines that an operation raises an exception."/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236069535443_860604_4106" name="base_Operation" visibility="private" association="_12_1_2_17260432_1236069535443_128366_4105">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236070838970_780750_4168" name="exception" visibility="public">
+        <ownedComment xmi:id="_12_1_2_17260432_1236070838970_648959_4171" annotatedElement="_12_1_2_17260432_1236070838970_780750_4168" body="Defines the list of raised exceptions (as fully qualified names)."/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236070838970_801018_4170" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236070838970_144193_4169" name="" visibility="public" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1236070908703_119422_4172" name="" visibility="public" value="Smp::Exception"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_1049037f_1237804591394_129476_5016" name="" visibility="public" memberEnd="_12_1_1049037f_1237804591394_996557_5018 _12_1_1049037f_1237804591394_279746_5017" navigableOwnedEnd="_12_1_1049037f_1237804591394_279746_5017">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_1049037f_1237804591394_279746_5017" name="extension_CppStrongType" visibility="private" type="_12_1_1049037f_1237804398634_687601_4886" aggregation="composite" association="_12_1_1049037f_1237804591394_129476_5016">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_1049037f_1237804591394_60578_5020" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_1049037f_1237804591394_356611_5019" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1295362382627_129388_3860" name="View" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1295362382627_328420_3863" annotatedElement="_12_1_2_17260432_1295362382627_129388_3860" body="The View attribute can be applied to a Field, Property, Operation or Entry Point to specify the element's visibility during publication."/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1295362382643_935617_3896" name="base_Operation" visibility="private" association="_12_1_2_17260432_1295362382643_747488_3895">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1295362382643_22303_3901" name="base_Property" visibility="private" association="_12_1_2_17260432_1295362382643_639080_3900">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1295362382627_755407_3862" name="ViewKind" visibility="public">
+        <type xmi:type="uml:Enumeration" href="tasi.sve.dss.uml#_12_1_2_17260432_1295362382627_394123_3861"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_12_1_2_17260432_1295362382627_469979_3871" name="" visibility="public">
+          <instance xmi:type="uml:EnumerationLiteral" href="tasi.sve.dss.uml#_12_1_2_17260432_1295362382627_448867_3865"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_16_9_8770277_1319463161642_522788_5229" name="" visibility="public" memberEnd="_16_9_8770277_1319463161642_278410_5230 _16_9_8770277_1319463161642_573625_5231" navigableOwnedEnd="_16_9_8770277_1319463161642_573625_5231">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_16_9_8770277_1319463161642_573625_5231" name="extension_BaseClassVirtual" visibility="private" type="_16_9_8770277_1319463161642_669595_5216" aggregation="composite" association="_16_9_8770277_1319463161642_522788_5229">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_9_8770277_1319463161642_233459_5232" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_9_8770277_1319463161642_87221_5233" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference" name="ByReference" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.ByReference" body="Defines whether a parameter or return value is passed by reference (e.g. operation parameter and return value or property parameter and return value)."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter1" name="base_Parameter" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property1" name="base_Property" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1236069319916_249513_4066" name="Service" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1236069388899_279862_4086" annotatedElement="_12_1_2_17260432_1236069319916_249513_4066" body="Defines that a model is a service implementation."/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236069342556_738231_4080" name="base_Component" visibility="private" association="_12_1_2_17260432_1236069342556_638596_4079">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_16_9_8770277_1319463161642_669595_5216" name="IncludePath" visibility="public">
+      <ownedComment xmi:id="_16_9_8770277_1319463161642_851002_5217" annotatedElement="_16_9_8770277_1319463161642_669595_5216" body="This attribute identifies that an SMP2 Model needs a specific C++ include path."/>
+      <ownedAttribute xmi:id="_16_9_8770277_1319463161642_278410_5230" name="base_Class" visibility="private" association="_16_9_8770277_1319463161642_522788_5229">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_9_8770277_1319463161642_950400_5218" name="Path" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_9_8770277_1319463161642_813876_5221" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_9_8770277_1319463161642_686091_5220" name="" visibility="public" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_16_9_8770277_1319463161642_641906_5222" name="" visibility="public" value=" "/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property1 _smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.ByReference" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Property">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Propertyl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Propertyu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel" name="ConcurrencyLevel" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel" body="This Attribute specifies the concurrency level for Scheduled Events. This Attribute is used by the Simsat 4 concurrent scheduler"/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel__t" name="ConcurrencyLevelKind" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevelKind">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel__tu" name="" visibility="public" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel__t__v" name="" visibility="public" instance="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.background"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ub" name="base_Element" visibility="public" association="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ue">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ue" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ub _smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ueo" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ueo">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ueo" name="extension_Const_ValueReference" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.Const" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__uel" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ueu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_f810373_1188485614597_652592_704" name="" visibility="public" memberEnd="_12_1_f810373_1188485614597_999596_705 _12_1_f810373_1188485614597_82954_706" navigableOwnedEnd="_12_1_f810373_1188485614597_82954_706">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_f810373_1188485614597_82954_706" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Forcible" aggregation="composite" association="_12_1_f810373_1188485614597_652592_704">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_f810373_1188485614597_789372_707" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_f810373_1188485614597_926551_708" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation1 _smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.ByReference" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operationl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Operationu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual" name="Virtual" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Virtual" body="Defines whether an element is virtual (operation or property)."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property1" name="base_Property" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation" name="Initialisation" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Initialisation" body="Task is an Initialisation Task."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task1" name="base_Element" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property1 _smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Abstract" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Propertyl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Propertyu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static" name="Static" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Static" body="Defined whether an element is static."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property1" name="base_Property" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236067685200_852769_3747" name="" visibility="public" memberEnd="_12_1_2_17260432_1236067685200_292782_3748 _12_1_2_17260432_1236067685200_30894_3749" navigableOwnedEnd="_12_1_2_17260432_1236067685200_30894_3749">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236067685200_30894_3749" name="extension_Const" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Const" aggregation="composite" association="_12_1_2_17260432_1236067685200_852769_3747">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236067685200_637414_3750" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236067685200_916054_3751" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236069342556_638596_4079" name="" visibility="public" memberEnd="_12_1_2_17260432_1236069342556_738231_4080 _12_1_2_17260432_1236069342556_919701_4081" navigableOwnedEnd="_12_1_2_17260432_1236069342556_919701_4081">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236069342556_919701_4081" name="extension_Service" visibility="private" type="_12_1_2_17260432_1236069319916_249513_4066" aggregation="composite" association="_12_1_2_17260432_1236069342556_638596_4079">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236069342556_292269_4082" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236069342556_725153_4083" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ue" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ub _smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ueo" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ueo">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ueo" name="extension_" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__uel" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel_EpochEvent__ueu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint1 _smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Maximum" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPoint">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPointl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Maximum__u_EntryPointu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_16_9_c300305_1314705110802_673478_5231" name="BaseClassVirtual" visibility="public">
+      <ownedComment xmi:id="_16_9_c300305_1314705110802_751365_5232" annotatedElement="_16_9_c300305_1314705110802_673478_5231" body="This attribute identifies that an SMP2 Model has a C++ base class that shall be generated as virtual public."/>
+      <ownedAttribute xmi:id="_16_9_c300305_1314705110817_744391_5245" name="base_Class" visibility="private" association="_16_9_c300305_1314705110817_41599_5244">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_9_c300305_1314705110802_375992_5233" name="String" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_9_c300305_1314705110802_469886_5236" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_9_c300305_1314705110802_416928_5235" name="" visibility="public" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_16_9_c300305_1314705110802_625089_5237" name="" visibility="public" value=" "/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_f810373_1223997831260_931136_9179" name="Varargs" visibility="public">
+      <ownedComment xmi:id="_12_1_f810373_1224664633949_313009_9161" annotatedElement="_12_1_f810373_1223997831260_931136_9179" body="This stereotype can be attached to an Operation to indicate that the operation takes a variable argument list."/>
+      <ownedAttribute xmi:id="_12_1_1049037f_1224668655058_485845_10070" name="printfCheck" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_12_1_1049037f_1224668767178_764351_10073" name="" visibility="public"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_9_c300305_1307548098794_256044_14139" name="base_Operation" visibility="private" association="_16_9_c300305_1307548098794_353625_14138">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.LimitValue" name="LimitValue" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.LimitValue__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.LimitValue" body="This Type is only to be used by the Limit Structure for holding the limit values of softMaximum, hardMaximum, softMinimum and hardMinimum."/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1212498562451_5303_1208" name="" visibility="public" memberEnd="_12_1_2_17260432_1212498562451_354305_1209 _12_1_2_17260432_1212498562451_912504_1210" navigableOwnedEnd="_12_1_2_17260432_1212498562451_912504_1210">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1212498562451_912504_1210" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField" aggregation="composite" association="_12_1_2_17260432_1212498562451_5303_1208">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1212498562498_606987_1211" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1212498562498_917081_1212" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236068252582_373408_3771" name="" visibility="public" memberEnd="_12_1_2_17260432_1236068252582_739149_3772 _12_1_2_17260432_1236068252582_589792_3773" navigableOwnedEnd="_12_1_2_17260432_1236068252582_589792_3773">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236068252582_589792_3773" name="extension_Immutable" visibility="private" type="_12_1_2_17260432_1236068200770_95725_3752" aggregation="composite" association="_12_1_2_17260432_1236068252582_373408_3771">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236068252582_201571_3774" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236068252582_28121_3775" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_f810373_1188485078401_327482_546" name="" visibility="public" memberEnd="_12_1_f810373_1188485078401_15077_547 _12_1_f810373_1188485078401_89260_548" navigableOwnedEnd="_12_1_f810373_1188485078401_89260_548">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_f810373_1188485078401_89260_548" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Fallible" aggregation="composite" association="_12_1_f810373_1188485078401_327482_546">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_f810373_1188485078401_602348_549" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_f810373_1188485078401_687662_550" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_f810373_1250019221203_980817_10558" name="Template" visibility="public">
+      <ownedComment xmi:id="_12_1_f810373_1250019326343_541359_10572" annotatedElement="_12_1_f810373_1250019221203_980817_10558" body="This stereotype tags a class as a template class."/>
+      <ownedAttribute xmi:id="_12_1_f810373_1250019307359_141348_10568" name="base_Class" visibility="private" association="_12_1_f810373_1250019307359_5446_10567">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_f810373_1250019334281_792070_10573" name="templateParameter" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="tasi.sve.dss.uml#_14c603f2_1097762639854_586036_1369"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_f810373_1250020659125_997012_11557" name="" visibility="public" value="typename Type"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1236069073179_32741_4044" name="Exception" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1236069284370_665504_4065" annotatedElement="_12_1_2_17260432_1236069073179_32741_4044" body="Defines that an SMP2 class is an exception."/>
+      <generalization xmi:id="_12_1_2_17260432_1236069175183_839674_4064" isSubstitutable="false">
+        <general xmi:type="uml:Stereotype" href="UMF.UMF_Profile.Functional_Viewpoint.profile.uml#_bfe02f9_1095863732138_335438_881"/>
+      </generalization>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236086287547_924240_3805" name="base_DataType" visibility="private" association="_12_1_2_17260432_1236086287547_836340_3804">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#DataType"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1213276449752_229629_3717" name="" visibility="public" memberEnd="_12_1_2_17260432_1213276449752_60780_3718 _12_1_2_17260432_1213276449752_973935_3719" navigableOwnedEnd="_12_1_2_17260432_1213276449752_973935_3719">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1213276449752_973935_3719" name="extension_IsConst" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.IsConst" aggregation="composite" association="_12_1_2_17260432_1213276449752_229629_3717">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1213276449768_938610_3720" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1213276449768_348140_3721" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit" name="Limit" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Limit" body="This Attribute enables Limit Support for Properties"/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit__t" name="Limits" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.Limits">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit__tu" name="" visibility="public" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_12_1_2_17260432_1213688789765_214525_3731" name="" visibility="public" instance="_12_1_2_17260432_1213688670451_221986_3719"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ub" name="base_Property" visibility="public" association="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ue">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum" name="Minimum" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Minimum" body="Minimum time between calls (e.g. time step)"/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__t" name="Duration" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="tasi.sve.dss.uml#_14c603f2_1097765765508_352517_8206"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__tu" name="" visibility="public" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__t__v" name="" visibility="public" value="PT0S"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation1 _smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Operator" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operationl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Operator__u_Operationu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ue" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ub _smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ueo" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ueo">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ueo" name="extension_" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.Limit" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__uel" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Limit_Property__ueu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter1 _smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.ByReference" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameterl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ByReference__u_Parameteru" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1213276449815_906695_3722" name="" visibility="public" memberEnd="_12_1_2_17260432_1213276449815_365540_3723 _12_1_2_17260432_1213276449815_362476_3724" navigableOwnedEnd="_12_1_2_17260432_1213276449815_362476_3724">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1213276449815_362476_3724" name="extension_IsConst" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.IsConst" aggregation="composite" association="_12_1_2_17260432_1213276449815_906695_3722">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1213276449815_287794_3725" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1213276449815_184475_3726" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ue" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ub _smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ueo" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ueo">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ueo" name="extension_Const_Operation" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.Const" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__uel" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ueu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint1 _smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Minimum" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPoint">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPointl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Minimum__u_EntryPointu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevelKind" name="ConcurrencyLevelKind" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevelKind__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevelKind" body="This Enumeration defines the three different concurrency levels for Scheduled Events."/>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_all" name="with_all" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_all__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_all" body="Concurrent events can be executed together, but in different threads. More than one concurrent event can be scheduled for the same Simulation Time."/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_none" name="with_none" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_none__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_none" body="The Non-Concurrent event are executed alone. During their execution the simulation time does not progress."/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.background" name="background" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.background__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.background" body="Background events are executed completely asynchronously and they do not stop the progress of the simulation time, no matter how long they take to complete the execution. This is the default."/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind" name="OperatorKind" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind" body="The different operator kinds supported by SMDL."/>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.None" name="None" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.None__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.None" body="Undefined"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Positive" name="Positive" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Positive__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Positive" body="Positive value of instance"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Negative" name="Negative" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Negative__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Negative" body="Negative value of instance"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Assign" name="Assign" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Assign__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Assign" body="Assigns new value to instance"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Add" name="Add" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Add__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Add" body="Adds value to instance"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Subtract" name="Subtract" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Subtract__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Subtract" body="Subtracts value from instance"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Multiply" name="Multiply" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Multiply__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Multiply" body="Multiplies instance with value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Divide" name="Divide" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Divide__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Divide" body="Divides instance by value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Remainder" name="Remainder" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Remainder__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Remainder" body="Remainder of instance for value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Greater" name="Greater" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Greater__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Greater" body="Compares whether instance is greater than value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Less" name="Less" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Less__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Less" body="Compares whether instance is less than value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Equal" name="Equal" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Equal__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Equal" body="Compares whether instance is equal to value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotGreater" name="NotGreater" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotGreater__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotGreater" body="Compares whether instance is not gerate than value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotLess" name="NotLess" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotLess__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotLess" body="Compares whether instance is notless than value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotEqual" name="NotEqual" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotEqual__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotEqual" body="Compares whether instance is not equal to value"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Indexer" name="Indexer" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Indexer__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Indexer" body="Returns indexed value of instance"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Sum" name="Sum" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Sum__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Sum" body="Returns sum of two values"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Difference" name="Difference" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Difference__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Difference" body="Returns difference between two values"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Product" name="Product" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Product__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Product" body="Returns product of two values"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Quotient" name="Quotient" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Quotient__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Quotient" body="Returns quotient of two values"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Module" name="Module" visibility="public">
+        <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Module__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Module" body="Returns remainder of two values"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property1 _smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Virtual" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Property">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Propertyl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Propertyu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236069618644_926237_4143" name="" visibility="public" memberEnd="_12_1_2_17260432_1236069618644_436213_4144 _12_1_2_17260432_1236069618644_309779_4145" navigableOwnedEnd="_12_1_2_17260432_1236069618644_309779_4145">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236069618644_309779_4145" name="extension_SetRaises" visibility="private" type="_12_1_2_17260432_1236069618628_391635_4134" aggregation="composite" association="_12_1_2_17260432_1236069618644_926237_4143">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236069618644_693242_4146" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236069618644_175342_4147" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1236069550115_717432_4110" name="SetRaises" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1236069550115_580157_4111" annotatedElement="_12_1_2_17260432_1236069550115_717432_4110" body="Defines that a property setter raises an exception."/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236069605816_965803_4130" name="base_Property" visibility="private" association="_12_1_2_17260432_1236069605816_115972_4129">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236069831949_795807_4156" name="exception" visibility="public">
+        <ownedComment xmi:id="_12_1_2_17260432_1236069831949_937807_4159" annotatedElement="_12_1_2_17260432_1236069831949_795807_4156" body="Defines the list of raised exceptions (as fully qualified names)."/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236069831949_869454_4158" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236069831949_333221_4157" name="" visibility="public" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1236070913577_935511_4173" name="" visibility="public" value="Smp::Exception"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.IsConst" name="IsConst" visibility="public">
+      <ownedComment xmi:id="_12_1_f810373_1189410005301_542165_556" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.IsConst" body="Applicable for operations, properties, fields and references. Defines, whether these are constant"/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1213276449752_60780_3718" name="base_Usage" visibility="private" association="_12_1_2_17260432_1213276449752_229629_3717">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Usage"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1213276449815_365540_3723" name="base_Property" visibility="private" association="_12_1_2_17260432_1213276449815_906695_3722">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1213276449815_125059_3728" name="base_Operation" visibility="private" association="_12_1_2_17260432_1213276449815_657631_3727">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task1 _smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Initialisation" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Task">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Taskl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Initialisation__u_Tasku" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_1049037f_1237804398634_687601_4886" name="CppStrongType" visibility="public">
+      <ownedComment xmi:id="_12_1_1049037f_1237804474101_163176_4892" annotatedElement="_12_1_1049037f_1237804398634_687601_4886" body="This stereotype informs the code generator that a typedef is not enough for the type, and derivation for the base type is needed instead."/>
+      <ownedAttribute xmi:id="_12_1_1049037f_1237804591394_996557_5018" name="base_DataType" visibility="private" association="_12_1_1049037f_1237804591394_129476_5016">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#DataType"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation1 _smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Abstract" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operationl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operationu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236086287547_836340_3804" name="" visibility="public" memberEnd="_12_1_2_17260432_1236086287547_924240_3805 _12_1_2_17260432_1236086287547_713036_3806" navigableOwnedEnd="_12_1_2_17260432_1236086287547_713036_3806">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236086287547_713036_3806" name="extension_Exception" visibility="private" type="_12_1_2_17260432_1236069073179_32741_4044" aggregation="composite" association="_12_1_2_17260432_1236086287547_836340_3804">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236086287547_74845_3807" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236086287547_327630_3808" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Fallible" name="Fallible" visibility="public">
+      <ownedComment xmi:id="_12_1_f810373_1188485155412_839742_551" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Fallible" body="This Attribute enables Model Failure Status Support."/>
+      <ownedAttribute xmi:id="_12_1_f810373_1188485078401_15077_547" name="base_Component" visibility="private" association="_12_1_f810373_1188485078401_327482_546">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ue" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ub _smp2_Smp.mdxml_Smp.Attributes.Const_Property__ueo" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ueo">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ueo" name="extension_Const_Property" visibility="public" type="_smp2_Smp.mdxml_Smp.Attributes.Const" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__uel" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ueu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation1 _smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Static" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operationl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Operationu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1295362382643_747488_3895" name="" visibility="public" memberEnd="_12_1_2_17260432_1295362382643_935617_3896 _12_1_2_17260432_1295362382643_767274_3897" navigableOwnedEnd="_12_1_2_17260432_1295362382643_767274_3897">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1295362382643_767274_3897" name="extension_View" visibility="private" type="_12_1_2_17260432_1295362382627_129388_3860" aggregation="composite" association="_12_1_2_17260432_1295362382643_747488_3895">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1295362382643_869802_3898" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1295362382643_118282_3899" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1236068200770_95725_3752" name="ConstCall" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1236068339503_383082_3778" annotatedElement="_12_1_2_17260432_1236068200770_95725_3752" body="Defines that a call to an operation or property getter cannot change the containing class or model (&quot;const operation&quot;, &quot;const property&quot;). This attribute does not apply to the property setter."/>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236068252582_395297_3767" name="base_Property" visibility="private" association="_12_1_2_17260432_1236068252582_295806_3766">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236068252582_739149_3772" name="base_Operation" visibility="private" association="_12_1_2_17260432_1236068252582_373408_3771">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_16_9_c300305_1314705110817_41599_5244" name="" visibility="public" memberEnd="_16_9_c300305_1314705110817_744391_5245 _16_9_c300305_1314705110817_858601_5246" navigableOwnedEnd="_16_9_c300305_1314705110817_858601_5246">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_16_9_c300305_1314705110817_858601_5246" name="extension_BaseClass" visibility="private" type="_16_9_c300305_1314705110802_673478_5231" aggregation="composite" association="_16_9_c300305_1314705110817_41599_5244">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_9_c300305_1314705110817_728662_5247" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_9_c300305_1314705110817_225168_5248" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property1 _smp2_Smp.mdxml_Smp.Attributes.Static__u_Property2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Static" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Property">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Propertyl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Static__u_Propertyu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField" name="BaseClassField" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField" body="This attribute indicates that a field has been &quot;inherited&quot; from a base class, i.e. it will only be published, but not declared."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField__t" name="String" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField__tl" name="" visibility="public" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField__tu" name="" visibility="public" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1213002918626_601211_1170" name="" visibility="public" value=" "/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1212498562451_354305_1209" name="base_Property" visibility="private" association="_12_1_2_17260432_1212498562451_5303_1208">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const" name="Const" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Const" body="Defines whether an operation, property, field, association, parameter or value reference is constant (&quot;const type&quot;)."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ub" name="base_Property" visibility="public" association="_smp2_Smp.mdxml_Smp.Attributes.Const_Property__ue">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ub" name="base_Operation" visibility="public" association="_smp2_Smp.mdxml_Smp.Attributes.Const_Operation__ue">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ub" name="base_DataType" visibility="public" association="_smp2_Smp.mdxml_Smp.Attributes.Const_ValueReference__ue">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#DataType"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_12_1_2_17260432_1236067685200_292782_3748" name="base_Parameter" visibility="private" association="_12_1_2_17260432_1236067685200_852769_3747">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation" name="" visibility="public" memberEnd="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation1 _smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation2" navigableOwnedEnd="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation2">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation2" name="extension_" visibility="private" type="_smp2_Smp.mdxml_Smp.Attributes.Virtual" aggregation="composite" association="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operationl" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralInteger" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Virtual__u_Operationu" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract" name="Abstract" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Abstract" body="Defines whether an element is abstract (e.g. operation or property)."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property1" name="base_Property" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Abstract__u_Property">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_12_1_2_17260432_1213688670451_221986_3719" name="LimitDefault" visibility="public" classifier="_smp2_Smp.mdxml_Smp.Attributes.Limits">
+      <slot xmi:id="_12_1_2_17260432_1213688728983_243513_3729" definingFeature="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum">
+        <value xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1213688728999_452490_3730" name="" visibility="public" value="0"/>
+      </slot>
+      <slot xmi:id="_12_1_2_17260432_1213688724671_913024_3725" definingFeature="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum">
+        <value xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1213688724686_505097_3726" name="" visibility="public" value="0"/>
+      </slot>
+      <slot xmi:id="_12_1_2_17260432_1213688727249_588084_3727" definingFeature="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum">
+        <value xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1213688727280_518930_3728" name="" visibility="public" value="0"/>
+      </slot>
+      <slot xmi:id="_12_1_2_17260432_1213688718249_863030_3723" definingFeature="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum">
+        <value xmi:type="uml:LiteralString" xmi:id="_12_1_2_17260432_1213688718311_455708_3724" name="" visibility="public" value="0"/>
+      </slot>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor" name="Constructor" visibility="public">
+      <ownedComment xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor__d" annotatedElement="_smp2_Smp.mdxml_Smp.Attributes.Constructor" body="The Constructor attribute marks an operation as a constructor."/>
+      <ownedAttribute xmi:id="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation1" name="base_Operation" visibility="private" association="_smp2_Smp.mdxml_Smp.Attributes.Constructor__u_Operation">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1236069535443_128366_4105" name="" visibility="public" memberEnd="_12_1_2_17260432_1236069535443_860604_4106 _12_1_2_17260432_1236069535443_943987_4107" navigableOwnedEnd="_12_1_2_17260432_1236069535443_943987_4107">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1236069535443_943987_4107" name="extension_RaisedException" visibility="private" type="_12_1_2_17260432_1236069413665_127679_4087" aggregation="composite" association="_12_1_2_17260432_1236069535443_128366_4105">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1236069535443_331619_4108" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1236069535443_118058_4109" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_16_9_c300305_1307548098794_353625_14138" name="" visibility="public" memberEnd="_16_9_c300305_1307548098794_256044_14139 _16_9_c300305_1307548098794_819459_14140" navigableOwnedEnd="_16_9_c300305_1307548098794_819459_14140">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_16_9_c300305_1307548098794_819459_14140" name="extension_Varargs" visibility="private" type="_12_1_f810373_1223997831260_931136_9179" aggregation="composite" association="_16_9_c300305_1307548098794_353625_14138">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_9_c300305_1307548098794_496657_14141" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_9_c300305_1307548098794_266494_14142" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1295362382643_639080_3900" name="" visibility="public" memberEnd="_12_1_2_17260432_1295362382643_22303_3901 _12_1_2_17260432_1295362382643_222059_3902" navigableOwnedEnd="_12_1_2_17260432_1295362382643_222059_3902">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1295362382643_222059_3902" name="extension_View" visibility="private" type="_12_1_2_17260432_1295362382627_129388_3860" aggregation="composite" association="_12_1_2_17260432_1295362382643_639080_3900">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1295362382643_32514_3903" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1295362382643_852214_3904" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_17_0_3_17260432_1334582883649_885335_5284" name="ReturnDoc" visibility="public">
+      <ownedComment xmi:id="_17_0_3_17260432_1334583064374_594603_5309" annotatedElement="_17_0_3_17260432_1334582883649_885335_5284" body="This attribute can be applied to an Operation to specify the documentation for the return value."/>
+      <ownedAttribute xmi:id="_17_0_3_17260432_1334582970753_63400_5304" name="base_Operation" visibility="private" association="_17_0_3_17260432_1334582970753_750069_5303">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_17260432_1334583096581_23995_5310" name="documentation" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="tasi.sve.dss.uml#_14c603f2_1097762639854_586036_1369"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_17_0_3_17260432_1334583557825_426441_5237" name="" visibility="public" value=""/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_17260432_1334582970753_750069_5303" name="" visibility="public" memberEnd="_17_0_3_17260432_1334582970753_63400_5304 _17_0_3_17260432_1334582970753_617707_5305" navigableOwnedEnd="_17_0_3_17260432_1334582970753_617707_5305">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_17260432_1334582970753_617707_5305" name="extension_ReturnDoc" visibility="private" type="_17_0_3_17260432_1334582883649_885335_5284" aggregation="composite" association="_17_0_3_17260432_1334582970753_750069_5303">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_17260432_1334582970753_945811_5306" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_17260432_1334582970753_376087_5307" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_17_0_3_c300305_1347452105532_195323_5240" name="ByPointer" visibility="public">
+      <ownedComment xmi:id="_17_0_3_c300305_1347452105534_452247_5241" annotatedElement="_17_0_3_c300305_1347452105532_195323_5240" body="Defines whether a parameter or return value is passed by pointer (e.g. operation parameter and return value or property parameter and return value)."/>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452105537_848583_5252" name="base_Property" visibility="private" association="_17_0_3_c300305_1347452105537_996511_5251">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452105542_329278_5257" name="base_Operation" visibility="private" association="_17_0_3_c300305_1347452105542_129166_5256">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452105545_509270_5262" name="base_Parameter" visibility="private" association="_17_0_3_c300305_1347452105545_277835_5261">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452105537_996511_5251" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452105537_848583_5252 _17_0_3_c300305_1347452105538_361630_5253" navigableOwnedEnd="_17_0_3_c300305_1347452105538_361630_5253">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452105538_361630_5253" name="extension_ByReference" visibility="private" type="_17_0_3_c300305_1347452105532_195323_5240" aggregation="composite" association="_17_0_3_c300305_1347452105537_996511_5251">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452105538_845689_5254" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452105538_637834_5255" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452105542_129166_5256" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452105542_329278_5257 _17_0_3_c300305_1347452105542_638903_5258" navigableOwnedEnd="_17_0_3_c300305_1347452105542_638903_5258">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452105542_638903_5258" name="extension_ByReference" visibility="private" type="_17_0_3_c300305_1347452105532_195323_5240" aggregation="composite" association="_17_0_3_c300305_1347452105542_129166_5256">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452105542_921870_5259" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452105542_250447_5260" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452105545_277835_5261" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452105545_509270_5262 _17_0_3_c300305_1347452105545_396659_5263" navigableOwnedEnd="_17_0_3_c300305_1347452105545_396659_5263">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452105545_396659_5263" name="extension_ByReference" visibility="private" type="_17_0_3_c300305_1347452105532_195323_5240" aggregation="composite" association="_17_0_3_c300305_1347452105545_277835_5261">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452105545_578102_5264" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452105545_597957_5265" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_17_0_3_c300305_1347452239275_758091_5747" name="NotConst" visibility="public">
+      <ownedComment xmi:id="_17_0_3_c300305_1347452239277_48902_5748" annotatedElement="_17_0_3_c300305_1347452239275_758091_5747" body="Defines that an operation, property, field, association, parameter or value reference is not constant (i.e. not a &quot;const type&quot;)."/>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452239280_855818_5762" name="base_DataType" visibility="private" association="_17_0_3_c300305_1347452239280_885159_5761">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#DataType"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452239283_353758_5767" name="base_Parameter" visibility="private" association="_17_0_3_c300305_1347452239283_765946_5766">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452239286_607563_5772" name="base_Operation" visibility="private" association="_17_0_3_c300305_1347452239286_542167_5771">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_c300305_1347452239289_909278_5777" name="base_Property" visibility="private" association="_17_0_3_c300305_1347452239289_411833_5776">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452239280_885159_5761" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452239280_855818_5762 _17_0_3_c300305_1347452239280_161387_5763" navigableOwnedEnd="_17_0_3_c300305_1347452239280_161387_5763">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452239280_161387_5763" name="extension_Const" visibility="private" type="_17_0_3_c300305_1347452239275_758091_5747" aggregation="composite" association="_17_0_3_c300305_1347452239280_885159_5761">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452239280_425185_5764" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452239280_100366_5765" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452239283_765946_5766" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452239283_353758_5767 _17_0_3_c300305_1347452239283_976062_5768" navigableOwnedEnd="_17_0_3_c300305_1347452239283_976062_5768">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452239283_976062_5768" name="extension_Const" visibility="private" type="_17_0_3_c300305_1347452239275_758091_5747" aggregation="composite" association="_17_0_3_c300305_1347452239283_765946_5766">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452239284_75746_5769" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452239284_11010_5770" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452239286_542167_5771" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452239286_607563_5772 _17_0_3_c300305_1347452239286_441988_5773" navigableOwnedEnd="_17_0_3_c300305_1347452239286_441988_5773">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452239286_441988_5773" name="extension_Const" visibility="private" type="_17_0_3_c300305_1347452239275_758091_5747" aggregation="composite" association="_17_0_3_c300305_1347452239286_542167_5771">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452239286_336924_5774" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452239287_977006_5775" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_c300305_1347452239289_411833_5776" name="" visibility="public" memberEnd="_17_0_3_c300305_1347452239289_909278_5777 _17_0_3_c300305_1347452239289_560644_5778" navigableOwnedEnd="_17_0_3_c300305_1347452239289_560644_5778">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_c300305_1347452239289_560644_5778" name="extension_Const" visibility="private" type="_17_0_3_c300305_1347452239275_758091_5747" aggregation="composite" association="_17_0_3_c300305_1347452239289_411833_5776">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_c300305_1347452239290_170705_5779" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_c300305_1347452239290_857476_5780" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_17_0_3_17260432_1391083970030_447276_6084" name="AttachedAssociation" visibility="public">
+      <ownedComment xmi:id="_17_0_3_17260432_1391084247642_146053_6099" annotatedElement="_17_0_3_17260432_1391083970030_447276_6084" body="This attribute allows to attach an SMP2 association to an SMP2 property (by name). The intended behaviour is identical to the SMP2 AttachedField construct, but referencing an SMP2 association instead."/>
+      <ownedAttribute xmi:id="_17_0_3_17260432_1391084045191_4416_6094" name="base_Property" visibility="private" association="_17_0_3_17260432_1391084045191_430415_6093">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_17260432_1391084088107_495077_6098" name="AssociationName" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_17_0_3_17260432_1393228490092_967547_5500" name="" visibility="public" value=" "/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_17260432_1391084045191_430415_6093" name="" visibility="public" memberEnd="_17_0_3_17260432_1391084045191_4416_6094 _17_0_3_17260432_1391084045191_566940_6095" navigableOwnedEnd="_17_0_3_17260432_1391084045191_566940_6095">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_17260432_1391084045191_566940_6095" name="extension_AttachedAssociation" visibility="private" type="_17_0_3_17260432_1391083970030_447276_6084" aggregation="composite" association="_17_0_3_17260432_1391084045191_430415_6093">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_17260432_1391084045191_125418_6096" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_17260432_1391084045191_8654_6097" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_17_0_3_17260432_1391084289496_229603_6100" name="ExtendsType" visibility="public">
+      <ownedComment xmi:id="_17_0_3_17260432_1391084436088_846077_6117" annotatedElement="_17_0_3_17260432_1391084289496_229603_6100" body="This attribute defines that an SMP2 class or model extends the selected SMP2 primitive type. This can be used to specify type compatibility on model level, assuming an appropriate implementation (e.g. C++ operator overloading)."/>
+      <ownedAttribute xmi:id="_17_0_3_17260432_1391084329510_515655_6110" name="base_Class" visibility="private" association="_17_0_3_17260432_1391084329510_757300_6109">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_3_17260432_1391084871418_607297_6125" name="PrimitiveTypeName" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_17_0_3_17260432_1393228468270_250836_5499" name="" visibility="public" value=" "/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_3_17260432_1391084329510_757300_6109" name="" visibility="public" memberEnd="_17_0_3_17260432_1391084329510_515655_6110 _17_0_3_17260432_1391084329510_647074_6111" navigableOwnedEnd="_17_0_3_17260432_1391084329510_647074_6111">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_3_17260432_1391084329510_647074_6111" name="extension_ExtendsType" visibility="private" type="_17_0_3_17260432_1391084289496_229603_6100" aggregation="composite" association="_17_0_3_17260432_1391084329510_757300_6109">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_3_17260432_1391084329510_900831_6112" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_3_17260432_1391084329510_745292_6113" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_17_0_2_5_8e00291_1459343513126_913388_6239" name="Mutable" visibility="public">
+      <ownedComment xmi:id="_17_0_2_5_8e00291_1459343513132_234318_6240" annotatedElement="_17_0_2_5_8e00291_1459343513126_913388_6239" body="Defines whether a field is mutable (&quot;mutable type&quot;)."/>
+      <ownedAttribute xmi:id="_17_0_2_5_8e00291_1459347704065_739057_6236" name="base_Property" visibility="private" association="_17_0_2_5_8e00291_1459347704065_6417_6235">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_17_0_2_5_8e00291_1459347704065_6417_6235" name="" visibility="public" memberEnd="_17_0_2_5_8e00291_1459347704065_739057_6236 _17_0_2_5_8e00291_1459347704065_374896_6237" navigableOwnedEnd="_17_0_2_5_8e00291_1459347704065_374896_6237">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_17_0_2_5_8e00291_1459347704065_374896_6237" name="extension_Mutable" visibility="private" type="_17_0_2_5_8e00291_1459343513126_913388_6239" aggregation="composite" association="_17_0_2_5_8e00291_1459347704065_6417_6235">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_8e00291_1459347704065_286282_6238" name="" visibility="public"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_2_5_8e00291_1459347704065_398915_6239" name="" visibility="public" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_12_1_17260432_1174090319085_16168_891profileApplicationAttributes">
+      <eAnnotations xmi:id="_8zedQZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMF.SMDL_Profile.profile.uml#_8v0H8J4HEeu53dsWBgqOCg"/>
+      </eAnnotations>
+      <appliedProfile href="UMF.SMDL_Profile.profile.uml#_12_1_17260432_1174090319085_16168_891"/>
+    </profileApplication>
+    <profileApplication xmi:id="_12_1_17260432_1174076026293_220340_734profileApplicationAttributes">
+      <eAnnotations xmi:id="_80KZ0Z4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMF.UMF_Profile.Information_Viewpoint.profile.uml#_8vrkkJ4HEeu53dsWBgqOCg"/>
+      </eAnnotations>
+      <appliedProfile href="UMF.UMF_Profile.Information_Viewpoint.profile.uml#_12_1_17260432_1174076026293_220340_734"/>
+    </profileApplication>
+  </uml:Profile>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgScJ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.IsConst" id="Smp.Attributes.IsConst">
+    <usage>Operation</usage>
+    <usage>Property</usage>
+    <usage>Field</usage>
+    <usage>Reference</usage>
+    <usage>Association</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgScZ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.BaseClass" id="Smp.Attributes.BaseClass">
+    <usage>Model</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgScp4HEeu53dsWBgqOCg" base_Stereotype="_12_1_1049037f_1237804398634_687601_4886">
+    <usage>ValueType</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSc54HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Initialisation" id="Smp.Attributes.Initialisation">
+    <usage>Task</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSdJ4HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1236069550115_717432_4110" id="Smp.Attributes.SetRaises" allowMultiple="true">
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSdZ4HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1236069319916_249513_4066" id="Smp.Attributes.Service">
+    <usage>Model</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSdp4HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1236069618628_391635_4134" id="Smp.Attributes.GetRaises" allowMultiple="true">
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSd54HEeu53dsWBgqOCg" base_Stereotype="_16_9_8770277_1319463161642_669595_5216" id="Smp.Attributes.IncludePath">
+    <usage>Model</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSeJ4HEeu53dsWBgqOCg" base_Stereotype="_17_0_3_17260432_1334582883649_885335_5284" id="Smp.Attributes.ReturnDoc">
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSeZ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Fallible" id="Smp.Attributes.Fallible">
+    <usage>Model</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSep4HEeu53dsWBgqOCg" base_Stereotype="_17_0_3_c300305_1347452239275_758091_5747" id="Smp.Attributes.NotConst">
+    <usage>Field</usage>
+    <usage>Association</usage>
+    <usage>Property</usage>
+    <usage>Operation</usage>
+    <usage>ValueReference</usage>
+    <usage>Parameter</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSe54HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Abstract" id="Smp.Attributes.Abstract">
+    <usage>Operation</usage>
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSfJ4HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1295362382627_129388_3860" id="Smp.Attributes.View">
+    <usage>Field</usage>
+    <usage>Property</usage>
+    <usage>Operation</usage>
+    <usage>EntrryPoint</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSfZ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Const" id="Smp.Attributes.Const">
+    <usage>Field</usage>
+    <usage>Association</usage>
+    <usage>Property</usage>
+    <usage>Operation</usage>
+    <usage>ValueReference</usage>
+    <usage>Parameter</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSfp4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel" id="Smp.Attributes.ConcurrencyLevel">
+    <usage>MissionEvent</usage>
+    <usage>EpochEvent</usage>
+    <usage>SimulationEvent</usage>
+    <usage>ZuluEvent</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zgSf54HEeu53dsWBgqOCg" base_Stereotype="_12_1_f810373_1223997831260_931136_9179">
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5gJ4HEeu53dsWBgqOCg" base_Stereotype="_12_1_f810373_1250019221203_980817_10558">
+    <usage>Type</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5gZ4HEeu53dsWBgqOCg" base_Stereotype="_17_0_3_17260432_1391084289496_229603_6100" id="Smp.Attributes.ExtendsType">
+    <usage>Class</usage>
+    <usage>Model</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5gp4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.ByReference" id="Smp.Attributes.ByReference">
+    <usage>Parameter</usage>
+    <usage>Property</usage>
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5g54HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Operator" id="Smp.Attributes.Operator">
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5hJ4HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1236069413665_127679_4087" id="Smp.Attributes.RaisedException" allowMultiple="true">
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5hZ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Minimum" id="Smp.Attributes.Minimum">
+    <usage>EntryPoint</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5hp4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Constructor" id="Smp.Attributes.Constructor">
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5h54HEeu53dsWBgqOCg" base_Stereotype="_17_0_3_c300305_1347452105532_195323_5240" id="Smp.Attributes.ByPointer">
+    <usage>Parameter</usage>
+    <usage>Property</usage>
+    <usage>Operation</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5iJ4HEeu53dsWBgqOCg" base_Stereotype="_17_0_3_17260432_1391083970030_447276_6084" id="Smp.Attributes.AttachedAssociation">
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5iZ4HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1236069073179_32741_4044" id="Smp.Attributes.Exception">
+    <usage>Class</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5ip4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField" id="Smp.Attributes.BaseClassField">
+    <usage>Field</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5i54HEeu53dsWBgqOCg" base_Stereotype="_12_1_2_17260432_1236068200770_95725_3752" id="Smp.Attributes.ConstCall">
+    <usage>Operation</usage>
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5jJ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Static" id="Smp.Attributes.Static">
+    <usage>Association</usage>
+    <usage>Field</usage>
+    <usage>Operation</usage>
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5jZ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Maximum" id="Smp.Attributes.Maximum">
+    <usage>EntryPoint</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5jp4HEeu53dsWBgqOCg" base_Stereotype="_17_0_2_5_8e00291_1459343513126_913388_6239" id="Smp.Attributes.Mutable">
+    <usage>Field</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5j54HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Forcible" id="Smp.Attributes.Forcible">
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5kJ4HEeu53dsWBgqOCg" base_Stereotype="_16_9_c300305_1314705110802_673478_5231" id="Smp.Attributes.BaseClassVirtual">
+    <usage>Model</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5kZ4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Limit" id="Smp.Attributes.Limit">
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2attribute xmi:id="_8zg5kp4HEeu53dsWBgqOCg" base_Stereotype="_smp2_Smp.mdxml_Smp.Attributes.Virtual" id="Smp.Attributes.Virtual">
+    <usage>Operation</usage>
+    <usage>Property</usage>
+  </SMDLProfile:SMP2attribute>
+  <SMDLProfile:SMP2field xmi:id="_8zoOTp4HEeu53dsWBgqOCg" base_Property="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum" view="false" state="false"/>
+  <SMDLProfile:SMP2field xmi:id="_8zo1UJ4HEeu53dsWBgqOCg" base_Property="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum" view="false" state="false"/>
+  <SMDLProfile:SMP2field xmi:id="_8zo1UZ4HEeu53dsWBgqOCg" base_Property="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum" view="false" state="false"/>
+  <SMDLProfile:SMP2field xmi:id="_8zo1Up4HEeu53dsWBgqOCg" base_Property="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum" view="false" state="false"/>
+  <InformationViewpoint:string xmi:id="_80MO8J4HEeu53dsWBgqOCg" length="32" base_DataType="_smp2_Smp.mdxml_Smp.Attributes.LimitValue"/>
+  <InformationViewpoint:order xmi:id="_80SVkp4HEeu53dsWBgqOCg" base_Element="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMaximum" order="2"/>
+  <InformationViewpoint:order xmi:id="_80S8oJ4HEeu53dsWBgqOCg" base_Element="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMinimum" order="3"/>
+  <InformationViewpoint:order xmi:id="_80S8oZ4HEeu53dsWBgqOCg" base_Element="_12_1_2_17260432_1295362382627_129388_3860" order="5"/>
+  <InformationViewpoint:order xmi:id="_80S8op4HEeu53dsWBgqOCg" base_Element="_smp2_Smp.mdxml_Smp.Attributes.Limits.softMaximum" order="1"/>
+  <InformationViewpoint:order xmi:id="_80S8o54HEeu53dsWBgqOCg" base_Element="_smp2_Smp.mdxml_Smp.Attributes.Limits.hardMinimum" order="4"/>
+  <InformationViewpoint:uuid xmi:id="_80S8pJ4HEeu53dsWBgqOCg" uuid="aaaaaaaa-bbbb-cccc-dddd-000000000001" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.IsConst"/>
+  <InformationViewpoint:uuid xmi:id="_80S8pZ4HEeu53dsWBgqOCg" uuid="2dde325f-6d5e-400b-b7a9-88ae6454a460" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.BaseClass"/>
+  <InformationViewpoint:uuid xmi:id="_80S8pp4HEeu53dsWBgqOCg" uuid="14de3149-1797-11de-b41b-239404e673b7" base_Classifier="_12_1_1049037f_1237804398634_687601_4886"/>
+  <InformationViewpoint:uuid xmi:id="_80S8p54HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed680" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Initialisation"/>
+  <InformationViewpoint:uuid xmi:id="_80S8qJ4HEeu53dsWBgqOCg" uuid="074f0828-07d2-11de-9727-230496d58295" base_Classifier="_12_1_2_17260432_1236069550115_717432_4110"/>
+  <InformationViewpoint:uuid xmi:id="_80S8qZ4HEeu53dsWBgqOCg" uuid="074f081d-07d2-11de-9727-230496d58295" base_Classifier="_12_1_2_17260432_1236069319916_249513_4066"/>
+  <InformationViewpoint:uuid xmi:id="_80S8qp4HEeu53dsWBgqOCg" uuid="074f0830-07d2-11de-9727-230496d58295" base_Classifier="_12_1_2_17260432_1236069618628_391635_4134"/>
+  <InformationViewpoint:uuid xmi:id="_80S8q54HEeu53dsWBgqOCg" uuid="aeb789a7-fe44-11e0-ae36-d74f9d523996" base_Classifier="_16_9_8770277_1319463161642_669595_5216"/>
+  <InformationViewpoint:uuid xmi:id="_80S8rJ4HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed663" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind"/>
+  <InformationViewpoint:uuid xmi:id="_80S8rZ4HEeu53dsWBgqOCg" uuid="e0d1f34a-87c8-11e1-8bc8-d108b9132d66" base_Classifier="_17_0_3_17260432_1334582883649_885335_5284"/>
+  <InformationViewpoint:uuid xmi:id="_80S8rp4HEeu53dsWBgqOCg" uuid="d7807ecd-8b13-4d77-b5b4-17b37cdc5e41" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Fallible"/>
+  <InformationViewpoint:uuid xmi:id="_80S8r54HEeu53dsWBgqOCg" uuid="e9d45099-fcd3-11e1-a847-b530514bcd04" base_Classifier="_17_0_3_c300305_1347452239275_758091_5747"/>
+  <InformationViewpoint:uuid xmi:id="_80S8sJ4HEeu53dsWBgqOCg" uuid="b8e80708-e29f-429c-9af1-f94da69aff08" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Abstract"/>
+  <InformationViewpoint:uuid xmi:id="_80S8sZ4HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed664" base_Classifier="_12_1_2_17260432_1295362382627_129388_3860"/>
+  <InformationViewpoint:uuid xmi:id="_80S8sp4HEeu53dsWBgqOCg" uuid="dd7344f0-878c-4322-9dee-384368393a7a" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Const"/>
+  <InformationViewpoint:uuid xmi:id="_80TjsJ4HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed681" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel"/>
+  <InformationViewpoint:uuid xmi:id="_80TjsZ4HEeu53dsWBgqOCg" uuid="80161366-9a04-11dd-a1f4-a537a992eae2" base_Classifier="_12_1_f810373_1223997831260_931136_9179"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjsp4HEeu53dsWBgqOCg" uuid="95e110e4-86ae-11de-9b50-a93574027371" base_Classifier="_12_1_f810373_1250019221203_980817_10558"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjs54HEeu53dsWBgqOCg" uuid="3b0db41e-a94a-4d4c-b5e3-7942a0312523" base_Classifier="_17_0_3_17260432_1391084289496_229603_6100"/>
+  <InformationViewpoint:uuid xmi:id="_80TjtJ4HEeu53dsWBgqOCg" uuid="1055bc58-24ad-40e4-894a-f43016383df8" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.ByReference"/>
+  <InformationViewpoint:uuid xmi:id="_80TjtZ4HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed662" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Operator"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjtp4HEeu53dsWBgqOCg" uuid="074f0820-07d2-11de-9727-230496d58295" base_Classifier="_12_1_2_17260432_1236069413665_127679_4087"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjt54HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed682" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevelKind"/>
+  <InformationViewpoint:uuid xmi:id="_80TjuJ4HEeu53dsWBgqOCg" uuid="1869d8f1-4779-4b09-8fa3-203765f1d542" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Limits"/>
+  <InformationViewpoint:uuid xmi:id="_80TjuZ4HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed660" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Minimum"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjup4HEeu53dsWBgqOCg" uuid="5bebbf98-6bec-4d17-8ce0-ae5c41245ae1" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Constructor"/>
+  <InformationViewpoint:uuid xmi:id="_80Tju54HEeu53dsWBgqOCg" uuid="8dd37548-fcd3-11e1-a847-b530514bcd04" base_Classifier="_17_0_3_c300305_1347452105532_195323_5240"/>
+  <InformationViewpoint:uuid xmi:id="_80TjvJ4HEeu53dsWBgqOCg" uuid="e503a1eb-b2d3-49a9-945b-51f62b58284f" base_Classifier="_17_0_3_17260432_1391083970030_447276_6084"/>
+  <InformationViewpoint:uuid xmi:id="_80TjvZ4HEeu53dsWBgqOCg" uuid="074c9719-07d2-11de-9727-230496d58295" base_Classifier="_12_1_2_17260432_1236069073179_32741_4044"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjvp4HEeu53dsWBgqOCg" uuid="2ef2ede5-9bcd-44ed-a87c-a71d245b1989" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.BaseClassField"/>
+  <InformationViewpoint:uuid xmi:id="_80Tjv54HEeu53dsWBgqOCg" uuid="46633391-07cd-11de-9727-230496d58295" base_Classifier="_12_1_2_17260432_1236068200770_95725_3752"/>
+  <InformationViewpoint:uuid xmi:id="_80TjwJ4HEeu53dsWBgqOCg" uuid="9464e8d3-6fe0-47b9-b134-d600f21415dd" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Static"/>
+  <InformationViewpoint:uuid xmi:id="_80UKwJ4HEeu53dsWBgqOCg" uuid="8596d697-fb84-41ce-a685-6912006ed661" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Maximum"/>
+  <InformationViewpoint:uuid xmi:id="_80UKwZ4HEeu53dsWBgqOCg" uuid="22ac332c-73a2-4d88-b5f9-528a07509302" base_Classifier="_17_0_2_5_8e00291_1459343513126_913388_6239"/>
+  <InformationViewpoint:uuid xmi:id="_80UKwp4HEeu53dsWBgqOCg" uuid="8aa16c79-3f3d-4981-a0f0-006fa6806346" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Forcible"/>
+  <InformationViewpoint:uuid xmi:id="_80UKw54HEeu53dsWBgqOCg" uuid="9d24de87-d2fe-11e0-9048-7dcf47b0f68f" base_Classifier="_16_9_c300305_1314705110802_673478_5231"/>
+  <InformationViewpoint:uuid xmi:id="_80UKxJ4HEeu53dsWBgqOCg" uuid="59e50c03-daee-4c97-80e4-e6bc47377bc0" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.LimitValue"/>
+  <InformationViewpoint:uuid xmi:id="_80UKxZ4HEeu53dsWBgqOCg" uuid="2dc1ed6d-29b8-4059-a92a-550b48738e79" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Limit"/>
+  <InformationViewpoint:uuid xmi:id="_80UKxp4HEeu53dsWBgqOCg" uuid="6ea12479-0472-42d3-a98c-3f844a28ea68" base_Classifier="_smp2_Smp.mdxml_Smp.Attributes.Virtual"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80Ux054HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Difference" value="17"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80Ux1J4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Positive" value="1"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80Ux154HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Subtract" value="5"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80Ux2J4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Divide" value="7"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80Ux4J4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Assign" value="3"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80Ux4p4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Product" value="18"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80VY554HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotGreater" value="12"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80VY6J4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Greater" value="9"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80VY6p4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Equal" value="11"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80VY654HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Sum" value="16"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80VY7Z4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Quotient" value="19"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80VY754HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Add" value="4"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V_8p4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Module" value="20"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V_854HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Negative" value="2"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V_9p4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotEqual" value="14"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V_-J4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.background" value="3"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V_-Z4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Multiply" value="6"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V_-p4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_all" value="1"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V__J4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.NotLess" value="13"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80V__54HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.None"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80WAAJ4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Remainder" value="8"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80WnAZ4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.ConcurrencyLevel.with_none" value="2"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80WnAp4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Indexer" value="15"/>
+  <InformationViewpoint:enumerationLiteral xmi:id="_80WnBZ4HEeu53dsWBgqOCg" base_EnumerationLiteral="_smp2_Smp.mdxml_Smp.Attributes.OperatorKind.Less" value="10"/>
+</xmi:XMI>

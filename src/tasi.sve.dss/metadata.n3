@@ -1,0 +1,5 @@
+<urn:maven/artifact#tasi.sve.tasi.sve:tasi.sve.tasi.sve.dss:1.0.0::pom>
+<urn:nexus/user#modelType> "mission" ;
+<urn:nexus/user#artifactType> "project" ;
+<urn:nexus/user#longName> "tasi.sve.tasi.sve.dss" ;
+<urn:nexus/user#description> "SMDL Catalogue for tasi.sve.dss" Version="1.0.0>" .

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_10_5_1_f810373_1164316323409_263422_394" name="DocBook Profile" visibility="public" URI="" metamodelReference="_10_5_1_f810373_1164316323409_263422_394_packageImportcreatedOnLoad">
+  <eAnnotations xmi:id="_8v0s-J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_8v0s-Z4HEeu53dsWBgqOCg" name="DocBookProfile" nsURI="http:///schemas/DocBookProfile/_8km60J4HEeu53dsWBgqOCg/0" nsPrefix="DocBookProfile">
+      <eAnnotations xmi:id="_8v0s-p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_8v0s-54HEeu53dsWBgqOCg" key="originalName" value="DocBook Profile"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_8v0s_J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/4.0.0/UML">
+        <references xmi:type="uml:Profile" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_be00301_1073394351331_445580_2"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8v0s_Z4HEeu53dsWBgqOCg" name="DocBook">
+        <eAnnotations xmi:id="_8v0s_p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9_5_1_17260432_1121871562781_133911_19"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0s_54HEeu53dsWBgqOCg" name="output" ordered="false" lowerBound="1" defaultValueLiteral="Datatypes">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tAZ4HEeu53dsWBgqOCg" name="sectionDepth" ordered="false" defaultValueLiteral="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8v0tA54HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8v0tBZ4HEeu53dsWBgqOCg" name="DocSection">
+        <eAnnotations xmi:id="_8v0tBp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_2_17260432_1210231921011_630384_261"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8v0tB54HEeu53dsWBgqOCg" name="base_Comment" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Comment"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tCZ4HEeu53dsWBgqOCg" name="section" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tC54HEeu53dsWBgqOCg" name="bookmark" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tDZ4HEeu53dsWBgqOCg" name="bookmarkText" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8v0tD54HEeu53dsWBgqOCg" name="DocTitle">
+        <eAnnotations xmi:id="_8v0tEJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f810373_1223533652889_330258_9186"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8v0tEZ4HEeu53dsWBgqOCg" name="base_Package" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tE54HEeu53dsWBgqOCg" name="title" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8v0tFZ4HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8v0tF54HEeu53dsWBgqOCg" name="FileSnippet" eSuperTypes="_8v0tKJ4HEeu53dsWBgqOCg">
+        <eAnnotations xmi:id="_8v0tGJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_910029a_1204894232101_505199_112"/>
+        <eAnnotations xmi:id="_8v0tGZ4HEeu53dsWBgqOCg" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_8v0tGp4HEeu53dsWBgqOCg" name="base_Element" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_8v0tG54HEeu53dsWBgqOCg" source="redefines" references="_8v0tK54HEeu53dsWBgqOCg"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tHZ4HEeu53dsWBgqOCg" name="fileName" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tH54HEeu53dsWBgqOCg" name="startLine" ordered="false" lowerBound="1" defaultValueLiteral="0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tIZ4HEeu53dsWBgqOCg" name="numberOfLines" ordered="false" lowerBound="1" defaultValueLiteral="0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tI54HEeu53dsWBgqOCg" name="skipStart" ordered="false" lowerBound="1" defaultValueLiteral="0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8v0tJZ4HEeu53dsWBgqOCg" name="skipLength" ordered="false" lowerBound="1" defaultValueLiteral="0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8v0tKJ4HEeu53dsWBgqOCg" name="MagicDrawProfile_InvisibleStereotype">
+        <eAnnotations xmi:id="_8v0tKZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_8v0tKp4HEeu53dsWBgqOCg" key="originalName" value="MagicDraw Profile_InvisibleStereotype"/>
+          <references xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_9_0_be00301_1108044721245_236588_411"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8v0tK54HEeu53dsWBgqOCg" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_10_5_1_f810373_1164316323409_263422_394_packageImportcreatedOnLoad">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0primitiveTypesDocBook_Profile">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0javaPrimitiveTypesDocBook_Profile">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823529_535496_317" name="" visibility="public" memberEnd="_10_0_17260432_1129543823529_502005_318 _10_0_17260432_1129543823529_422574_319" navigableOwnedEnd="_10_0_17260432_1129543823529_422574_319">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823529_422574_319" name="extension_DocBook" visibility="private" type="_9_5_1_17260432_1121871562781_133911_19" aggregation="composite" association="_10_0_17260432_1129543823529_535496_317">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823529_721080_320" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823529_406530_321" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1210231921027_932975_263" name="" visibility="public" memberEnd="_12_1_2_17260432_1210231921027_450455_264 _12_1_2_17260432_1210231921027_434235_265" navigableOwnedEnd="_12_1_2_17260432_1210231921027_434235_265">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1210231921027_434235_265" name="extension_DocReference" visibility="private" type="_12_1_2_17260432_1210231921011_630384_261" aggregation="composite" association="_12_1_2_17260432_1210231921027_932975_263">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1210231921027_994152_266" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1210231921027_649271_267" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_f810373_1223533709360_584783_9192" name="" visibility="public" memberEnd="_12_1_f810373_1223533709360_235546_9193 _12_1_f810373_1223533709360_83789_9194" navigableOwnedEnd="_12_1_f810373_1223533709360_83789_9194">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_f810373_1223533709360_83789_9194" name="extension_DocTitle" visibility="private" type="_12_1_f810373_1223533652889_330258_9186" aggregation="composite" association="_12_1_f810373_1223533709360_584783_9192">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_f810373_1223533709360_181752_9195" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_f810373_1223533709360_961274_9196" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_f810373_1330426429854_3523_305" name="" visibility="public" memberEnd="_12_1_2_f810373_1330426429854_120393_306 _12_1_2_f810373_1330426429854_327587_307" navigableOwnedEnd="_12_1_2_f810373_1330426429854_327587_307">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_f810373_1330426429854_327587_307" name="extension_DocTitle" visibility="private" type="_12_1_f810373_1223533652889_330258_9186" aggregation="composite" association="_12_1_2_f810373_1330426429854_3523_305">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_f810373_1330426429854_269400_308" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_f810373_1330426429854_666645_309" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_9_5_1_17260432_1121871562781_133911_19" name="DocBook" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1121872326698_651024_114" annotatedElement="_9_5_1_17260432_1121871562781_133911_19" body="This stereotype can be used to mark a UML Component as a DocBook Document.&#xA;&#xA;A DocBook Document is an XML file which complies with the DocBook specification, see http://www.docbook.org."/>
+    <ownedAttribute xmi:id="_9_5_1_17260432_1122549830078_227592_55" name="output" visibility="public">
+      <ownedComment xmi:id="_12_0_17260432_1170751904874_837453_4586" annotatedElement="_9_5_1_17260432_1122549830078_227592_55" body="Selection of output to generate"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_17260432_1170154800790_329794_1520" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_0_17260432_1170154800790_404256_1521" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_0_17260432_1170154418516_576406_1418" name="" visibility="public" value="Datatypes"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_17260432_1125942206755_505863_1" name="sectionDepth" visibility="public">
+      <ownedComment xmi:id="_12_0_17260432_1170751915722_123815_4587" annotatedElement="_9_5_1_17260432_1125942206755_505863_1" body="Section depth to generate"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822726_300324_159" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822726_629081_160" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823740_271933_642" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823529_502005_318" name="base_Component" visibility="private" association="_10_0_17260432_1129543823529_535496_317">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822726_218137_156" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_2_17260432_1210231921011_630384_261" name="DocSection" visibility="public">
+    <ownedComment xmi:id="_12_1_2_17260432_1210231921011_217000_262" annotatedElement="_12_1_2_17260432_1210231921011_630384_261" body="This stereotype can be used to mark a UML Comment as documentation for a specific sub-section of the commented model element.&#xA;&#xA;If the section tag is omitted or empty, the text shall be rendered into the main section related to the commented model element (also known as Overview section). Otherwise, the text shall be rendered into the specified sub-section.&#xA;&#xA;The optional bookmark tag can be used to reference an external element in the documentation (e.g. an abbreviation/key within the list of applicable or reference documents, or an external URL).&#xA;&#xA;The optional bookmarkText tag can be used to define the &quot;hot&quot; text for the bookmark.&#xA;&#xA;From BSSC 2005(1): &quot;Explicit references should be inserted where a component description uses or implies material from another document.&quot;"/>
+    <ownedAttribute xmi:id="_12_1_2_17260432_1210231921027_450455_264" name="base_Comment" visibility="private" association="_12_1_2_17260432_1210231921027_932975_263">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Comment"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_2_17260432_1212049929103_731049_144" name="section" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1214133012593_576279_128" annotatedElement="_12_1_2_17260432_1212049929103_731049_144" body="Section name that this comment applies to"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1212049977835_292103_146" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1212049977835_953625_147" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_2_17260432_1210234202827_940369_893" name="bookmark" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1214133021671_710923_129" annotatedElement="_12_1_2_17260432_1210234202827_940369_893" body="External bookmark or URL"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1210234346765_130691_895" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1210234346765_691164_896" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_2_17260432_1214133028359_661382_130" name="bookmarkText" visibility="public">
+      <ownedComment xmi:id="_12_1_2_17260432_1214133028375_350253_133" annotatedElement="_12_1_2_17260432_1214133028359_661382_130" body="Text to display for external bookmark or URL (&quot;hot text&quot;)"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1214133028375_329230_132" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1214133028375_757406_131" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_f810373_1223533652889_330258_9186" name="DocTitle" visibility="public">
+    <ownedComment xmi:id="_12_1_f810373_1223533939486_300539_9197" annotatedElement="_12_1_f810373_1223533652889_330258_9186" body="This stereotype allows defining a document title for a package. This enables the use of long titles in documents, and of acronyms in generated source code.&#xA;When applied to a Component stereotyped as DocBook, stereotype allows defining a document title for the top-level section of the document that differs from the component or package realised by the DocBook. This allows generating different documents for the same component or package with different document titles, e.g.for integration into different documents (such as SDD or ICD)."/>
+    <ownedAttribute xmi:id="_12_1_f810373_1223533709360_235546_9193" name="base_Package" visibility="private" association="_12_1_f810373_1223533709360_584783_9192">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_f810373_1223533941579_316671_9198" name="title" visibility="public">
+      <ownedComment xmi:id="_12_1_f810373_1223534007376_950397_9199" annotatedElement="_12_1_f810373_1223533941579_316671_9198" body="Title to give to the section that corresponds to the package when generating a document."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_f810373_1223534012454_26636_9200" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_f810373_1223534012454_132443_9201" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_12_1_1049037f_1224668316053_123817_10018" name="" visibility="public" value=""/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_2_f810373_1330426429854_120393_306" name="base_Component" visibility="private" association="_12_1_2_f810373_1330426429854_3523_305">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_910029a_1204894232101_505199_112" name="FileSnippet" visibility="public">
+    <ownedComment xmi:id="_17_0_2_5_17260432_1441369581575_951359_2187" annotatedElement="_12_1_910029a_1204894232101_505199_112" body="This stereotype allows defining a file snippet that is to be inserted in the generated documentation related to the stereotyped element.&#xA;The tags define the snippet as follows:&#xA;- fileName: name of text file (w/o path)&#xA;- startLine: first line of text snippet in text file&#xA;- numberOfLines: number of lines of text snippet&#xA;- skipStart: start line to skip within snippet&#xA;- skipLength: number of lines to skip within snippet"/>
+    <generalization xmi:id="_17_0_2_5_17260432_1441369401854_12992_2164" isSubstitutable="false">
+      <general xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_9_0_be00301_1108044721245_236588_411"/>
+    </generalization>
+    <ownedAttribute xmi:id="_12_1_910029a_1204894232117_411982_114" name="base_Element" visibility="private" association="_12_1_910029a_1204894232117_437150_113">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_910029a_1204894388639_342599_125" name="fileName" visibility="private">
+      <ownedComment xmi:id="_17_0_2_5_17260432_1441369401854_110137_2166" annotatedElement="_12_1_910029a_1204894388639_342599_125" body="Name of file to take snippet from."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_845852_2167" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_2_5_17260432_1441369401854_603497_2165" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_910029a_1204894408669_617835_126" name="startLine" visibility="private">
+      <ownedComment xmi:id="_17_0_2_5_17260432_1441369401854_931909_2169" annotatedElement="_12_1_910029a_1204894408669_617835_126" body="Starting line of snippet."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_858680_2170" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_2_5_17260432_1441369401854_93520_2168" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_813698_2171" name="" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_910029a_1204894469447_399796_131" name="numberOfLines" visibility="private">
+      <ownedComment xmi:id="_17_0_2_5_17260432_1441369401854_847452_2173" annotatedElement="_12_1_910029a_1204894469447_399796_131" body="Number of lines the snippet consists of."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_897343_2174" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_2_5_17260432_1441369401854_572486_2172" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_798641_2175" name="" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_910029a_1205229989310_692921_112" name="skipStart" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_30208_2177" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_2_5_17260432_1441369401854_679078_2176" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_121175_2178" name="" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_1_910029a_1205230089846_64782_118" name="skipLength" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_464137_2180" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_17_0_2_5_17260432_1441369401854_774405_2179" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_17_0_2_5_17260432_1441369401854_29288_2181" name="" visibility="public"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_910029a_1204894232117_437150_113" name="" visibility="public" memberEnd="_12_1_910029a_1204894232117_411982_114 _12_1_910029a_1204894232133_371479_115" navigableOwnedEnd="_12_1_910029a_1204894232133_371479_115">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_910029a_1204894232133_371479_115" name="extension_FileSnippet" visibility="private" type="_12_1_910029a_1204894232101_505199_112" aggregation="composite" association="_12_1_910029a_1204894232117_437150_113">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_910029a_1204894232164_658204_116" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_910029a_1204894232179_663087_117" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>

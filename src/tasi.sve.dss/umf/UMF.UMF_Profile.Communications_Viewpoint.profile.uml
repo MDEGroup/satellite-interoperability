@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_12_1_17260432_1174076006364_628856_722" name="Communications Viewpoint" visibility="public" URI="" metamodelReference="_12_1_17260432_1174076006364_628856_722_packageImportcreatedOnLoad">
+  <eAnnotations xmi:id="_8vnQ_54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_8vnRAJ4HEeu53dsWBgqOCg" name="CommunicationsViewpoint" nsURI="http:///schemas/CommunicationsViewpoint/_8kowAJ4HEeu53dsWBgqOCg/0" nsPrefix="CommunicationsViewpoint">
+      <eAnnotations xmi:id="_8vnRAZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_8vnRAp4HEeu53dsWBgqOCg" key="originalName" value="Communications Viewpoint"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRA54HEeu53dsWBgqOCg" name="beo">
+        <eAnnotations xmi:id="_8vnRBJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106316503918_120513_2"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRBZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRB54HEeu53dsWBgqOCg" name="engineeringObject">
+        <eAnnotations xmi:id="_8vnRCJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106322657136_412461_983"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRCZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRC54HEeu53dsWBgqOCg" name="channel">
+        <eAnnotations xmi:id="_8vnRDJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106316555862_307374_3"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRDZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRD54HEeu53dsWBgqOCg" name="stub">
+        <eAnnotations xmi:id="_8vnREJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_17260432_1106666603907_480489_260"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnREZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRE54HEeu53dsWBgqOCg" name="clusterManager">
+        <eAnnotations xmi:id="_8vnRFJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106322707768_706982_1026"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRFZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRF54HEeu53dsWBgqOCg" name="binder">
+        <eAnnotations xmi:id="_8vnRGJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106316661995_410645_4"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRGZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRG54HEeu53dsWBgqOCg" name="capsuleManager">
+        <eAnnotations xmi:id="_8vnRHJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106322289928_539865_952"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRHZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRH54HEeu53dsWBgqOCg" name="capsule">
+        <eAnnotations xmi:id="_8vnRIJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106318426122_294034_814"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRIZ4HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRI54HEeu53dsWBgqOCg" name="cluster">
+        <eAnnotations xmi:id="_8vnRJJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106322900015_180497_1069"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRJZ4HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRJ54HEeu53dsWBgqOCg" name="protocolObject">
+        <eAnnotations xmi:id="_8vnRKJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106316772594_190830_6"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRKZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRK54HEeu53dsWBgqOCg" name="node">
+        <eAnnotations xmi:id="_8vnRLJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106318820309_612593_866"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRLZ4HEeu53dsWBgqOCg" name="base_Node" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Node"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRL54HEeu53dsWBgqOCg" name="interceptor">
+        <eAnnotations xmi:id="_8vnRMJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106317044605_785618_7"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRMZ4HEeu53dsWBgqOCg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InstanceSpecification"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vnRM54HEeu53dsWBgqOCg" name="nucleus">
+        <eAnnotations xmi:id="_8vnRNJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_61501c1_1106318859495_160454_897"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vnRNZ4HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_12_1_17260432_1174076006364_628856_722_packageImportcreatedOnLoad">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0primitiveTypesCommunications_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0javaPrimitiveTypesCommunications_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106316503918_120513_2" name="beo" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389356861_255328_265" annotatedElement="_61501c1_1106316503918_120513_2" body="A Basic Engineering Object is the representation within the communication viewpoint of a functional component that exists within the functional viewpoint and that requires the support of a distributed infrastructure.&#xA;&#xA;A basic engineering object represents a computational object within the Engineering Viewpoint."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823599_593860_433" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823599_944967_432">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_432894_203" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106322657136_412461_983" name="engineeringObject" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125390817559_326653_368" annotatedElement="_61501c1_1106322657136_412461_983" body="Engineering object: An entity in RM-ODP's Engineering Viewpoint."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823499_383806_277" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823499_519390_276">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_986621_212" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106316555862_307374_3" name="channel" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_199503_268" annotatedElement="_61501c1_1106316555862_307374_3" body="A Channel is a configuration of stubs, binders, protocol objects and interceptors providing a binding between a set of interfaces to basic engineering objects, through which interaction can occur. A channel is required for communication between engineering objects located in different nodes or capsules.&#xA;&#xA;Bindings that require channels are referred to as distributed bindings in the engineering language; bindings between engineering objects that do not require channels (e.g., between engineering objects in the same cluster) are referred to as local bindings. Basic engineering objects which interact via channels are locally bound to stubs."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823579_360837_389" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823579_5203_388">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_399604_204" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_17260432_1106666603907_480489_260" name="stub" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_830575_275" annotatedElement="_17260432_1106666603907_480489_260" body="A Stub provides the conversion of data carried by interactions in a channel (i.e. marshalling and un-marshalling). This distinguishes them from binders and protocol objects, which transfer complete messages without concern for their internal structure. Stubs can apply controls and keep records (e.g., for security and accounting). Stubs can interact with engineering objects outside the channel (e.g., a security function) if required. A stub in a channel has an interface for use by the basic engineering object it supports and an interface for interaction with a binder.  When interconnected stubs use different transfer syntaxes, there must be an interceptor in the path between them which can transform data from one syntax to another.&#xA;For example, a stub can perform marshalling and un-marshalling of parameters into communications buffers, or the recording of activity for audit purposes."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823589_164847_420" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823589_370645_419">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_77155_216" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106322707768_706982_1026" name="clusterManager" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389356861_629148_266" annotatedElement="_61501c1_1106322707768_706982_1026" body="A Cluster Manager is an engineering object which manages the engineering objects in a cluster."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823619_866832_439" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823619_94048_438">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_790093_213" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106316661995_410645_4" name="binder" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_667803_269" annotatedElement="_61501c1_1106316661995_410645_4" body="A Binder is an engineering object in a channel, which maintains a distributed binding between interacting basic engineering objects. The binders in a channel manage the end-to-end integrity of that channel. When required, binders provide relocation transparency by monitoring communication failures and repairing broken distributed bindings. Binders in a channel can interact with engineering objects outside the channel to obtain additional data needed to perform their function (e.g., a relocator to obtain location data). A binder in a channel has at least an interface for interaction with a stub and one or more interfaces for interaction with protocol objects. A binder can have a control interface. If present, the control interface enables changes in the configuration of the channel and deletion of the channel."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823750_721231_674" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823750_628174_673">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_288734_205" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106322289928_539865_952" name="capsuleManager" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_74724_274" annotatedElement="_61501c1_1106322289928_539865_952" body="A Capsule Manager is an engineering object which manages the engineering objects in a capsule.&#xA;&#xA;An example of a capsule manager would be a J2EE application server."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823499_662447_287" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823499_423675_286">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_359579_211" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106318426122_294034_814" name="capsule" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_348899_271" annotatedElement="_61501c1_1106318426122_294034_814" body="A Capsule is a configuration of engineering objects forming a single unit for the purpose of encapsulation of processing and storage.&#xA;&#xA;A virtual machine (e.g. a process) is an example of a capsule."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823740_531789_659" name="base_Component" visibility="private" association="_10_0_17260432_1129543823740_100269_658">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_546584_208" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106322900015_180497_1069" name="cluster" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389356861_448728_267" annotatedElement="_61501c1_1106322900015_180497_1069" body="A Cluster is the smallest grouping of engineering objects within a capsule. The objects in a cluster are grouped together in order to reduce the cost of manipulating them. The objects in cluster can be deactivated, transferred to persistent storage, reactivated or moved to another node altogether. Communication between objects in a cluster can be highly optimized, since the objects are created together, in the same language, and are expected to stay together. A cluster maps closely to a traditional software component, such as an EJB Component or CORBA Component.&#xA;&#xA;A segment of virtual memory containing objects is an example of a cluster."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823720_915288_613" name="base_Component" visibility="private" association="_10_0_17260432_1129543823720_938868_612">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_740512_214" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106316772594_190830_6" name="protocolObject" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125394770810_547461_603" annotatedElement="_61501c1_1106316772594_190830_6" body="A Protocol Object is an engineering object in a channel, which communicates with other protocol objects in the same channel to achieve interaction between basic engineering objects (possibly in different clusters, capsules or nodes). Protocol objects provide the channel’s communication functions. Protocol objects can interact with engineering objects outside a channel (e.g., directory functions) to obtain the information they need. A protocol object has an interface for interaction with a binder and at least one communications interface for interaction with other protocol objects (via interceptors if required). A protocol object can have a control interface. When protocol objects in a channel are of different type, they require an interceptor which provides protocol conversion."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823549_450271_368" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823549_676138_367">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_160385_206" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106318820309_612593_866" name="node" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_484169_272" annotatedElement="_61501c1_1106318820309_612593_866" body="A Node is a configuration of engineering objects forming a single unit for the purpose of location in space, and which embodies a set of processing, storage and communication functions. The node represents an independently managed computing system (i.e. a computer and the software it supports). A node is physically located at a particular point in space. Within a node, there may be a number of capsules, which own storage and a share of the node's processing. The node is under the control of a single nucleus (i.e. operating system).&#xA;&#xA;A computer and the software it supports (operating system and applications) is an example of a node."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823479_354616_248" name="base_Node" visibility="private" association="_10_0_17260432_1129543823479_665344_247">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_906430_209" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106317044605_785618_7" name="interceptor" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_965351_270" annotatedElement="_61501c1_1106317044605_785618_7" body="An Interceptor in a channel stands at the boundary between &lt;x> domains and provides checks and transformations on interactions that cross &lt;x> domain boundaries. Depending upon the boundary crossed, interceptors require different information to perform their task.&#xA; &#xA;For example, a security interceptor could perform checks to enforce or monitor policies on permitted interactions between basic engineering objects in different security domains."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823489_413546_259" name="base_InstanceSpecification" visibility="private" association="_10_0_17260432_1129543823489_717394_258">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_858884_207" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_61501c1_1106318859495_160454_897" name="nucleus" visibility="public">
+    <ownedComment xmi:id="_9_5_1_17260432_1125389793880_113172_273" annotatedElement="_61501c1_1106318859495_160454_897" body="A Nucleus is an engineering object which coordinates processing, storage and communications functions for use by other engineering objects within the node to which it belongs. The node is under the control of the nucleus which is responsible for initialization, for creating groups of objects, for making communications facilities available, and for providing basic services like timing and the source of unique identifiers.&#xA;&#xA;An operating system (kernel) is an example of a nucleus."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823670_53849_551" name="base_Component" visibility="private" association="_10_0_17260432_1129543823670_730780_550">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_975217_210" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823740_100269_658" name="" visibility="public" memberEnd="_10_0_17260432_1129543823740_531789_659 _10_0_17260432_1129543823740_91230_660" navigableOwnedEnd="_10_0_17260432_1129543823740_91230_660">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823740_91230_660" name="extension_capsule" visibility="private" type="_61501c1_1106318426122_294034_814" aggregation="composite" association="_10_0_17260432_1129543823740_100269_658">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823740_619095_661" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823740_986026_662" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823499_519390_276" name="" visibility="public" memberEnd="_10_0_17260432_1129543823499_383806_277 _10_0_17260432_1129543823499_568274_278" navigableOwnedEnd="_10_0_17260432_1129543823499_568274_278">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823499_568274_278" name="extension_engineeringObject" visibility="private" type="_61501c1_1106322657136_412461_983" aggregation="composite" association="_10_0_17260432_1129543823499_519390_276">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823499_573697_279" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823499_710834_280" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823599_944967_432" name="" visibility="public" memberEnd="_10_0_17260432_1129543823599_593860_433 _10_0_17260432_1129543823599_493517_434" navigableOwnedEnd="_10_0_17260432_1129543823599_493517_434">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823599_493517_434" name="extension_beo" visibility="private" type="_61501c1_1106316503918_120513_2" aggregation="composite" association="_10_0_17260432_1129543823599_944967_432">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823599_42398_435" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823599_488414_436" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823720_938868_612" name="" visibility="public" memberEnd="_10_0_17260432_1129543823720_915288_613 _10_0_17260432_1129543823720_665566_614" navigableOwnedEnd="_10_0_17260432_1129543823720_665566_614">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823720_665566_614" name="extension_cluster" visibility="private" type="_61501c1_1106322900015_180497_1069" aggregation="composite" association="_10_0_17260432_1129543823720_938868_612">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823720_83371_615" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823720_871986_616" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823619_94048_438" name="" visibility="public" memberEnd="_10_0_17260432_1129543823619_866832_439 _10_0_17260432_1129543823619_468791_440" navigableOwnedEnd="_10_0_17260432_1129543823619_468791_440">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823619_468791_440" name="extension_clusterManager" visibility="private" type="_61501c1_1106322707768_706982_1026" aggregation="composite" association="_10_0_17260432_1129543823619_94048_438">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823619_761510_441" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823619_938893_442" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823670_730780_550" name="" visibility="public" memberEnd="_10_0_17260432_1129543823670_53849_551 _10_0_17260432_1129543823670_688707_552" navigableOwnedEnd="_10_0_17260432_1129543823670_688707_552">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823670_688707_552" name="extension_nucleus" visibility="private" type="_61501c1_1106318859495_160454_897" aggregation="composite" association="_10_0_17260432_1129543823670_730780_550">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823670_907142_553" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823670_163605_554" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823750_628174_673" name="" visibility="public" memberEnd="_10_0_17260432_1129543823750_721231_674 _10_0_17260432_1129543823750_564237_675" navigableOwnedEnd="_10_0_17260432_1129543823750_564237_675">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823750_564237_675" name="extension_binder" visibility="private" type="_61501c1_1106316661995_410645_4" aggregation="composite" association="_10_0_17260432_1129543823750_628174_673">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823750_273231_676" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823750_141583_677" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823549_676138_367" name="" visibility="public" memberEnd="_10_0_17260432_1129543823549_450271_368 _10_0_17260432_1129543823549_636339_369" navigableOwnedEnd="_10_0_17260432_1129543823549_636339_369">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823549_636339_369" name="extension_protocolObject" visibility="private" type="_61501c1_1106316772594_190830_6" aggregation="composite" association="_10_0_17260432_1129543823549_676138_367">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823549_360344_370" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823549_104858_371" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823499_423675_286" name="" visibility="public" memberEnd="_10_0_17260432_1129543823499_662447_287 _10_0_17260432_1129543823499_304299_288" navigableOwnedEnd="_10_0_17260432_1129543823499_304299_288">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823499_304299_288" name="extension_capsuleManager" visibility="private" type="_61501c1_1106322289928_539865_952" aggregation="composite" association="_10_0_17260432_1129543823499_423675_286">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823499_529914_289" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823499_90321_290" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823589_370645_419" name="" visibility="public" memberEnd="_10_0_17260432_1129543823589_164847_420 _10_0_17260432_1129543823589_19615_421" navigableOwnedEnd="_10_0_17260432_1129543823589_19615_421">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823589_19615_421" name="extension_stub" visibility="private" type="_17260432_1106666603907_480489_260" aggregation="composite" association="_10_0_17260432_1129543823589_370645_419">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823589_867653_422" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823589_277666_423" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823479_665344_247" name="" visibility="public" memberEnd="_10_0_17260432_1129543823479_354616_248 _10_0_17260432_1129543823479_745199_249" navigableOwnedEnd="_10_0_17260432_1129543823479_745199_249">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823479_745199_249" name="extension_node" visibility="private" type="_61501c1_1106318820309_612593_866" aggregation="composite" association="_10_0_17260432_1129543823479_665344_247">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823479_394484_250" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823479_928142_251" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823579_5203_388" name="" visibility="public" memberEnd="_10_0_17260432_1129543823579_360837_389 _10_0_17260432_1129543823579_511433_390" navigableOwnedEnd="_10_0_17260432_1129543823579_511433_390">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823579_511433_390" name="extension_channel" visibility="private" type="_61501c1_1106316555862_307374_3" aggregation="composite" association="_10_0_17260432_1129543823579_5203_388">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823579_875687_391" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823579_330226_392" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823489_717394_258" name="" visibility="public" memberEnd="_10_0_17260432_1129543823489_413546_259 _10_0_17260432_1129543823489_768239_260" navigableOwnedEnd="_10_0_17260432_1129543823489_768239_260">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823489_768239_260" name="extension_interceptor" visibility="private" type="_61501c1_1106317044605_785618_7" aggregation="composite" association="_10_0_17260432_1129543823489_717394_258">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823489_66870_261" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823489_917092_262" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>

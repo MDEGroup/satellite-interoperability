@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_12_1_17260432_1174076018021_627749_730" name="Functional Viewpoint" visibility="public" URI="" metamodelReference="_12_1_17260432_1174076018021_627749_730_packageImportcreatedOnLoad">
+  <eAnnotations xmi:id="_8vrmNZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_8vrmNp4HEeu53dsWBgqOCg" name="FunctionalViewpoint" nsURI="http:///schemas/FunctionalViewpoint/_8kmTwJ4HEeu53dsWBgqOCg/0" nsPrefix="FunctionalViewpoint">
+      <eAnnotations xmi:id="_8vrmN54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_8vrmOJ4HEeu53dsWBgqOCg" key="originalName" value="Functional Viewpoint"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmOZ4HEeu53dsWBgqOCg" name="operation">
+        <eAnnotations xmi:id="_8vrmOp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1089467278032_951885_1023"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmO54HEeu53dsWBgqOCg" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmPZ4HEeu53dsWBgqOCg" name="exception">
+        <eAnnotations xmi:id="_8vrmPp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_bfe02f9_1095863732138_335438_881"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmP54HEeu53dsWBgqOCg" name="base_DataType" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//DataType"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmQZ4HEeu53dsWBgqOCg" name="event">
+        <eAnnotations xmi:id="_8vrmQp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1089469543560_777883_2000"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmQ54HEeu53dsWBgqOCg" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmRZ4HEeu53dsWBgqOCg" name="consume">
+        <eAnnotations xmi:id="_8vrmRp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102579365035_662427_783"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmR54HEeu53dsWBgqOCg" name="base_InterfaceRealization" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InterfaceRealization"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmSZ4HEeu53dsWBgqOCg" name="produce">
+        <eAnnotations xmi:id="_8vrmSp4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102579365045_667182_784"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmS54HEeu53dsWBgqOCg" name="base_Usage" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Usage"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vrmTZ4HEeu53dsWBgqOCg" name="unicast" ordered="false" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmT54HEeu53dsWBgqOCg" name="stream">
+        <eAnnotations xmi:id="_8vrmUJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1089467427357_210484_1060"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmUZ4HEeu53dsWBgqOCg" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmU54HEeu53dsWBgqOCg" name="functional">
+        <eAnnotations xmi:id="_8vrmVJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1089468962294_714056_1798"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vrmVZ4HEeu53dsWBgqOCg" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vrmV54HEeu53dsWBgqOCg" name="asynchronous">
+        <eAnnotations xmi:id="_8vrmWJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1106228163576_127907_1"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsJcJ4HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsJcp4HEeu53dsWBgqOCg" name="emit">
+        <eAnnotations xmi:id="_8vsJc54HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102576749864_202365_274"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsJdJ4HEeu53dsWBgqOCg" name="base_Usage" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Usage"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vsJdp4HEeu53dsWBgqOCg" name="unicast" ordered="false" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vsJeJ4HEeu53dsWBgqOCg" name="receive">
+        <eAnnotations xmi:id="_8vsJeZ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102576938275_178423_459"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vsJep4HEeu53dsWBgqOCg" name="base_InterfaceRealization" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InterfaceRealization"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_12_1_17260432_1174076018021_627749_730_packageImportcreatedOnLoad">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0primitiveTypesFunctional_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0javaPrimitiveTypesFunctional_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1089467278032_951885_1023" name="operation" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1100876885580_858547_7231" annotatedElement="_14c603f2_1089467278032_951885_1023" body="This stereotype can be used to mark a UML Interface as an Operation Interface.&#xA;&#xA;An Operation Interface is used to model interfaces based on operations. A UML Usage dependency may link to one or more information objects to indicate that the referenced information is associated with this interface.&#xA;A realized (or provided) interface of a functional component is represented as a UML Interface Realization from the component to the interface, while a used (or required) interface of a functional component is represented as a UML Usage dependency from the functional component to an operation interface.&#xA;If needed, the name and/or multiplicity of the required interface within the functional component may be modelled by creating a port on the functional component as anchor for the usage dependency. The default name for the required interface is the used operation interface’s name and the default multiplicity is one (1)."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823559_234759_375" name="base_Interface" visibility="private" association="_10_0_17260432_1129543823559_609942_374">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_332188_123" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_bfe02f9_1095863732138_335438_881" name="exception" visibility="public">
+    <ownedComment xmi:id="_bfe02f9_1095933247647_397168_5018" annotatedElement="_bfe02f9_1095863732138_335438_881" body="This stereotype can be used to mark a UML Data Type as an Exception.&#xA;&#xA;An Exception can be thrown by an operation when it reaches an exceptional situation that it needs to flag back to its caller."/>
+    <ownedAttribute xmi:id="_12_0_17260432_1170154237144_637753_1347" name="base_DataType" visibility="private" association="_12_0_17260432_1170154237134_354544_1345">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#DataType"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_508007_122" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1089469543560_777883_2000" name="event" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1100883873889_784689_16144" annotatedElement="_14c603f2_1089469543560_777883_2000" body="This stereotype can be used to mark a UML Interface as an Event Interface.&#xA;&#xA;An Event Interface allows components to indicate certain state changes to other components, without being aware who is actually listening. A UML Usage dependency may link to an information object to indicate the type of information that is passed when an event is emitted. Alternatively, the event data may be represented by attributes of the event interface."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823740_883860_654" name="base_Interface" visibility="private" association="_10_0_17260432_1129543823740_236353_653">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_394265_125" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102579365035_662427_783" name="consume" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102580136524_124179_1048" annotatedElement="_14c603f2_1102579365035_662427_783" body="This stereotype can be used to mark a UML Interface Realization as a Stream Sink.&#xA;&#xA;A Stream Sink of a functional component (the consumer) is represented as a UML Interface Realization marked with the «consume» stereotype from the functional component to the stream interface. The underlying semantics are that the component provides functionality to consume data specified by the stream interface. Typically, this functionality is provided by the platform implementation of stream interfaces and, therefore, not specified in the platform independent model."/>
+    <ownedAttribute xmi:id="_12_0_f810373_1168962695385_437797_759" name="base_InterfaceRealization" visibility="private" association="_12_0_f810373_1168962695385_672261_757">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InterfaceRealization"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_373254_130" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102579365045_667182_784" name="produce" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102580136524_830709_1049" annotatedElement="_14c603f2_1102579365045_667182_784" body="This stereotype can be used to mark a UML Usage (of an Interface) as a Stream Source.&#xA;&#xA;A Stream Source of a functional component (the producer) is represented as a UML Usage dependency marked with the «produce» stereotype from the functional component to the stream interface. If needed, the name and/or multiplicity of the stream source within the functional component may be modelled by creating a port in the functional component as anchor for the usage dependency. The name of the stream source defaults to the used stream interface’s name and the multiplicity defaults to “0..*”."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823750_828757_664" name="base_Usage" visibility="private" association="_10_0_17260432_1129543823750_726232_663">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Usage"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_0_f810373_1169649906180_670662_457" name="unicast" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1173648052859_89505_3898" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_0_f810373_1173648052859_132765_3899" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_12_0_f810373_1169649906180_402123_458" name="" visibility="public"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_793133_131" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1089467427357_210484_1060" name="stream" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1100883685378_71068_16041" annotatedElement="_14c603f2_1089467427357_210484_1060" body="This stereotype can be used to mark a UML Interface as a Stream Interface.&#xA;&#xA;A Stream Interface is used to model information flow between functional components (examples include packet streams, audio/video streams, or raw data streams). A UML Usage dependency must link to an information object in order to show the type of information that is passed via the stream interface."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823639_83200_466" name="base_Interface" visibility="private" association="_10_0_17260432_1129543823639_433985_465">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_205389_124" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1089468962294_714056_1798" name="functional" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1100883311260_381663_15879" annotatedElement="_14c603f2_1089468962294_714056_1798" body="This stereotype can be used to mark a UML Component as a Functional Component.&#xA;&#xA;A Functional Component is typically used to provide context to the specified interfaces. Interfaces on functional components can either be operation, stream, or event interfaces.&#xA;&#xA;A UML Interface Realization from a functional component to an interface specifies&#xA;- a provided interface if it is an operation interface,&#xA;- an event sink if it is an event interface,&#xA;- a stream sink if it is a stream interface.&#xA;&#xA;A UML Usage from a functional component to an interface specifies&#xA;- a required interface if it is an operation interface,&#xA;- an event source if it is an event interface,&#xA;- a stream source if it is a stream interface.&#xA;&#xA;A UML Refinement (UML Abstraction marked «refine») may indicate that a functional component refines some other model element.&#xA;To show the internal structure of a functional component, the standard UML mechanism for composite structure shall be used, i.e. a composite structure diagram attached to the functional component."/>
+    <ownedAttribute xmi:id="_12_0_f810373_1173451918965_847247_3393" name="base_Component" visibility="private" association="_12_0_f810373_1173451918965_59185_3391">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_395163_127" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1106228163576_127907_1" name="asynchronous" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1106228398594_806801_77" annotatedElement="_14c603f2_1106228163576_127907_1" body="This stereotype can be used to mark a UML Operation as an Asynchronous Operation.&#xA;&#xA;An Asynchronous Operation is an operation that can run asynchronously (oneway operation)."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823489_338381_266" name="base_Operation" visibility="private" association="_10_0_17260432_1129543823489_645900_265">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_865306_132" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102576749864_202365_274" name="emit" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102580136524_247401_1046" annotatedElement="_14c603f2_1102576749864_202365_274" body="This stereotype can be used to mark a UML Usage (of an Interface) as an Event Source.&#xA;&#xA;An Event Source of a functional component (the emitter) is represented as a UML Usage dependency marked with the «emit» stereotype from the functional component to the event interface. If needed, the name and/or multiplicity of the event source within the functional component may be modelled by creating a port on the functional component as anchor for the usage dependency. The name of the event&#xA;source defaults to the used event interface’s name and the multiplicity defaults to “0..*”."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823549_817628_362" name="base_Usage" visibility="private" association="_10_0_17260432_1129543823549_810902_361">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Usage"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_12_0_f810373_1169649686352_986820_454" name="unicast" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1173647972523_173795_3894" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_0_f810373_1173647972523_842889_3895" name="" visibility="public" value="1"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_12_0_f810373_1169649718881_317435_456" name="" visibility="public"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_778952_128" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102576938275_178423_459" name="receive" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102580136524_614451_1047" annotatedElement="_14c603f2_1102576938275_178423_459" body="This stereotype can be used to mark a UML Interface Realization as an Event Sink.&#xA;&#xA;An Event Sink of a functional component (the receiver) is represented as a UML Interface Realization marked with the «receive» stereotype from the functional component to the event interface. The underlying semantics are that the component provides functionality to receive events specified by the event interface. Typically, this functionality is an event handler provided by the underlying middleware (e.g. J2EE, .NET, CORBA Components). Therefore, the event handler itself is not specified in the platform independent model."/>
+    <ownedAttribute xmi:id="_12_0_f810373_1168962691099_965868_754" name="base_InterfaceRealization" visibility="private" association="_12_0_f810373_1168962691089_837438_752">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InterfaceRealization"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822716_198114_129" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823559_609942_374" name="" visibility="public" memberEnd="_10_0_17260432_1129543823559_234759_375 _10_0_17260432_1129543823559_881476_376" navigableOwnedEnd="_10_0_17260432_1129543823559_881476_376">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823559_881476_376" name="extension_operation" visibility="private" type="_14c603f2_1089467278032_951885_1023" aggregation="composite" association="_10_0_17260432_1129543823559_609942_374">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823559_657265_377" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823559_77448_378" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823740_236353_653" name="" visibility="public" memberEnd="_10_0_17260432_1129543823740_883860_654 _10_0_17260432_1129543823740_399335_655" navigableOwnedEnd="_10_0_17260432_1129543823740_399335_655">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823740_399335_655" name="extension_event" visibility="private" type="_14c603f2_1089469543560_777883_2000" aggregation="composite" association="_10_0_17260432_1129543823740_236353_653">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823740_997844_656" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823740_958866_657" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823750_726232_663" name="" visibility="public" memberEnd="_10_0_17260432_1129543823750_828757_664 _10_0_17260432_1129543823750_896234_665" navigableOwnedEnd="_10_0_17260432_1129543823750_896234_665">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823750_896234_665" name="extension_produce" visibility="private" type="_14c603f2_1102579365045_667182_784" aggregation="composite" association="_10_0_17260432_1129543823750_726232_663">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823750_133392_666" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823750_35596_667" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823639_433985_465" name="" visibility="public" memberEnd="_10_0_17260432_1129543823639_83200_466 _10_0_17260432_1129543823639_598203_467" navigableOwnedEnd="_10_0_17260432_1129543823639_598203_467">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823639_598203_467" name="extension_stream" visibility="private" type="_14c603f2_1089467427357_210484_1060" aggregation="composite" association="_10_0_17260432_1129543823639_433985_465">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823639_97606_468" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823639_323855_469" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823549_810902_361" name="" visibility="public" memberEnd="_10_0_17260432_1129543823549_817628_362 _10_0_17260432_1129543823549_933850_363" navigableOwnedEnd="_10_0_17260432_1129543823549_933850_363">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823549_933850_363" name="extension_emit" visibility="private" type="_14c603f2_1102576749864_202365_274" aggregation="composite" association="_10_0_17260432_1129543823549_810902_361">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823549_354504_364" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823549_480649_365" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823489_645900_265" name="" visibility="public" memberEnd="_10_0_17260432_1129543823489_338381_266 _10_0_17260432_1129543823489_256649_267" navigableOwnedEnd="_10_0_17260432_1129543823489_256649_267">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823489_256649_267" name="extension_asynchronous" visibility="private" type="_14c603f2_1106228163576_127907_1" aggregation="composite" association="_10_0_17260432_1129543823489_645900_265">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823489_504267_268" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823489_172283_269" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_0_f810373_1168962691089_837438_752" name="" visibility="public" memberEnd="_12_0_f810373_1168962691099_965868_754 _12_0_f810373_1168962691099_350498_753" navigableOwnedEnd="_12_0_f810373_1168962691099_350498_753">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_0_f810373_1168962691099_350498_753" name="extension_receive" visibility="private" type="_14c603f2_1102576938275_178423_459" aggregation="composite" association="_12_0_f810373_1168962691089_837438_752">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1168962691099_100201_756" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1168962691099_806241_755" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_0_f810373_1168962695385_672261_757" name="" visibility="public" memberEnd="_12_0_f810373_1168962695385_437797_759 _12_0_f810373_1168962695385_140114_758" navigableOwnedEnd="_12_0_f810373_1168962695385_140114_758">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_0_f810373_1168962695385_140114_758" name="extension_consume" visibility="private" type="_14c603f2_1102579365035_662427_783" aggregation="composite" association="_12_0_f810373_1168962695385_672261_757">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1168962695385_465346_761" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1168962695385_619409_760" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_0_17260432_1170154237134_354544_1345" name="" visibility="public" memberEnd="_12_0_17260432_1170154237144_637753_1347 _12_0_17260432_1170154237144_544473_1346" navigableOwnedEnd="_12_0_17260432_1170154237144_544473_1346">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_0_17260432_1170154237144_544473_1346" name="extension_exception" visibility="private" type="_bfe02f9_1095863732138_335438_881" aggregation="composite" association="_12_0_17260432_1170154237134_354544_1345">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_17260432_1170154237144_539065_1349" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_17260432_1170154237144_106932_1348" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_0_f810373_1173451918965_59185_3391" name="" visibility="public" memberEnd="_12_0_f810373_1173451918965_847247_3393 _12_0_f810373_1173451918965_38285_3392" navigableOwnedEnd="_12_0_f810373_1173451918965_38285_3392">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_0_f810373_1173451918965_38285_3392" name="extension_functional" visibility="private" type="_14c603f2_1089468962294_714056_1798" aggregation="composite" association="_12_0_f810373_1173451918965_59185_3391">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1173451918975_382693_3395" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_12_0_f810373_1173451918975_942839_3394" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>

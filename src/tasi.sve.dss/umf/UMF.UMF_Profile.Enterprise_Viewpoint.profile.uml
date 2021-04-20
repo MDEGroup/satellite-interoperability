@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_12_1_17260432_1174076011561_491307_726" name="Enterprise Viewpoint" visibility="public" URI="" metamodelReference="_12_1_17260432_1174076011561_491307_726_packageImportcreatedOnLoad">
+  <eAnnotations xmi:id="_8vmp4Z4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_8vmp4p4HEeu53dsWBgqOCg" name="EnterpriseViewpoint" nsURI="http:///schemas/EnterpriseViewpoint/_8km60Z4HEeu53dsWBgqOCg/0" nsPrefix="EnterpriseViewpoint">
+      <eAnnotations xmi:id="_8vmp454HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_8vmp5J4HEeu53dsWBgqOCg" key="originalName" value="Enterprise Viewpoint"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vmp5Z4HEeu53dsWBgqOCg" name="satisfy">
+        <eAnnotations xmi:id="_8vmp5p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102944121530_537924_1781"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vmp554HEeu53dsWBgqOCg" name="base_Abstraction" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Abstraction"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vmp6Z4HEeu53dsWBgqOCg" name="verify">
+        <eAnnotations xmi:id="_8vmp6p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102943925779_528047_1620"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vmp654HEeu53dsWBgqOCg" name="base_Abstraction" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Abstraction"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vmp7Z4HEeu53dsWBgqOCg" name="testCase">
+        <eAnnotations xmi:id="_8vmp7p4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102940906287_460688_508"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vmp754HEeu53dsWBgqOCg" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vmp8Z4HEeu53dsWBgqOCg" name="base_Behavior" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Behavior"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vmp854HEeu53dsWBgqOCg" name="requirement">
+        <eAnnotations xmi:id="_8vmp9J4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102944407892_738673_0"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmp9Z4HEeu53dsWBgqOCg" name="id" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmp954HEeu53dsWBgqOCg" name="text" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmp-Z4HEeu53dsWBgqOCg" name="type" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmp-54HEeu53dsWBgqOCg" name="priority" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmp_Z4HEeu53dsWBgqOCg" name="delivery" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmp_54HEeu53dsWBgqOCg" name="version" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmqAZ4HEeu53dsWBgqOCg" name="need" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmqA54HEeu53dsWBgqOCg" name="stability" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmqBZ4HEeu53dsWBgqOCg" name="verification" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8vmqB54HEeu53dsWBgqOCg" name="source" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vmqCZ4HEeu53dsWBgqOCg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8vmqC54HEeu53dsWBgqOCg" name="rationale">
+        <eAnnotations xmi:id="_8vmqDJ4HEeu53dsWBgqOCg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14c603f2_1102942478448_627452_645"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8vmqDZ4HEeu53dsWBgqOCg" name="base_Comment" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Comment"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_12_1_17260432_1174076011561_491307_726_packageImportcreatedOnLoad">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0primitiveTypesEnterprise_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_0javaPrimitiveTypesEnterprise_Viewpoint">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102944121530_537924_1781" name="satisfy" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102944278476_729601_1830" annotatedElement="_14c603f2_1102944121530_537924_1781" body="This stereotype can be used to mark a UML Abstraction (or UML Realization) as a Requirement Satisfaction (from SysML).&#xA;&#xA;A Requirement Satisfaction is modelled as an asbtraction (or realization) relationship between a requirement (i.e. a UML Class marked with the «requirement» stereotype) and a model element that fulfils the requirement.&#xA;A satisfaction dependency can be made between a requirement and any UML Element. The modeller therefore has complete freedom on deciding on how to map requirements to the UML model and this very much depends on what is being modelling. Typically, it would be expected that functional requirements would be satisfied by UMF functional components and interface requirements by UMF interfaces. For certain general requirements it may be possible only to satisfy a requirement by linking from a top-level UML Package or UML Model.&#xA;As with other UML Dependencies, the arrow direction points from the satisfying (client) element to the (supplier) requirement that is satisfied."/>
+    <ownedAttribute xmi:id="_12_1_2_17260432_1187871413589_586548_613" name="base_Abstraction" visibility="private" association="_12_1_2_17260432_1187871413574_662660_612">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Abstraction"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_216851_178" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102943925779_528047_1620" name="verify" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102944278476_509924_1829" annotatedElement="_14c603f2_1102943925779_528047_1620" body="This stereotype can be used to mark a UML Abstraction as a Requirement Verification  (from SysML).&#xA;&#xA;A Requirement Verification is modelled as an abstraction of a requirement (i.e. a UML Class marked with the «requirement» stereotype) by a test case (i.e. a UML Element marked with the «testCase» stereotype).&#xA;As with other UML Dependencies, the arrow direction points from the (client) test case to the (supplier) requirement."/>
+    <ownedAttribute xmi:id="_10_5_1_f810373_1165589083017_979690_1316" name="base_Abstraction" visibility="private" association="_10_5_1_f810373_1165589082987_569126_1314">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Abstraction"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_373972_177" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102940906287_460688_508" name="testCase" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102942185747_857821_604" annotatedElement="_14c603f2_1102940906287_460688_508" body="This stereotype can be used to mark a UML Operation or UML Behavior as a Test Case (from SysML).&#xA;&#xA;UML Behavior is the base metaclass for a number of behavioural elements in UML, including UML Activity, UML Interaction and UML State Machine.&#xA;&#xA;A Test Case is a process or activity that is used to determine whether a system has fulfilled its requirements.&#xA;Note that tracing of tests to requirements is typically done in requirements engineering tools rather than in a UML model. Therefore, test cases and requirement tracing in the UMF Profile are rather basic and in general not intended to support full tracing of tests to requirements. However, for special cases such as to visualize outstanding test cases within a UML Model, these mechanisms are provided as part&#xA;of the profile."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823529_587691_330" name="base_Operation" visibility="private" association="_10_0_17260432_1129543823529_453366_329">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_10_5_1_f810373_1165588678675_337526_1272" name="base_Behavior" visibility="private" association="_10_5_1_f810373_1165588678665_997601_1270">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Behavior"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_123094_175" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102944407892_738673_0" name="requirement" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1103022097613_843916_52" annotatedElement="_14c603f2_1102944407892_738673_0" body="This stereotype can be used to mark a UML Class as a Requirement (from SysML).&#xA;&#xA;A Requirement states a capability or condition that a system must satisfy. A requirement may specify a function that a system must perform or a performance condition that a system must satisfy.&#xA;Requirements are used to establish a contract between the customer (or other stakeholder) and those responsible for designing and implementing the system.&#xA;The default interpretation of a compound requirement, unless stated differently by the compound requirement itself, is that all its sub-requirements must be satisfied for the compound requirement to be satisfied. Sub-requirements can be modelled as nested classifiers of the «requirement» class. When a requirement has nested requirements, all the nested requirements apply as part of the container requirement. Deleting the container requirement deleted the nested requirements, a functionality inherited from UML.">
+      <ownedComment xmi:id="_12_0_17260432_1170845103393_569203_1809" annotatedElement="_14c603f2_1103022097613_843916_52" body="This stereotype can be used to mark a UML Class as a Requirement (from SysML).&#xA;&#xA;A Requirement states a capability or condition that a system must satisfy. A requirement may specify a function that a system must perform or a performance condition that a system must satisfy.&#xA;Requirements are used to establish a contract between the customer (or other stakeholder) and those responsible for designing and implementing the system.&#xA;The default interpretation of a compound requirement, unless stated differently by the compound requirement itself, is that all its sub-requirements must be satisfied for the compound requirement to be satisfied. Sub-requirements can be modelled as nested classifiers of the «requirement» class. When a requirement has nested requirements, all the nested requirements apply as part of the container requirement. Deleting the container requirement deleted the nested requirements, a functionality inherited from UML."/>
+    </ownedComment>
+    <ownedAttribute xmi:id="_14c603f2_1102946305571_303839_2989" name="id" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125994682261_810181_106" annotatedElement="_14c603f2_1102946305571_303839_2989" body="The unique identifier of the requirement (from SysML).&#xA;&#xA;BSSC 2005(1): Each software requirement shall include an identifier, to facilitate tracing through subsequent processes."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_575571_180" name="" visibility="public" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_642756_181" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_14c603f2_1102946305581_308673_2990" name="text" visibility="public">
+      <ownedComment xmi:id="_12_0_17260432_1170845210530_537517_1810" annotatedElement="_14c603f2_1102946305581_308673_2990" body="The textual representation of the requirement (from SysML)."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_40395_182" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_256659_183" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_14c603f2_1102946305581_950803_2991" name="type" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125994682261_168775_107" annotatedElement="_14c603f2_1102946305581_950803_2991" body="The type of requirement (e.g. functional,&#xA;operational, etc.).&#xA;&#xA;BSSC 2005(1): Identify the type of requirement."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_782691_184" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_145291_185" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_14c603f2_1102952849290_720359_3349" name="priority" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125994682261_376566_108" annotatedElement="_14c603f2_1102952849290_720359_3349" body="The priority of the requirement (e.g. high,&#xA;medium, low, etc.).&#xA;&#xA;BSSC 2005(1): For incremental delivery, each software requirement shall include a measure of priority so that the developer can decide the production schedule."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_158996_186" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_671544_187" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17260432_1108466283182_137417_1" name="delivery" visibility="public">
+      <ownedComment xmi:id="_12_0_17260432_1170845266282_62848_1811" annotatedElement="_17260432_1108466283182_137417_1" body="The delivery number for which the&#xA;requirements will be implemented."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_652747_188" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_374896_189" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_17260432_1108466283192_116461_2" name="version" visibility="public">
+      <ownedComment xmi:id="_12_0_17260432_1170845337527_505919_1812" annotatedElement="_17260432_1108466283192_116461_2" body="The version number of the requirement."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_63827_190" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_170932_191" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_17260432_1125994526645_812160_1" name="need" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125994682261_826535_111" annotatedElement="_9_5_1_17260432_1125994526645_812160_1" body="The need of the requirement (e.g. essential, optional, etc.).&#xA;&#xA;BSSC 2005(1): Essential software requirements shall be marked as such. Essential software requirements are non-negotiable; others may be less vitally important and subject to negotiation."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_426403_192" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_43452_193" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_17260432_1125994526655_113627_2" name="stability" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125994682261_596078_114" annotatedElement="_9_5_1_17260432_1125994526655_113627_2" body="The stability of the requirement (e.g. stable, subject to change, etc.).&#xA;&#xA;BSSC 2005(1): Some requirements may be known to be stable over the expected life cycle of the software; others may be more dependent on feedback from the design engineering process or may be subject to change during the software life cycle. Such unstable requirements shall be flagged."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_980509_194" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_86921_195" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_17260432_1125994526655_253646_3" name="verification" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125994682271_414064_117" annotatedElement="_9_5_1_17260432_1125994526655_253646_3" body="The verification method for the requirement.&#xA;&#xA;BSSC 2005(1): The method of verification for each requirement shall be given."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_667701_196" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_756277_197" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_17260432_1125995474376_374962_289" name="source" visibility="public">
+      <ownedComment xmi:id="_9_5_1_17260432_1125996948996_214581_342" annotatedElement="_9_5_1_17260432_1125995474376_374962_289" body="The source of the requirement (trace back to Requirements Baseline).&#xA;&#xA;BSSC 2005(1): References that trace software requirements back to the Requirements Baseline shall accompany each software requirement."/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543822766_597989_198" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0_17260432_1129543822766_706319_199" name="" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823660_973733_502" name="base_Class" visibility="private" association="_10_0_17260432_1129543823660_238951_501">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_409638_179" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_14c603f2_1102942478448_627452_645" name="rationale" visibility="public">
+    <ownedComment xmi:id="_14c603f2_1102943221136_902656_855" annotatedElement="_14c603f2_1102942478448_627452_645" body="This stereotype can be used to mark a UML Comment as a Rationale (from SysML).&#xA;&#xA;A Rationale documents the principles or reasons for a modelling decision, such as an analysis choice or a design selection. It provides or references the basis for the modelling decision, and can be attached to&#xA;any model element."/>
+    <ownedAttribute xmi:id="_10_0_17260432_1129543823529_489624_324" name="base_Comment" visibility="private" association="_10_0_17260432_1129543823529_100427_323">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Comment"/>
+    </ownedAttribute>
+    <icon xmi:id="_10_0_17260432_1129543822766_865319_176" content="" format="" location=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823660_238951_501" name="" visibility="public" memberEnd="_10_0_17260432_1129543823660_973733_502 _10_0_17260432_1129543823660_524143_503" navigableOwnedEnd="_10_0_17260432_1129543823660_524143_503">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823660_524143_503" name="extension_requirement" visibility="private" type="_14c603f2_1102944407892_738673_0" aggregation="composite" association="_10_0_17260432_1129543823660_238951_501">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823660_710970_504" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823660_408576_505" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823529_453366_329" name="" visibility="public" memberEnd="_10_0_17260432_1129543823529_587691_330 _10_0_17260432_1129543823529_502563_331" navigableOwnedEnd="_10_0_17260432_1129543823529_502563_331">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823529_502563_331" name="extension_testCase" visibility="private" type="_14c603f2_1102940906287_460688_508" aggregation="composite" association="_10_0_17260432_1129543823529_453366_329">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823529_289978_332" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823529_985688_333" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_5_1_f810373_1165589082987_569126_1314" name="" visibility="public" memberEnd="_10_5_1_f810373_1165589083017_979690_1316 _10_5_1_f810373_1165589083017_510356_1315" navigableOwnedEnd="_10_5_1_f810373_1165589083017_510356_1315">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_5_1_f810373_1165589083017_510356_1315" name="extension_verify" visibility="private" type="_14c603f2_1102943925779_528047_1620" aggregation="composite" association="_10_5_1_f810373_1165589082987_569126_1314">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_5_1_f810373_1165589083017_303359_1318" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_5_1_f810373_1165589083017_128779_1317" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_0_17260432_1129543823529_100427_323" name="" visibility="public" memberEnd="_10_0_17260432_1129543823529_489624_324 _10_0_17260432_1129543823529_27098_325" navigableOwnedEnd="_10_0_17260432_1129543823529_27098_325">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0_17260432_1129543823529_27098_325" name="extension_rationale" visibility="private" type="_14c603f2_1102942478448_627452_645" aggregation="composite" association="_10_0_17260432_1129543823529_100427_323">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823529_262468_326" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_0_17260432_1129543823529_692486_327" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_10_5_1_f810373_1165588678665_997601_1270" name="" visibility="public" memberEnd="_10_5_1_f810373_1165588678675_337526_1272 _10_5_1_f810373_1165588678665_397233_1271" navigableOwnedEnd="_10_5_1_f810373_1165588678665_397233_1271">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_5_1_f810373_1165588678665_397233_1271" name="extension_testCase" visibility="private" type="_14c603f2_1102940906287_460688_508" aggregation="composite" association="_10_5_1_f810373_1165588678665_997601_1270">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_5_1_f810373_1165588678675_857852_1274" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_10_5_1_f810373_1165588678675_265422_1273" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_2_17260432_1187871413574_662660_612" name="" visibility="public" memberEnd="_12_1_2_17260432_1187871413589_586548_613 _12_1_2_17260432_1187871413589_476417_614" navigableOwnedEnd="_12_1_2_17260432_1187871413589_476417_614">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_2_17260432_1187871413589_476417_614" name="extension_satisfy" visibility="private" type="_14c603f2_1102944121530_537924_1781" aggregation="composite" association="_12_1_2_17260432_1187871413574_662660_612">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_2_17260432_1187871413605_40058_615" name="" visibility="public"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_2_17260432_1187871413605_537926_616" name="" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>
