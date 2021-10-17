@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MagicDrawProfile="http://www.omg.org/spec/UML/20131001/MagicDrawProfile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/UML/20131001/MagicDrawProfile UML_Standard_Profile.MagicDraw_Profile.profile.uml#_hrchj-7XEeujy64NX9K4rA">
+  <uml:Model xmi:id="eee_1045467100313_135436_1" name="DSS_LEVEL_1" visibility="public" URI="" viewpoint="">
+    <ownedComment xmi:id="_18_1beta_8c90288_1415101994820_370998_4336" annotatedElement="eee_1045467100313_135436_1" body="Author:simulus.&#xA;Created:7/15/21 4:09 PM.&#xA;Title:.&#xA;Comment:.&#xA;"/>
+    <ownedComment xmi:id="_19_0_3_c380313_1626358163250_298171_5086" annotatedElement="eee_1045467100313_135436_1" body="Author:simulus.&#xA;Created:7/15/21 3:28 PM.&#xA;Title:.&#xA;Comment:.&#xA;"/>
+    <ownedComment xmi:id="_19_0_3_c380313_1626355702395_379838_5074" annotatedElement="eee_1045467100313_135436_1" body="Author:simulus.&#xA;Created:6/26/21 3:25 PM.&#xA;Title:.&#xA;Comment:.&#xA;"/>
+    <packageImport xmi:id="_0primitiveTypesDSS_LEVEL_1">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesDSS_LEVEL_1">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1624714334583_120660_4814" name="Generic Object" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1624716290420_947002_5276" name="" visibility="private" type="_19_0_3_c380313_1624715894806_539899_5225" association="_19_0_3_c380313_1624716290419_72051_5275"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334625_676591_4821" name="Generic Object" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334643_390849_4832" name="UniqueName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334646_845257_4833" name="ClassSizeof" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334648_70200_4834" name="StatusSizeof" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334649_905525_4835" name="InputSizeof" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334651_728889_4836" name="OutputSizeof" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334652_281290_4837" name="pointer_X" visibility="public" type="_19_0_3_c380313_1624714944599_291934_5068" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334653_988496_4838" name="pointer_Xdot" visibility="public" type="_19_0_3_c380313_1624714944599_291934_5068" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334654_765700_4839" name="pointer_U" visibility="public" type="_19_0_3_c380313_1624714944599_291934_5068" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334656_530110_4840" name="pointer_Y" visibility="public" type="_19_0_3_c380313_1624714944599_291934_5068" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334627_652357_4822" name="Initialize_Model" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334657_209387_4841" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334658_716059_4842" name="Input_File_Name" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334629_648048_4823" name="Model_Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334659_901299_4843" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334660_522850_4844" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334631_221663_4824" name="Update_Model" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334661_273855_4845" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334665_494931_4846" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334670_607186_4847" name="is_the_final_updating" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_19_0_3_c380313_1624714760064_956438_5022" name="" visibility="public" value="true"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334632_173853_4825" name="Model_Local_Parser" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334672_521063_4848" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334672_910073_4849" name="model_command" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334673_186827_4850" name=" n_parameters" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334673_705603_4851" name="parameters[]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334634_201484_4826" name="Execute_Model_Command" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334674_445080_4852" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334675_107307_4853" name="model_command_string" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334635_121311_4827" name="Initialize_All" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334675_125715_4854" name="Input_File_Name" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334680_99157_4855" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334636_41480_4828" name="Status_All_Dynamic" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334681_959957_4856" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334681_46210_4857" name="is_the_first_getinput" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_19_0_3_c380313_1624714741727_269423_5021" name="" visibility="public" value="true"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334682_983809_4858" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334638_889247_4829" name="Update_All_Dynamic" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334683_80757_4859" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334684_399291_4860" name="is_the_final_updating" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_19_0_3_c380313_1624714779849_952035_5023" name="" visibility="public" value="true"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334685_503723_4861" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334640_189680_4830" name="Update_All_Static_in_Chain" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334686_778328_4862" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334686_787865_4863" name="static_processing_type" visibility="public" type="_19_0_3_c380313_1624715696415_986643_5196" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334690_287886_4864" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624714334641_695098_4831" name="Topology_Checks" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624714334693_870008_4866" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625151105630_737786_4814" name="Execute_Command" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151130407_313827_4816" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151137581_528737_4817" name="command_string" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625151263428_414326_4818" name="Initialize" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151533112_896751_4820" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625151565155_654450_4821" name="Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151570632_646676_4823" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151587019_21701_4824" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625151610848_980927_4825" name="Update" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151617848_961502_4827" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151636202_206913_4828" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151644909_208564_4829" name="is_the_final_updating" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_19_0_3_c380313_1625151659448_125446_4830" name="" visibility="public" value="true"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625151675748_849028_4831" name="Local_Parser" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151688733_913598_4833" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151708251_649738_4834" name="model_command" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151730665_952346_4835" name="n_parameters" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151738706_131074_4836" name="parameters[]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_19_0_3_c380313_1624714944599_291934_5068" name="VoidPtr" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624715272559_439666_5155" name="" visibility="public" client="_19_0_3_c380313_1624714334583_120660_4814" supplier="_19_0_3_c380313_1624714944599_291934_5068"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624715405870_682326_5167" name="typ_return" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624715426047_543697_5190" name="" visibility="public" client="_19_0_3_c380313_1624714334583_120660_4814" supplier="_19_0_3_c380313_1624715405870_682326_5167"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624715696415_986643_5196" name="typ_processing_mode" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624715727935_971571_5219" name="" visibility="public" client="_19_0_3_c380313_1624714334583_120660_4814" supplier="_19_0_3_c380313_1624715696415_986643_5196"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1624715894806_539899_5225" name="InputFile" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1624716290421_550162_5277" name="" visibility="private" type="_19_0_3_c380313_1624714334583_120660_4814" association="_19_0_3_c380313_1624716290419_72051_5275"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624715909567_882553_5250" name="open" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624715938960_432530_5252" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624715942769_656868_5253" name="filename" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624715967588_367981_5254" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624715991861_116860_5255" name="close" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624716003416_840678_5257" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624716039633_697864_5258" name="load" visibility="public"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624716049495_78318_5260" name="readSymbol" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624716063934_746200_5262" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624716077362_465937_5264" name="EnableLineTokenizer" visibility="public"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624716241140_112528_5266" name="DisableLineTokenizer" visibility="public"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624716258129_841568_5268" name="ReadLine" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624716270724_109661_5270" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1624716290419_72051_5275" name="" visibility="public" memberEnd="_19_0_3_c380313_1624716290420_947002_5276 _19_0_3_c380313_1624716290421_550162_5277"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1624717371888_131092_5285" name="I1553" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1624717413935_357888_5307" name="Rt1553_Set_RT_Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624717451996_625027_5309" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624717456183_217408_5310" name="Enabling_Status" visibility="public" type="_19_0_3_c380313_1624717595359_581498_5312" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624717702704_880901_5338" name="Rt1553_Set_SA_Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624717724419_959369_5340" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624717727651_742193_5341" name="RT_SubAddress" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624717756144_37777_5342" name="Transaction_Direction" visibility="public" type="_19_0_3_c380313_1624717805484_58073_5344" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624717840177_893818_5366" name="Enabling_Status" visibility="public" type="_19_0_3_c380313_1624717595359_581498_5312" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718006791_904889_5390" name="Rt1553_Set_MC_Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718028784_847744_5392" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718031972_207100_5393" name="RT_ModeCode" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718049229_425309_5394" name="Enabling_Status" visibility="public" type="_19_0_3_c380313_1624717595359_581498_5312" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718099443_466004_5395" name="Rt1553_ReceiveData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718111773_346576_5397" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718115090_374070_5398" name="Subaddress" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718130321_171731_5399" name="DataWordCount" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718143443_337352_5400" name="pDataWords[32]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718174370_389495_5401" name="Rt1553_TransmitData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718180553_598108_5403" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718183213_77015_5404" name="Subaddress" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718194975_460511_5405" name="DataWordCount" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718206743_916629_5406" name="pDataWords[32]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718248119_304298_5407" name="Rt1553_ReceiveModeCommand" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718254133_496186_5409" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718268836_860432_5410" name="TxRx" visibility="public" type="_19_0_3_c380313_1624717805484_58073_5344" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718348412_646245_5440" name="ModeCode" visibility="public" type="_19_0_3_c380313_1624718298604_837333_5412" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718366969_91343_5441" name="pDataWord[32]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718384877_818225_5442" name="Synchronizes_All_Rt_Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718443789_247304_5444" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718526924_154910_5445" name="Set_Rt1553_Address" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718532614_691099_5447" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718539334_446109_5448" name="Rt1553_Address" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718557693_331083_5449" name="allow_shared_Rt1553_Address_flag" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_19_0_3_c380313_1624718579146_545157_5450" name="" visibility="public"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625151807177_431125_4837" name="Modify_Rt1553_Buffer" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151814398_917219_4839" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151817183_350951_4840" name="Rt1553_word" visibility="public" type="_19_0_3_c380313_1625151848113_553000_4843" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625151894414_153111_4871" name="pDataWords[32]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624717595359_581498_5312" name="typ_en_dis" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624717805484_58073_5344" name="typ_B1553_TxRx" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624717908090_997647_5368" name="" visibility="public" client="_19_0_3_c380313_1624717371888_131092_5285" supplier="_19_0_3_c380313_1624717805484_58073_5344"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624717912514_617399_5374" name="" visibility="public" client="_19_0_3_c380313_1624717371888_131092_5285" supplier="_19_0_3_c380313_1624717595359_581498_5312"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624718298604_837333_5412" name="typ_B1553_ModeCode" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624718686052_360764_5452" name="" visibility="public" client="_19_0_3_c380313_1624717371888_131092_5285" supplier="_19_0_3_c380313_1624718298604_837333_5412"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1624718735973_848725_5458" name="ILog" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1624718770795_805322_5480" name="LogFileSetPath" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624718824206_78877_5482" name="path" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719208311_135979_5484" name="Log_Write" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719234151_693649_5486" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719237673_329006_5487" name="format" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719268152_904608_5489" name="Log_Message" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719284349_340156_5491" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719287100_970884_5492" name="format" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719302132_705783_5493" name="Log_Warning" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719316003_902227_5495" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719319104_786412_5496" name="format" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719344839_663066_5497" name="Log_Error" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719350607_369998_5499" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719353329_921932_5500" name="format" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719374211_439871_5501" name="Log_Open_Custom" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719379541_685394_5503" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719382790_775769_5504" name="User_File_Name" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_19_0_3_c380313_1624719742748_89437_5515" name="Typ_DataPublish" visibility="public"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1624719764470_184693_5536" name="IPublish" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719781263_513738_5558" name="Get_DataPublish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719797544_808770_5560" name="" visibility="public" type="_19_0_3_c380313_1624719742748_89437_5515" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719821362_869069_5561" name="i" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719879582_590819_5570" name="Publish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719888784_62562_5572" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719891653_7567_5573" name="Data" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719906653_885755_5574" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719925021_920404_5575" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624719934839_848478_5576" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624719938529_755740_5577" name="Publish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719954787_524286_5579" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719957835_533057_5580" name="Data" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719975711_67018_5581" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624719982483_389701_5582" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624719995743_251554_5583" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624720134609_297134_5592" name="Publish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720147522_522908_5594" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720150075_888167_5595" name="Data" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720161790_242541_5596" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720175834_490062_5597" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624720188972_741378_5598" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624720286928_288396_5607" name="Publish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720314144_345956_5609" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720316803_794564_5610" name="Data" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720331728_757049_5611" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720343627_573103_5612" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624720359096_704192_5613" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624720456698_975448_5621" name="Publish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720487141_920368_5623" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720491343_639631_5624" name="Data" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720515643_333986_5625" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720523067_356895_5626" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624720534002_687455_5627" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624720538622_590255_5628" name="Publish" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720546305_438026_5630" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720549841_704358_5631" name="Data" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720570487_632103_5632" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720591289_103413_5633" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_c380313_1624720604024_124639_5634" name="" visibility="public" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624720710496_411327_5635" name="PublishNewData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720765819_180688_5637" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720768552_613959_5638" name="DataPointer" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720784195_163749_5639" name="DataType" visibility="public" type="_19_0_3_c380313_1624720899036_47649_5646" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720815161_396323_5641" name="DataSize" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720829804_534219_5642" name="DataNumber" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720842220_731564_5643" name="DataName" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624720858701_530030_5644" name="DataUnit" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624719854916_889123_5565" name="" visibility="public" client="_19_0_3_c380313_1624719764470_184693_5536" supplier="_19_0_3_c380313_1624719742748_89437_5515"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624720899036_47649_5646" name="typ_DataType" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624720912321_833195_5669" name="" visibility="public" client="_19_0_3_c380313_1624719764470_184693_5536" supplier="_19_0_3_c380313_1624720899036_47649_5646"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1624721062846_139222_5678" name="ISerial" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721074987_697931_5700" name="Registry_Serial_Link_Connection" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721097785_818808_5702" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721100448_61152_5703" name="objA" visibility="public" type="_19_0_3_c380313_1624714334583_120660_4814" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721118196_23870_5704" name="chA" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721129997_296971_5705" name="objB" visibility="public" type="_19_0_3_c380313_1624714334583_120660_4814" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721144552_723768_5706" name="chB" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721181539_628625_5707" name="Serial_ProcessData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721193337_161915_5709" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721203613_645279_5710" name="channel" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721215402_187904_5711" name="DataWordCount" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721233295_708007_5712" name="pDataWords" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721240909_723267_5713" name="Serial_ProduceData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721256160_794668_5715" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721258715_418112_5716" name="channel" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721271040_939635_5717" name="DataWordCount" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721283115_46383_5718" name="pDataWords" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721301180_457776_5720" name="Serial_CreateLinks" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721316046_543323_5722" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721321599_222023_5723" name="N_links" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721338221_919482_5724" name="Serial_TransmitData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721352521_456266_5726" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721355597_477912_5727" name="channel" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721367854_829668_5728" name="DataWordCount" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721381534_250707_5729" name="pDataWords" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721406754_558269_5730" name="Serial_ReceiveData" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721412048_485963_5732" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721414656_150583_5733" name="channel" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721425580_153646_5734" name="DataWordCount" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721441152_553767_5735" name="pDataWords" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1624721625333_131466_5740" name="ISwitch" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721663132_583776_5785" name="Get_switch_status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721675133_821496_5787" name="" visibility="public" type="_19_0_3_c380313_1624721629428_848656_5763" direction="return" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721680536_128643_5788" name="Set_switch_status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721697690_97947_5790" name="status" visibility="public" type="_19_0_3_c380313_1624721629428_848656_5763" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721713029_452729_5791" name="Command_Switch_ON" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721735368_499392_5793" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1624721753223_852318_5794" name="Command_Switch_OFF" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1624721759794_427224_5796" name="" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" direction="return" effect="create"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1624721629428_848656_5763" name="typ_off_on" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1624721791641_606402_5798" name="" visibility="public" client="_19_0_3_c380313_1624721625333_131466_5740" supplier="_19_0_3_c380313_1624721629428_848656_5763"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1625151833105_454186_4841" name="typ" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1625151848113_553000_4843" name="typ_Rt_1553_word" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1625151880172_349049_4866" name="" visibility="public" client="_19_0_3_c380313_1624717371888_131092_5285" supplier="_19_0_3_c380313_1625151848113_553000_4843"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1625217488393_24724_4815" name="IDynamicModel" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1625217523320_516926_4837" name="Initialize" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217689649_422740_4847" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625217536638_375908_4839" name="Get_Input" visibility="public"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625217545966_342160_4841" name="Status" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217732026_685217_4848" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217748296_539055_4849" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625217555282_232094_4843" name="Update" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217774823_665085_4850" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217795065_283835_4851" name="time" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217807790_217916_4852" name="is_the_final_updating" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_19_0_3_c380313_1625217834234_531164_4853" name="" visibility="public" value="true"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1625217562075_82436_4845" name="Local_Parser" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217846656_556218_4854" name="result" visibility="public" type="_19_0_3_c380313_1624715405870_682326_5167" effect="create"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217864306_330416_4856" name="model_command" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217895971_59850_4857" name="n_parameters" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1625217915804_176778_4858" name="parameters[]" visibility="public" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1625217988367_430109_4863" name="DssRoot" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1625218057350_957058_4903" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1625217963241_990190_4860" name="" visibility="public" client="_19_0_3_c380313_1625217988367_430109_4863" supplier="_19_0_3_c380313_1625217488393_24724_4815" contract="_19_0_3_c380313_1625217488393_24724_4815"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1626687153370_369550_4815" name="" visibility="public" client="_19_0_3_c380313_1625217988367_430109_4863" supplier="_19_0_3_c380313_1624719764470_184693_5536" contract="_19_0_3_c380313_1624719764470_184693_5536"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1625218089130_201965_4905" name="GenericRemoteTerminal" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1625218121516_502786_4932" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1624719433931_940191_5509" name="" visibility="public" client="_19_0_3_c380313_1625218089130_201965_4905" supplier="_19_0_3_c380313_1624717371888_131092_5285" contract="_19_0_3_c380313_1624717371888_131092_5285"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1626357596291_563199_5726" name="ReactionWheel" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1626357838072_667865_5866" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1624720943022_151252_5675" name="" visibility="public" client="_19_0_3_c380313_1626357596291_563199_5726" supplier="_19_0_3_c380313_1624719764470_184693_5536" contract="_19_0_3_c380313_1624719764470_184693_5536"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1626357643148_310801_5752" name="Gyroscope" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1626357842348_445854_5869" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1626357851560_151613_5871" name="" visibility="public" client="_19_0_3_c380313_1626357643148_310801_5752" supplier="_19_0_3_c380313_1624719764470_184693_5536" contract="_19_0_3_c380313_1624719764470_184693_5536"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1626357690941_260365_5778" name="GenericLog" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1626357810812_311601_5863" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1624719439140_81030_5512" name="" visibility="public" client="_19_0_3_c380313_1626357690941_260365_5778" supplier="_19_0_3_c380313_1624718735973_848725_5458" contract="_19_0_3_c380313_1624718735973_848725_5458"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1626357732591_922586_5804" name="GenericSerial" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1626357805040_874240_5860" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1624721474590_413145_5737" name="" visibility="public" client="_19_0_3_c380313_1626357732591_922586_5804" supplier="_19_0_3_c380313_1624721062846_139222_5678" contract="_19_0_3_c380313_1624721062846_139222_5678"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1626357763931_292578_5830" name="GenericSwitch" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1626357794811_652035_5857" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1624721801295_832213_5805" name="" visibility="public" client="_19_0_3_c380313_1626357763931_292578_5830" supplier="_19_0_3_c380313_1624721625333_131466_5740" contract="_19_0_3_c380313_1624721625333_131466_5740"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1626958440232_687609_4815" name="GenericCANWrap" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1626958499753_780306_4842" general="_19_0_3_c380313_1624714334583_120660_4814"/>
+      <interfaceRealization xmi:id="_19_0_3_c380313_1627388242833_317612_4838" name="" visibility="public" client="_19_0_3_c380313_1626958440232_687609_4815" supplier="_19_0_3_c380313_1627388189330_871297_4815" contract="_19_0_3_c380313_1627388189330_871297_4815"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627388189330_871297_4815" name="CANWrapper" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1627388551896_600380_4840" name="ReadCanReceivedBuffer" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388706731_641237_4898" name="" visibility="public" type="_19_0_3_c380313_1627388602007_681764_4843" direction="return"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388711882_618032_4899" name="nodeID" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388727703_938081_4900" name="messaggio" visibility="public" type="_19_0_3_c380313_1627388658303_226185_4864"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627388769416_68844_4901" name="WriteCanSendBuffer" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388781777_532987_4903" name="" visibility="public" type="_19_0_3_c380313_1627388602007_681764_4843" direction="return"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388785390_35386_4904" name="nodeID" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388798889_974700_4905" name="messaggio" visibility="public" type="_19_0_3_c380313_1627388658303_226185_4864"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627388815365_615108_4906" name="CAN_memcpy_flip" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388828835_35205_4908" name="" visibility="public" direction="return"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388832491_55093_4909" name="destination" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388864260_887843_4910" name="source" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388883113_862268_4911" name="n_bytes" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627388922868_423300_4912" name="CAN_fill_buffer_RX" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388975499_974713_4914" name="" visibility="public" direction="return"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627388999174_76510_4915" name="buffer_output" visibility="public" type="_19_0_3_c380313_1627388658303_226185_4864"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627389012908_800921_4916" name="buffer_input" visibility="public" type="_19_0_3_c380313_1627388602007_681764_4843"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627389165626_3551_4917" name="CAN_fill_buffer_TX" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627389171486_266862_4919" name="buffer_output" visibility="public" type="_19_0_3_c380313_1627388602007_681764_4843"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627389185036_601767_4920" name="buffer_input" visibility="public" type="_19_0_3_c380313_1627388658303_226185_4864"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_19_0_3_c380313_1627388602007_681764_4843" name="uchar" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627388658303_226185_4864" name="CNIO_MSG" visibility="public"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1627388679520_308296_4887" name="" visibility="public" client="_19_0_3_c380313_1627388189330_871297_4815" supplier="_19_0_3_c380313_1627388602007_681764_4843"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_19_0_3_c380313_1627388683864_335741_4893" name="" visibility="public" client="_19_0_3_c380313_1627388189330_871297_4815" supplier="_19_0_3_c380313_1627388658303_226185_4864"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="magicdraw_uml_standard_profile_v_0001" name="UML Standard Profile" visibility="public" URI="">
+      <ownedComment xmi:id="_be00301_1078843546940_242228_131" annotatedElement="magicdraw_uml_standard_profile_v_0001" body="UML Standard Profile contains a UML metamodel (metaclasses without properties and associations), Standard UML stereotypes defined in the annex C of UML specification, validation suites for UML model correctness and completeness checking, and stereotypes used by MagicDraw internally."/>
+    </packagedElement>
+    <profileApplication xmi:id="_11_5_be00301_1153310565718_226811_161profileApplicationDSS_LEVEL_1">
+      <eAnnotations xmi:id="_hsEMcO7XEeujy64NX9K4rA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_hriA8u7XEeujy64NX9K4rA"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_11_5_be00301_1153310565718_226811_161"/>
+    </profileApplication>
+    <profileApplication xmi:id="_be00301_1073394351331_445580_2profileApplicationDSS_LEVEL_1">
+      <eAnnotations xmi:id="_hsg4YO7XEeujy64NX9K4rA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_hrchj-7XEeujy64NX9K4rA"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_be00301_1073394351331_445580_2"/>
+    </profileApplication>
+    <profileApplication xmi:id="_19_0beta_8bb027e_1484121177637_661582_4502profileApplicationDSS_LEVEL_1">
+      <eAnnotations xmi:id="_hsoNIO7XEeujy64NX9K4rA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_hrchf-7XEeujy64NX9K4rA"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_19_0beta_8bb027e_1484121177637_661582_4502"/>
+    </profileApplication>
+    <profileApplication xmi:id="_11_5_f720368_1159529670215_231387_1profileApplicationDSS_LEVEL_1">
+      <eAnnotations xmi:id="_hswI8O7XEeujy64NX9K4rA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Validation_Profile.profile.uml#_hrXo4u7XEeujy64NX9K4rA"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Validation_Profile.profile.uml#_11_5_f720368_1159529670215_231387_1"/>
+    </profileApplication>
+    <profileApplication xmi:id="_16_6_8f90291_1254846042821_86742_517profileApplicationDSS_LEVEL_1">
+      <eAnnotations xmi:id="_hs3dsO7XEeujy64NX9K4rA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_hroIC-7XEeujy64NX9K4rA"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_16_6_8f90291_1254846042821_86742_517"/>
+    </profileApplication>
+    <profileApplication xmi:id="_17_0_4beta_8ca0285_1361349406965_180847_3086profileApplicationDSS_LEVEL_1">
+      <eAnnotations xmi:id="_hs89Qe7XEeujy64NX9K4rA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_hrpVsu7XEeujy64NX9K4rA"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_17_0_4beta_8ca0285_1361349406965_180847_3086"/>
+    </profileApplication>
+  </uml:Model>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_hyXBsO7XEeujy64NX9K4rA" base_Element="magicdraw_uml_standard_profile_v_0001"/>
+</xmi:XMI>

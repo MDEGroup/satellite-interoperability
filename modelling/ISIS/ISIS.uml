@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MagicDrawProfile="http://www.omg.org/spec/UML/20131001/MagicDrawProfile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/UML/20131001/MagicDrawProfile UML_Standard_Profile.MagicDraw_Profile.profile.uml#_ClPvFyBTEeyDn4F9LuyX9w">
+  <uml:Model xmi:id="eee_1045467100313_135436_1" name="Model" visibility="public" URI="" viewpoint="">
+    <ownedComment xmi:id="_18_1beta_8c90288_1415101994820_370998_4336" annotatedElement="eee_1045467100313_135436_1" body="Author:simulus.&#xA;Created:7/27/21 2:41 PM.&#xA;Title:.&#xA;Comment:.&#xA;"/>
+    <packageImport xmi:id="_0primitiveTypesModel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesModel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627390087658_460786_4830" name="CanNode" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627390617768_898720_5068" name="" visibility="private" type="_19_0_3_c380313_1627390567320_438178_5015" aggregation="shared" association="_19_0_3_c380313_1627390617767_274445_5067"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627390130308_881889_4856" name="CanBus" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627390527426_228314_5006" name="" visibility="private" type="_19_0_3_c380313_1627390480968_989461_4976" aggregation="shared" association="_19_0_3_c380313_1627390527425_863875_5005"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627390151716_516972_4883" name="ICanNodeLineIF" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1627390195394_261253_4905" name="StartReceive" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390243935_497075_4936" name="" visibility="public" type="_19_0_3_c380313_1627390223711_515777_4908" direction="return"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390246821_360955_4937" name="msg" visibility="public" type="_19_0_3_c380313_1627390298730_973263_4939"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627390337328_791164_4967" name="EndReceive" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390353525_350561_4969" name="msg" visibility="public" type="_19_0_3_c380313_1627390298730_973263_4939"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390367354_506664_4970" name="status" visibility="public" type="_19_0_3_c380313_1627390223711_515777_4908"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627390383270_438818_4971" name="AckTransmit" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390395547_323096_4973" name="msg" visibility="public" type="_19_0_3_c380313_1627390298730_973263_4939"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390410833_115450_4974" name="status" visibility="public" type="_19_0_3_c380313_1627390223711_515777_4908"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627390223711_515777_4908" name="CanMsgStatus" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627390298730_973263_4939" name="CanMsg" visibility="public"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627390480968_989461_4976" name="ICanNodeLineConsumer" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627390502608_584244_5000" general="_19_0_3_c380313_1627390151716_516972_4883"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627390527426_404306_5007" name="" visibility="public" type="_19_0_3_c380313_1627390130308_881889_4856" association="_19_0_3_c380313_1627390527425_863875_5005"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627390527425_863875_5005" name="" visibility="public" memberEnd="_19_0_3_c380313_1627390527426_228314_5006 _19_0_3_c380313_1627390527426_404306_5007"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627390567320_438178_5015" name="ICanBusLineConsumer" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627390611296_180466_5062" general="_19_0_3_c380313_1627390591525_555335_5038"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627390617770_311234_5069" name="" visibility="public" type="_19_0_3_c380313_1627390087658_460786_4830" association="_19_0_3_c380313_1627390617767_274445_5067"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627390591525_555335_5038" name="ICanBusLineIF" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1627390658556_480076_5076" name="Transmit" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390672225_726062_5078" name="msg" visibility="public" type="_19_0_3_c380313_1627390298730_973263_4939"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627390690685_321554_5079" name="status" visibility="public" type="_19_0_3_c380313_1627390223711_515777_4908"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627390617767_274445_5067" name="" visibility="public" memberEnd="_19_0_3_c380313_1627390617768_898720_5068 _19_0_3_c380313_1627390617770_311234_5069"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627391133432_380142_5096" name="BusController" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627392838028_827421_5455" name="" visibility="private" type="_19_0_3_c380313_1627391206552_330085_5168" aggregation="shared" association="_19_0_3_c380313_1627392838028_550336_5454"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627391142526_87055_5122" name="IRemoteTerminalIF" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627392844915_294188_5465" general="_19_0_3_c380313_1627391206552_330085_5168"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392156842_327373_5409" name="enableSubAddress" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392163466_697906_5411" name="subAddress" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392277052_67365_5412" name="disableSubAddress" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392286563_914955_5414" name="subAddress" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392313939_301001_5416" name="forceAcquisition" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392325904_773098_5418" name="subAddress" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392339817_494401_5419" name="word" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392352381_295556_5420" name="value" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392362568_943588_5421" name="mask" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392378041_580113_5422" name="forceStatusWord" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392387797_22500_5424" name="subAddress" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392401144_668164_5425" name="value" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392426939_176785_5426" name="mask" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392450215_745458_5427" name="cancelAllSettings" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392495048_71339_5429" name="subAddress" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392518040_854658_5430" name="timeoutOnce" visibility="public"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392536326_192099_5432" name="enableModeCode" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392541909_515397_5434" name="modeCode" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392555545_356391_5435" name="disableModeCode" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392570110_201410_5437" name="modeCode" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627391206552_330085_5168" name="IM1553LineIF" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627392838029_20341_5456" name="" visibility="public" type="_19_0_3_c380313_1627391133432_380142_5096" association="_19_0_3_c380313_1627392838028_550336_5454"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627391667321_779081_5206" name="BCtoRT" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627391878406_978236_5396" name="command" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627391890470_642666_5397" name="data[32]" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627391904577_652282_5398" name="exchangeStatus" visibility="public" type="_19_0_3_c380313_1627391799130_852909_5297"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627391921930_64166_5399" name="exchangeEpochTime" visibility="public" type="_19_0_3_c380313_1627391812430_791398_5320"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627391950402_463329_5400" name="exchangeSimTime" visibility="public" type="_19_0_3_c380313_1627391824725_625411_5343"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627392018209_73189_5401" name="RTtoBC" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392045506_280197_5404" name="command" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392058261_193988_5405" name="data[32]" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392070710_636351_5406" name="exchangeStatus" visibility="public" type="_19_0_3_c380313_1627391799130_852909_5297"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392083888_459911_5407" name="exchangeEpochTime" visibility="public" type="_19_0_3_c380313_1627391812430_791398_5320"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627392098451_694135_5408" name="exchangeSimTime" visibility="public" type="_19_0_3_c380313_1627391824725_625411_5343"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627391756248_86184_5251" name="UInt16" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627391782331_984170_5274" name="BusId" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627391799130_852909_5297" name="ExchangeStatus" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627391812430_791398_5320" name="DateTime" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627391824725_625411_5343" name="Duration" visibility="public"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627392838028_550336_5454" name="" visibility="public" memberEnd="_19_0_3_c380313_1627392838028_827421_5455 _19_0_3_c380313_1627392838029_20341_5456"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627393087984_426567_5467" name="VoltageProvider" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627476366030_468178_4865" name="" visibility="private" type="_19_0_3_c380313_1627476322309_910130_4815" aggregation="shared" association="_19_0_3_c380313_1627476366030_873172_4864"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627393098852_23866_5493" name="ConsumerProvider" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627476371578_969822_4878" name="" visibility="private" type="_19_0_3_c380313_1627476336634_741508_4838" aggregation="shared" association="_19_0_3_c380313_1627476371577_845376_4877"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627476322309_910130_4815" name="IPowerLineVoltageConsumer" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627476660353_585338_4919" general="_19_0_3_c380313_1627476574988_696179_4891"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627476366031_563649_4866" name="" visibility="public" type="_19_0_3_c380313_1627393087984_426567_5467" association="_19_0_3_c380313_1627476366030_873172_4864"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627476336634_741508_4838" name="IPowerLineCurrentConsumer" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627476667149_741176_4922" general="_19_0_3_c380313_1627476574988_696179_4891"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627476371579_180457_4879" name="" visibility="public" type="_19_0_3_c380313_1627393098852_23866_5493" association="_19_0_3_c380313_1627476371577_845376_4877"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627476366030_873172_4864" name="" visibility="public" memberEnd="_19_0_3_c380313_1627476366030_468178_4865 _19_0_3_c380313_1627476366031_563649_4866"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627476371577_845376_4877" name="" visibility="public" memberEnd="_19_0_3_c380313_1627476371578_969822_4878 _19_0_3_c380313_1627476371579_180457_4879"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627476574988_696179_4891" name="IPowerLineIF" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1627476605607_857137_4913" name="PowerLinceChangeEvent" visibility="public"/>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627476628948_232976_4915" name="PowerLineConsumptionChangeEvent" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627477087866_367841_4924" name="HPCCProvider" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627477309748_372763_5010" name="" visibility="private" type="_19_0_3_c380313_1627477119485_724549_4950" association="_19_0_3_c380313_1627477309747_749326_5008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627477119485_724549_4950" name="IHPCConsumer" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627477291700_413461_5003" general="_19_0_3_c380313_1627477143849_106730_4973"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627477309747_678719_5009" name="" visibility="public" type="_19_0_3_c380313_1627477087866_367841_4924" aggregation="shared" association="_19_0_3_c380313_1627477309747_749326_5008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627477143849_106730_4973" name="IHPCLineIF" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1627477197238_237729_4995" name="PulseRaising" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477220543_968968_4997" name="edge" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477245435_973765_4998" name="pulseTime" visibility="public" type="_19_0_3_c380313_1627391824725_625411_5343"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627477309747_749326_5008" name="" visibility="public" memberEnd="_19_0_3_c380313_1627477309747_678719_5009 _19_0_3_c380313_1627477309748_372763_5010"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627477385012_323455_5018" name="&#x9;RS244Provider" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627477704729_154389_5178" name="" visibility="private" type="_19_0_3_c380313_1627477459345_449840_5070" aggregation="shared" association="_19_0_3_c380313_1627477704729_317659_5177"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_3_c380313_1627477387865_579557_5044" name="RS485Provider" visibility="public">
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627477710032_690876_5191" name="" visibility="private" type="_19_0_3_c380313_1627477459345_449840_5070" aggregation="shared" association="_19_0_3_c380313_1627477710032_822582_5190"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627477459345_449840_5070" name="ISerialLineConsumer" visibility="public">
+      <generalization xmi:id="_19_0_3_c380313_1627477699708_350881_5172" general="_19_0_3_c380313_1627477474465_579443_5093"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627477704730_744802_5179" name="" visibility="public" type="_19_0_3_c380313_1627477385012_323455_5018" association="_19_0_3_c380313_1627477704729_317659_5177"/>
+      <ownedAttribute xmi:id="_19_0_3_c380313_1627477710033_304446_5192" name="" visibility="public" type="_19_0_3_c380313_1627477387865_579557_5044" association="_19_0_3_c380313_1627477710032_822582_5190"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_19_0_3_c380313_1627477474465_579443_5093" name="ISerialLineIF" visibility="public">
+      <ownedOperation xmi:id="_19_0_3_c380313_1627477497227_526841_5115" name="PushByte" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477572613_44702_5163" name="b" visibility="public" type="_19_0_3_c380313_1627477525678_59224_5118"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477584832_57762_5164" name="exchangeTime" visibility="public" type="_19_0_3_c380313_1627391824725_625411_5343"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_3_c380313_1627477609395_572855_5165" name="PushMessage" visibility="public">
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477619251_144382_5167" name="length" visibility="public" type="_19_0_3_c380313_1627391756248_86184_5251"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477639019_102672_5168" name="message" visibility="public" type="_19_0_3_c380313_1627477540849_541862_5141"/>
+        <ownedParameter xmi:id="_19_0_3_c380313_1627477651126_676929_5169" name="exchangeTime" visibility="public" type="_19_0_3_c380313_1627391824725_625411_5343"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627477525678_59224_5118" name="UInt8" visibility="public"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_3_c380313_1627477540849_541862_5141" name="MessageBytes" visibility="public"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627477704729_317659_5177" name="" visibility="public" memberEnd="_19_0_3_c380313_1627477704729_154389_5178 _19_0_3_c380313_1627477704730_744802_5179"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_3_c380313_1627477710032_822582_5190" name="" visibility="public" memberEnd="_19_0_3_c380313_1627477710032_690876_5191 _19_0_3_c380313_1627477710033_304446_5192"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="magicdraw_uml_standard_profile_v_0001" name="UML Standard Profile" visibility="public" URI="">
+      <ownedComment xmi:id="_be00301_1078843546940_242228_131" annotatedElement="magicdraw_uml_standard_profile_v_0001" body="UML Standard Profile contains a UML metamodel (metaclasses without properties and associations), Standard UML stereotypes defined in the annex C of UML specification, validation suites for UML model correctness and completeness checking, and stereotypes used by MagicDraw internally."/>
+    </packagedElement>
+    <profileApplication xmi:id="_16_6_8f90291_1254846042821_86742_517profileApplicationModel">
+      <eAnnotations xmi:id="_Cp6zsCBTEeyDn4F9LuyX9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_Cl5PVyBTEeyDn4F9LuyX9w"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_16_6_8f90291_1254846042821_86742_517"/>
+    </profileApplication>
+    <profileApplication xmi:id="_19_0beta_8bb027e_1484121177637_661582_4502profileApplicationModel">
+      <eAnnotations xmi:id="_Cp9P8SBTEeyDn4F9LuyX9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_CliqAiBTEeyDn4F9LuyX9w"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_19_0beta_8bb027e_1484121177637_661582_4502"/>
+    </profileApplication>
+    <profileApplication xmi:id="_11_5_be00301_1153310565718_226811_161profileApplicationModel">
+      <eAnnotations xmi:id="_Cp-eESBTEeyDn4F9LuyX9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_ClIaUyBTEeyDn4F9LuyX9w"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_11_5_be00301_1153310565718_226811_161"/>
+    </profileApplication>
+    <profileApplication xmi:id="_11_5_f720368_1159529670215_231387_1profileApplicationModel">
+      <eAnnotations xmi:id="_Cr3UcCBTEeyDn4F9LuyX9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Validation_Profile.profile.uml#_ClEI4iBTEeyDn4F9LuyX9w"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Validation_Profile.profile.uml#_11_5_f720368_1159529670215_231387_1"/>
+    </profileApplication>
+    <profileApplication xmi:id="_be00301_1073394351331_445580_2profileApplicationModel">
+      <eAnnotations xmi:id="_Cr7l4CBTEeyDn4F9LuyX9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_ClPvFyBTEeyDn4F9LuyX9w"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_be00301_1073394351331_445580_2"/>
+    </profileApplication>
+    <profileApplication xmi:id="_17_0_4beta_8ca0285_1361349406965_180847_3086profileApplicationModel">
+      <eAnnotations xmi:id="_Cr80ASBTEeyDn4F9LuyX9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_CliqEiBTEeyDn4F9LuyX9w"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_17_0_4beta_8ca0285_1361349406965_180847_3086"/>
+    </profileApplication>
+  </uml:Model>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_DFWLcCBTEeyDn4F9LuyX9w" base_Element="magicdraw_uml_standard_profile_v_0001"/>
+</xmi:XMI>
